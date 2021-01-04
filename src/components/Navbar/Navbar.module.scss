@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    position: relative;
+    background: white;    
+    z-index: 999;
+}
+.brand{
+    justify-self: start;
+    cursor: pointer;    
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 15px 0 0 10px;
+}
+.brand img {
+    height: 50px;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 15px 0 0 10px;    
+}
+.desktopLogo {
+    display: none;
+}
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 2.5rem;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;        
+}
+.navMenu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    list-style: none;
+}
+.navLinks {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+    color: white;
+    text-decoration: none;
+}
+.navLinks:hover {
+    border-radius: 0;
+}
+.menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: transate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 15px 10px 0 0;
+}
+.faBars{
+    color: black;
+}
+.faTimes {
+    color: black;
+}
+
+// applied css rules for screen width over 992px
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        background-color:transparent;
+    }
+    .navMenu {
+        display: grid;
+        flex-direction: row;
+        width: none;
+        position: static;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 10px;
+        text-align: center; 
+        list-style: none;
+        width: 70vw;
+        justify-content: end;
+        margin-right: 2rem;
+        padding: 0;
+        background-color: none;
+    }    
+    .navLinks {
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+    .brand {
+        position: static;
+        justify-self: start;
+        cursor: pointer;
+    }    
+    .brand img {
+        position: static;
+        padding: 0;    
+        height: 45px;
+    }    
+    .desktopLogo {
+        display: block;
+    }
+    .mobileLogo {
+        display: none;
+    }
+    .menuIcon {
+        display:none;
+    }    
+}
+
+// css rules for screen width under 992px
+@media screen and (max-width: 992px) {
+
+}
