@@ -41,7 +41,7 @@ class App extends Component {
                       <button>START MY CHECKUP</button>
                     </div>
                     <div className="col-5">
-                      <button style={{background: "transparent", color: "white", border: "1px solid white", boxSizing: "content-box"}}>LEARN MORE</button>
+                      <button style={{background: "transparent", color: "white", boxSizing: "content-box"}}>LEARN MORE</button>
                     </div>
                   </div>
                 </div>              
@@ -62,7 +62,7 @@ class App extends Component {
                         <button>START MY CHECKUP</button>
                       </div>
                       <div className="col-5">
-                        <button style={{background: "transparent", color: "white", border: "1px solid white", boxSizing: "content-box"}}>LEARN MORE</button>
+                        <button style={{background: "transparent", color: "white", boxSizing: "content-box"}}>LEARN MORE</button>
                       </div>
                     </div>
                   </div>
