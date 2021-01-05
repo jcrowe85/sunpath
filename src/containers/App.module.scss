@@ -1,14 +1,13 @@
+p {
+    color: gray;
+}
 .wrapBlk {
     background: black;
     color: white;
 }
 .wrapWht {
-    background: white;
+    background: #e4e4e4;
     color: black;
-}
-.tachSection {
-    background: linear-gradient(to bottom,
-    white 10%, black 10% 30%, white 30% 100%)
 }
 .mainSection::before {
     content: '';
@@ -22,14 +21,29 @@
     background-repeat: no-repeat;
     opacity: 0.4;
 }
+.tachSection {
+    background: linear-gradient(to bottom,
+    #e4e4e4 10%, black 10% 30%, #e4e4e4 30% 100%); 
+    margin-bottom: 5rem;
+}
+.savingsBarSection p {
+    font-family: 'Crimson', Times;
+}
+
 @media screen and (min-width: 992px) {
     .tachSection {
         background: linear-gradient(to bottom,
-        white 30%, black 20% 70%, white 70% 100%)
+        white 30%, black 20% 70%, white 70% 100%);
+        margin-bottom: 0px;
     }
     .tachometer {
         align-items: center;
         justify-content: center;
         display: flex;
     }
+    .dotsChart {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }    
 }

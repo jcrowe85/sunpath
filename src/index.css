@@ -13,12 +13,14 @@ body {
     font-size: 16px;
     background-position: top center;    
 }
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: Crimson, Times;
     letter-spacing: 0.04rem;
     font-weight: 500;
     line-height: 1em;
     margin: .5em 0em;
+}
+h1 {
     font-size: 2em;
 }
 p {
@@ -32,14 +34,31 @@ button {
     background: white;
     padding: .8rem 1rem;
     border: none;
+    position: relative;
+    z-index: 999;
+    border: 1px solid white;
 }
 button:hover {
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     transition: all 0.5s ease;
+    z-index: 999;
+    color: white;
+    border: 1px solid white;
+    
 }
-
-.bootstrap-wrapper {
- 
+.learnMoreBtn {
+    border: none;
+    background: transparent; 
+    color: white;
+    position: relative;
+    z-index: 999;
+}
+.learnMoreBtn:hover {
+    border: 1px solid white;
+    position: absolute;
+    z-index: 999;
+    color: black;
+    background: white;
 }
 .column {
     padding-left: 3rem !important;
