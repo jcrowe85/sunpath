@@ -26,6 +26,10 @@ h1 {
 p {
     line-height: 1.5rem;
 }
+img {
+    width: 100%;
+    height: auto;
+}
 .paragraphBreak::before {
     content: '\a';
     white-space: pre;
@@ -75,7 +79,10 @@ button:hover {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
-    .row{
+    .container{
         padding: 4rem 0rem;
-    }    
+    }   
+    .savingsBarSection {
+        margin-top: 500rem;
+    } 
 }

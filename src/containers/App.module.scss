@@ -19,12 +19,23 @@ p {
     left: 0;
     background: url("../assets/imgs/logo-large-bg.png");
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.8;
 }
+.savingsBarSection {
+    background: url("../assets/imgs/tachometer-low-opacity.png");
+    background-repeat: no-repeat; 
+    z-index: -1; 
+    background-position: top center;
+    width: 100%;
+}
+
 .tachSection {
     background: linear-gradient(to bottom,
     #e4e4e4 10%, black 10% 30%, #e4e4e4 30% 100%); 
     margin-bottom: 5rem;
+}
+.dotsChartSection {
+    border: none;
 }
 .savingsBarSection p {
     font-family: 'Crimson', Times;
@@ -33,7 +44,7 @@ p {
 @media screen and (min-width: 992px) {
     .tachSection {
         background: linear-gradient(to bottom,
-        white 30%, black 20% 70%, white 70% 100%);
+        #e4e4e4 30%, black 20% 70%, #e4e4e4 70% 100%);
         margin-bottom: 0px;
     }
     .tachometer {
@@ -45,5 +56,26 @@ p {
         align-items: center;
         justify-content: center;
         display: flex;
+    }   
+    .savingsBarSection {
+        background-position: center right;
+    }
+    .improveScoreSection {
+        background: black;
+        background: url("../assets/imgs/improve-score-background.png") black;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-position: center;
     }    
+    .textRight {
+        text-align: right;
+    }
+    .crossIconExt {
+        width: 125%;
+        height: 57px;
+        position: absolute;
+        left: -6rem;
+        top: 12.5rem;
+    }
+
 }
