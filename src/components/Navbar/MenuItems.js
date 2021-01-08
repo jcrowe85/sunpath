@@ -18,6 +18,10 @@ const MenuItems = [
         title: "Contact Us",
         url: "#contact"
     },         
+    {
+        title: "Blog",
+        url: "/wordpress"
+    },       
     
 
 ]

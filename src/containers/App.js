@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import classes from './App.module.scss';
 import Navbar from '../components/Navbar/Navbar';
+
 import retireTach from '../assets/imgs/retirement-tachometer.png';
 import retireDots from '../assets/imgs/retirement-dots.png';
 import savingsBar from '../assets/imgs/savings-bar.png';
@@ -13,6 +14,7 @@ import sunpathPlanningWoman from '../assets/imgs/retirement-planning-with-sunpat
 import retirementSunset from '../assets/imgs/blissful-sunset-of-retirement.png';
 import crossIcon from '../assets/imgs/cross-icon.png';
 import crossIconExt from '../assets/imgs/cross-icon-extension.png';
+import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -173,11 +175,11 @@ class App extends Component {
           <div className="container">
             <div className="row">
               <div className="column col-12 col-lg-6" >
-                <div>
-                  <img src={retirementSunset} style={{margin: "2rem"}}></img>
+                <div className={classes.retirementSunset}>
+                  <img src={retirementSunset}></img>
                 </div>
                 <div className="row">
-                  <div className="col-12 col-lg-4">
+                  <div className="col-12 col-lg-4 hidden-md-down">
                     <img src={crossIcon}></img>
                   </div>
                   <div className="col-12 col-lg-8">
@@ -201,7 +203,7 @@ finance - we simply accomodate.</p>
                       <button className="learnMoreBtn">LEARN MORE</button>
                     </div>
                   </div>
-                  <div>
+                  <div className="hidden-md-down">
                     <img src={crossIconExt} className={classes.crossIconExt}></img>
                   </div>
                 </div>
