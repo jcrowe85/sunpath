@@ -183,7 +183,7 @@ class App extends Component {
                 </div>
                 <div className="row">
                   <div className="col-12 col-lg-4 hidden-md-down">
-                    <img src={crossIcon}></img>
+                    <img src={crossIcon} className={classes.crossIcon}></img>
                   </div>
                   <div className="col-12 col-lg-8">
                   <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>

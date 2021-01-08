@@ -139,17 +139,19 @@ p {
         position: absolute;
         z-index: 1;
         right: -1.2rem;
-
     }
     .textRight {
         text-align: right;
+    }
+    .crossIcon {
+        margin-top: 2rem;
     }
     .crossIconExt {
         width: 140%;
         height: 57px;
         position: absolute;
         left: -6rem;
-        top: 12.5rem;
+        top: 4rem;
     }
     .retirementSunset img{
         margin: 2rem;
