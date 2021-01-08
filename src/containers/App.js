@@ -32,7 +32,7 @@ class App extends Component {
                   <div style={{position: "relative"}}>
                     <p style={{marginTop: "0", color: "white", fontSize: "1.3rem"}}>Get started with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
-                    <button>START MY CHECKUP</button>
+                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                   </div>
                 </div>
               </div>
@@ -50,10 +50,10 @@ class App extends Component {
                   <p>Our complimentary retirement plan provides answers to the major retirement questions. Each plan is built by a fiduciary and reviewed by a CFP and CPA.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button>START MY CHECKUP</button>
+                      <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                     </div>
                     <div className="col-5">
-                    <button className="learnMoreBtn">LEARN MORE</button>
+                    <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div>
                   </div>
                 </div>              
@@ -70,10 +70,10 @@ class App extends Component {
                 <p>The score compares your desired retirement age and income to your current ability to generate it. The score includes social security, pension(s), retirement savings, and all other major asset types. </p>
                 <div className="row" style={{padding: "0"}}>
                   <div className="col-7">
-                    <button>START MY CHECKUP</button>
+                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                   </div>
                   <div className="col-5">
-                    <button className="learnMoreBtn">LEARN MORE</button>
+                    <button className="blkBlkWhtBtn">LEARN MORE</button>
                   </div>
                 </div>
               </div>
@@ -102,20 +102,22 @@ class App extends Component {
                 </div>                                                                             
               </div>
               <div className={`column col-12 col-lg-7 ${classes.textRight}`}>
-                <p>The Question Everyone Wants an Answer To</p>
-                <h1>We’ll Also Let You Know If You’re Saving Enough.</h1>
-                <div style={{position: "relative"}}>
-                  <p>Found in the tachometer is a small savings gauge. The gauge represents the likeness of you reaching your retirement goal according to how much you’re currently saving.</p>
-                  <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p>
-                  <div className="row" style={{padding: "0"}}>
-                    <div className="col-7">
-                      <button style={{backgroundColor: "black", color: "white"}}>START MY CHECKUP</button>
-                    </div>
-                    <div className="col-5">
-                      <button className="learnMoreBtn" style={{color: "black"}}>LEARN MORE</button>
-                    </div>
+                <div className={classes.textRight}>
+                  <p>The Question Everyone Wants an Answer To</p>
+                  <h1>We’ll Also Let You Know If You’re Saving Enough.</h1>
+                  <div style={{position: "relative"}}>
+                    <p>Found in the tachometer is a small savings gauge. The gauge represents the likeness of you reaching your retirement goal according to how much you’re currently saving.</p>
+                    <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p>
                   </div>
                 </div>
+                <div className="row">
+                    <div className="col-7">
+                      <button className="blkWhtBlkBtn">START MY CHECKUP</button>
+                    </div>
+                    <div className="col-5">
+                      <button className="whtWhtBlkBtn">LEARN MORE</button>
+                    </div>
+                  </div>                
               </div>
             </div>
           </div>
@@ -136,10 +138,10 @@ class App extends Component {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <button>START MY CHECKUP</button>
+                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                   </div>
                   <div className="col-5">
-                    <button className="learnMoreBtn">LEARN MORE</button>
+                    <button className="blkBlkWhtBtn">LEARN MORE</button>
                   </div>
                 </div>
               </div>
@@ -160,10 +162,10 @@ class App extends Component {
                   <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button style={{backgroundColor: "black", color: "white"}}>START MY CHECKUP</button>
+                      <button className="blkWhtBlkBtn">START MY CHECKUP</button>
                     </div>
                     <div className="col-5">
-                      <button className="learnMoreBtn" style={{color: "black"}}>LEARN MORE</button>
+                      <button className="whtWhtBlkBtn">LEARN MORE</button>
                     </div>
                   </div>
                 </div>
@@ -197,10 +199,10 @@ class App extends Component {
 finance - we simply accomodate.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button>START MY CHECKUP</button>
+                      <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                     </div>
                     <div className="col-5">
-                      <button className="learnMoreBtn">LEARN MORE</button>
+                      <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div>
                   </div>
                   <div className="hidden-md-down">

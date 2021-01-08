@@ -35,34 +35,51 @@ img {
     white-space: pre;
 }
 button {
-    background: white;
+    position: relative;
+    border: none;
     padding: .8rem 1rem;
-    border: none;
-    position: relative;
     z-index: 999;
-    border: 1px solid white;
-}
-button:hover {
-    background: transparent;
     transition: all 0.5s ease;
-    z-index: 999;
-    color: white;
-    border: 1px solid white;
-    
 }
-.learnMoreBtn {
-    border: none;
-    background: transparent; 
-    color: white;
-    position: relative;
-    z-index: 999;
-}
-.learnMoreBtn:hover {
-    border: 1px solid white;
-    position: absolute;
-    z-index: 999;
+.whtBlkWhtBtn {
+    background: white; 
     color: black;
-    background: white;
+    border: 1px solid white;
+}
+.whtBlkWhtBtn:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.blkBlkWhtBtn {
+    background: black; 
+    color: white;
+    border: 1px solid transparent;
+}
+.blkBlkWhtBtn:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.blkWhtBlkBtn {
+    background: black; 
+    color: white;
+    border: 1px solid black;
+}
+.blkWhtBlkBtn:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.whtWhtBlkBtn {
+    background: transparent; 
+    color: black;
+    border: 1px solid transparent;
+}
+.whtWhtBlkBtn:hover {
+    background: transparent; 
+    color: black;
+    border: 1px solid black;
 }
 .column {
     padding-left: 3rem !important;
