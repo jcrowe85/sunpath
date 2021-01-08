@@ -176,7 +176,7 @@ class App extends Component {
             <div className="row">
               <div className="column col-12 col-lg-6" >
                 <div>
-                  <img src={retirementSunset} style={{margin: "2rem"}}></img>
+                  <img src={retirementSunset} className={classes.retirementSunset}></img>
                 </div>
                 <div className="row">
                   <div className="col-12 col-lg-4 hidden-md-down">
