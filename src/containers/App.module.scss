@@ -38,13 +38,11 @@ p {
     content: " ";
     position: absolute;
     border: 3px solid #a1a1a1;
-    height: 105%;
-    top: -2.5rem;
+    height: 84%;
+    top: 8.5rem;
     left: 0;
     right: 0;
     margin: 1.5rem;
-    z-index: 999;
-
 }
 .dotsChartSection {
     border: none;
@@ -65,10 +63,10 @@ p {
         border: 3px solid #a1a1a1;
         height: 115%;
         top: -7rem;
-        left: 15%;
+        left: 50%;
         right: 0;
         margin: 4rem;
-        width: 100%;
+        width: 55%;
         z-index: 0;
     }    
     .tachometer {
