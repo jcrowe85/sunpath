@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import classes from './App.module.scss';
 import Navbar from '../components/Navbar/Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 import retireTach from '../assets/imgs/retirement-tachometer.png';
 import retireDots from '../assets/imgs/retirement-dots.png';
@@ -14,7 +15,7 @@ import sunpathPlanningWoman from '../assets/imgs/retirement-planning-with-sunpat
 import retirementSunset from '../assets/imgs/blissful-sunset-of-retirement.png';
 import crossIcon from '../assets/imgs/cross-icon.png';
 import crossIconExt from '../assets/imgs/cross-icon-extension.png';
-import { BrowserRouter } from 'react-router-dom';
+import cornerCap from '../assets/imgs/corner-cap.png';
 
 class App extends Component {
   render() {
@@ -174,7 +175,7 @@ class App extends Component {
           </div>
         </div> 
         <div className={classes.wrapBlk + ' ' + classes.numbersPeople}>
-          <div className="container">
+          <div className={`container ${classes.container}`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
                 <div className={classes.retirementSunset}>
