@@ -63,11 +63,11 @@ p {
     content: ' ';
     background: url("../assets/imgs/corner-cap.png") no-repeat black;
     height: 164px;
-    width: 500px;
+    width: 100%;
     bottom: 10rem;
     position: absolute;
     z-index: 1;
-    right: -1.2rem;
+
 
 }
 @media screen and (min-width: 992px) {

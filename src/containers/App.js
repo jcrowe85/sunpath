@@ -186,9 +186,9 @@ class App extends Component {
                     <img src={crossIcon} className={classes.crossIcon}></img>
                   </div>
                   <div className="col-12 col-lg-8">
-                  <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
-                  <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
-                  <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
+                    <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
+                    <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
+                    <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
                   </div>
                 </div>                                                                             
               </div>
