@@ -179,7 +179,7 @@ class App extends Component {
                   <img src={retirementSunset} style={{margin: "2rem"}}></img>
                 </div>
                 <div className="row">
-                  <div className="col-12 col-lg-4">
+                  <div className="col-12 col-lg-4 hidden-md-down">
                     <img src={crossIcon}></img>
                   </div>
                   <div className="col-12 col-lg-8">
@@ -203,7 +203,7 @@ finance - we simply accomodate.</p>
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div>
                   </div>
-                  <div>
+                  <div className="hidden-md-down">
                     <img src={crossIconExt} className={classes.crossIconExt}></img>
                   </div>
                 </div>
