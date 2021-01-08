@@ -15,7 +15,7 @@ import sunpathPlanningWoman from '../assets/imgs/retirement-planning-with-sunpat
 import retirementSunset from '../assets/imgs/blissful-sunset-of-retirement.png';
 import crossIcon from '../assets/imgs/cross-icon.png';
 import crossIconExt from '../assets/imgs/cross-icon-extension.png';
-import cornerCap from '../assets/imgs/corner-cap.png';
+import webinars from '../assets/imgs/webinars.png';
 
 class App extends Component {
   render() {
@@ -213,7 +213,27 @@ finance - we simply accomodate.</p>
               </div>
             </div>
           </div>
-        </div>                 
+        </div>  
+        <div className={classes.whtBlk + ' ' + classes.webinarsSection}>
+          <div className={`container`}>
+            <div className="row">
+              <div className="column col-12 col-lg-7" >
+                <p>Your Financial Education Starts Here with Sunpath Webinars</p>
+                <h1>Successful Retirees<span className="paragraphBreak" style={{color: "gray"}}>Seek Education.</span> </h1>
+                <p> Get recommendations to improve your retirement score from a registered financial advisor. Our retirement specialist will provide you a complimentary custom retirement report that builds on the areas of weakness in your checkup.</p>
+                <div className="row">
+                  <div className="col-6">
+                    <button className="blkWhtBlkBtn">REGISTER FOR EVENT</button>
+                  </div>
+                  <div className="col-5">
+                    <button className="whtWhtBlkBtn">LEARN MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div className={`${classes.webinars} column col-12 col-lg-5`}><img src={webinars} style={{width: "100%"}} /></div>
+            </div>                                                  
+          </div>
+        </div>               
       </div>
     )
   }
