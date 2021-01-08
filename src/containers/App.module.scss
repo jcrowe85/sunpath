@@ -28,11 +28,23 @@ p {
     background-position: top center;
     width: 100%;
 }
-
 .tachSection {
     background: linear-gradient(to bottom,
     #e4e4e4 10%, black 10% 30%, #e4e4e4 30% 100%); 
     margin-bottom: 5rem;
+    position: relative;
+}
+.tachSection::before {
+    content: " ";
+    position: absolute;
+    border: 3px solid #a1a1a1;
+    height: 105%;
+    top: -2.5rem;
+    left: 0;
+    right: 0;
+    margin: 1.5rem;
+    z-index: 999;
+
 }
 .dotsChartSection {
     border: none;
@@ -47,11 +59,23 @@ p {
         #e4e4e4 30%, black 20% 70%, #e4e4e4 70% 100%);
         margin-bottom: 0px;
     }
+    .tachSection::before {
+        content: " ";
+        position: absolute;
+        border: 3px solid #a1a1a1;
+        height: 115%;
+        top: -7rem;
+        left: 15%;
+        right: 0;
+        margin: 4rem;
+        width: 100%;
+        z-index: 0;
+    }    
     .tachometer {
         align-items: center;
         justify-content: center;
         display: flex;
-    }
+    }    
     .dotsChart {
         align-items: center;
         justify-content: center;
@@ -80,5 +104,15 @@ p {
     .retirementSunset {
         margin: 2rem;
     }   
+    // .tachSection::after {
+    //     content: "";
+    //     position: absolute;
+    //     background: black;
+    //     height: 100%;
+    //     width: 100%;
+    //     left: 90%;
+    //     max-width: 250px;
+    //     top: 0;
+    // }
 
 }
