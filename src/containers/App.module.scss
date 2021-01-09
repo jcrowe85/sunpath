@@ -21,12 +21,14 @@ p {
     background-repeat: no-repeat;
     opacity: 0.8;
 }
-.savingsBarSection {
-    background: url("../assets/imgs/tachometer-low-opacity.png");
-    background-repeat: no-repeat; 
-    z-index: -1; 
-    background-position: top center;
-    width: 100%;
+.savingsBarSection .container::after {
+    content: ' ';
+    background: url("../assets/imgs/tachometer-low-opacity.png") no-repeat;
+    height: 619px;
+    width: 95%;
+    top: 3rem;
+    position: absolute;
+    z-index: 3;
 }
 .tachSection {
     background: linear-gradient(to bottom,
@@ -50,16 +52,15 @@ p {
 .savingsBarSection p {
     font-family: 'Crimson', Times;
 }
-.numbersPeople .container{
+.peopleLikeUsSection .container, .savingsBarSection .container{
     position: relative;
     z-index: 999; 
 }
-.numbersPeople img, .numbersPeople p, h1{
+.peopleLikeUsSection img, .peopleLikeUsSection p, h1{
     z-index: 999; 
     position: relative
 }
-
-.numbersPeople .container::after  {
+.peopleLikeUsSection .container::after  {
     content: ' ';
     background: url("../assets/imgs/corner-cap.png") no-repeat black;
     height: 164px;
@@ -67,8 +68,6 @@ p {
     bottom: 16rem;
     position: absolute;
     z-index: 1;
-
-
 }
 @media screen and (min-width: 992px) {
     .tachSection {
@@ -101,26 +100,40 @@ p {
     .savingsBarSection {
         background-position: center right;
     }
+    .savingsBarFeatures {
+        z-index: 4;
+        background: #e4e4e4;
+    }
+    .savingsBarSection .container::before {
+        content: " ";
+        position: absolute;
+        border: 2px solid black;
+        height: 90%;
+        left: 0;
+        right: 0;
+        margin: 0rem 0rem 0rem 7rem;
+        z-index: 2;
+        top: 2rem;
+    }
+    .savingsBarSection .container::after {
+        content: ' ';
+        background: url("../assets/imgs/tachometer-low-opacity.png") no-repeat;
+        height: 619px;
+        width: 668px;
+        top: 3rem;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        right: -5rem;
+    }
     .improveScoreSection {
         background: black;
         background: url("../assets/imgs/improve-score-background.png") black;
         background-repeat: no-repeat; 
         background-attachment: fixed;
         background-position: center;
-    }    
-    // .numbersPeople::before {
-    //     content: " ";
-    //     position: absolute;
-    //     border: 3px solid #a1a1a1;
-    //     height: 100%;
-    //     /* top: -4rem; */
-    //     left: 0;
-    //     right: 0;
-    //     margin: 5rem 8rem 0rem 16rem;
-    //     /* width: 55%; */
-    //     /* z-index: 999; */
-    // }
-    .numbersPeople .container::before {
+    }   
+    .peopleLikeUsSection .container::before {
         content: " ";
         position: absolute;
         border: 3px solid #a1a1a1;
@@ -130,7 +143,7 @@ p {
         margin: 0rem 0rem 0rem 7rem;
         z-index: 2;
     }
-    .numbersPeople .container::after  {
+    .peopleLikeUsSection .container::after  {
         content: ' ';
         background: url("../assets/imgs/corner-cap.png") no-repeat black;
         height: 212px;

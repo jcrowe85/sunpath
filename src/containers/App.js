@@ -83,26 +83,26 @@ class App extends Component {
           </div>
         </div>   
         <div className={classes.wrapWht + ' ' + classes.savingsBarSection}>
-          <div className="container">
+          <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className="column col-12 col-lg-5" >
-                <div>
+              <div className={`column col-12 col-lg-5`} style={{zIndex: "4"}} >
+                <div className={`${classes.savingsBarFeatures}`}>
                   <h2>Savings Bar</h2>
                   <img src={savingsBar} style={{width: '100%'}}></img>
                   <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
                 </div>
-                <div>
+                <div className={`${classes.savingsBarFeatures}`}>
                   <h2>Savings Bar Container</h2>
                   <img src={savingsContainer} style={{width: '100%'}}></img>
                   <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
                 </div> 
-                <div>
+                <div className={`${classes.savingsBarFeatures}`}>
                   <h2>Savings Bars</h2>
                   <img src={savingLines} style={{width: "100%"}}></img>
                   <p>There are 100 savings bars. Each bar represents 10% of the savings you need to be contributing to hit your retirement income goal. Increasing your monthly retirement savings contributions will add more bars.</p>
                 </div>                                                                             
               </div>
-              <div className={`column col-12 col-lg-7 ${classes.textRight}`}>
+              <div className={`column col-12 col-lg-7 ${classes.textRight}`} style={{zIndex: "4"}}>
                 <div className={classes.textRight}>
                   <p>The Question Everyone Wants an Answer To</p>
                   <h1>We’ll Also Let You Know If You’re Saving Enough.</h1>
@@ -159,8 +159,9 @@ class App extends Component {
               <div className={`column col-12 col-lg-5`}>
                 <h1>We Nerds do Everything Online.</h1>
                 <div style={{position: "relative"}}>
-                  <p>Found in the tachometer is a small savings gauge. The gauge represents the likeness of you reaching your retirement goal according to how much you’re currently saving.</p>
-                  <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p>
+                  <p>If you like convenience, you’re giong to love our process, because we’re an online retirement planning firm.</p>
+                  <p>Working remotely solves the inefficiencies of driving to client homes, or having clients in office. Instead, we use that time to build our plans.</p>
+                  <p>Security? Don’t worry, our systems are highly secure...find out more here.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
                       <button className="blkWhtBlkBtn">START MY CHECKUP</button>
@@ -174,7 +175,7 @@ class App extends Component {
             </div>
           </div>
         </div> 
-        <div className={classes.wrapBlk + ' ' + classes.numbersPeople}>
+        <div className={classes.wrapBlk + ' ' + classes.peopleLikeUsSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
@@ -185,7 +186,7 @@ class App extends Component {
                   <div className="col-12 col-lg-4 hidden-md-down">
                     <img src={crossIcon} className={classes.crossIcon}></img>
                   </div>
-                  <div className="col-12 col-lg-8">
+                  <div className="col-12 col-lg-8" style={{fontStyle: "italic"}}>
                     <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
                     <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
                     <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
@@ -220,7 +221,7 @@ finance - we simply accomodate.</p>
               <div className="column col-12 col-lg-7" >
                 <p>Your Financial Education Starts Here with Sunpath Webinars</p>
                 <h1>Successful Retirees<span className="paragraphBreak" style={{color: "gray"}}>Seek Education.</span> </h1>
-                <p> Get recommendations to improve your retirement score from a registered financial advisor. Our retirement specialist will provide you a complimentary custom retirement report that builds on the areas of weakness in your checkup.</p>
+                <p>Retirement brings new, yet unfamiliar challenges. It’s imperative to obtain a financial education. Our webinars are designed to help retirees understand the fundamentals and risks associated with retirement. </p>
                 <div className="row">
                   <div className="col-6">
                     <button className="blkWhtBlkBtn">REGISTER FOR EVENT</button>
