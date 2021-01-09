@@ -178,22 +178,7 @@ class App extends Component {
         <div className={classes.wrapBlk + ' ' + classes.peopleLikeUsSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className="column col-12 col-lg-6" >
-                <div className={classes.retirementSunset}>
-                  <img src={retirementSunset}></img>
-                </div>
-                <div className="row">
-                  <div className="col-12 col-lg-4 hidden-md-down">
-                    <img src={crossIcon} className={classes.crossIcon}></img>
-                  </div>
-                  <div className="col-12 col-lg-8" style={{fontStyle: "italic"}}>
-                    <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
-                    <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
-                    <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
-                  </div>
-                </div>                                                                             
-              </div>
-              <div className={`column col-12 col-lg-6`}>
+              <div className={`column col-12 col-lg-6 order-lg-2`}>
                 <p>Numbers Keep Us Busy, People Keep Us Happy!</p>
                 <h1>We might be nerdy, but people actually like us!</h1>
                 <div style={{position: "relative"}}>
@@ -211,6 +196,21 @@ finance - we simply accomodate.</p>
                     <img src={crossIconExt} className={classes.crossIconExt}></img>
                   </div>
                 </div>
+              </div>
+              <div className="column col-12 col-lg-6" >
+                <div className={classes.retirementSunset}>
+                  <img src={retirementSunset}></img>
+                </div>
+                <div className="row">
+                  <div className="col-12 col-lg-4 hidden-md-down">
+                    <img src={crossIcon} className={classes.crossIcon}></img>
+                  </div>
+                  <div className="col-12 col-lg-8 order-lg-1" style={{fontStyle: "italic"}}>
+                    <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
+                    <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
+                    <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
+                  </div>
+                </div>                                                                             
               </div>
             </div>
           </div>
