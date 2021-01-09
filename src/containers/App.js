@@ -65,7 +65,7 @@ class App extends Component {
         <div className={classes.wrapBlk + ' ' + classes.dotsChartSection}>
           <div className={`container`}>
             <div className="row">
-              <div className="column col-12 col-lg-6 order-lg-1 order-2" >
+              <div className="column col-12 col-lg-6" >
                 <h1>The Higher Your Score, the Closer You are to Retiring</h1>
                 <p style={{marginTop: "0", color: "white", fontSize: "1rem"}}>Get started with our 5-minute questionnaire.</p>
                 <p>The score compares your desired retirement age and income to your current ability to generate it. The score includes social security, pension(s), retirement savings, and all other major asset types. </p>
@@ -78,31 +78,14 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              <div className={`${classes.dotsChart} column col-12 col-lg-6 order-lg-2 order-1`}><img src={retireDots} style={{width: "100%"}} /></div>
+              <div className={`${classes.dotsChart} column col-12 col-lg-6`}><img src={retireDots} style={{width: "100%"}} /></div>
             </div>
           </div>
         </div>   
         <div className={classes.wrapWht + ' ' + classes.savingsBarSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className={`column col-12 col-lg-5`} style={{zIndex: "4"}} >
-                <div className={`${classes.savingsBarFeatures}`}>
-                  <h2>Savings Bar</h2>
-                  <img src={savingsBar} style={{width: '100%'}}></img>
-                  <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
-                </div>
-                <div className={`${classes.savingsBarFeatures}`}>
-                  <h2>Savings Bar Container</h2>
-                  <img src={savingsContainer} style={{width: '100%'}}></img>
-                  <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
-                </div> 
-                <div className={`${classes.savingsBarFeatures}`}>
-                  <h2>Savings Bars</h2>
-                  <img src={savingLines} style={{width: "100%"}}></img>
-                  <p>There are 100 savings bars. Each bar represents 10% of the savings you need to be contributing to hit your retirement income goal. Increasing your monthly retirement savings contributions will add more bars.</p>
-                </div>                                                                             
-              </div>
-              <div className={`column col-12 col-lg-7 ${classes.textRight}`} style={{zIndex: "4"}}>
+            <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{zIndex: "4"}}>
                 <div className={classes.textRight}>
                   <p>The Question Everyone Wants an Answer To</p>
                   <h1>We’ll Also Let You Know If You’re Saving Enough.</h1>
@@ -119,6 +102,23 @@ class App extends Component {
                       <button className="whtWhtBlkBtn">LEARN MORE</button>
                     </div>
                   </div>                
+              </div>              
+              <div className={`column col-12 col-lg-5 order-lg-1`} style={{zIndex: "4"}} >
+                <div className={`${classes.savingsBarFeatures}`}>
+                  <h2>Savings Bar</h2>
+                  <img src={savingsBar} style={{width: '100%'}}></img>
+                  <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
+                </div>
+                <div className={`${classes.savingsBarFeatures}`}>
+                  <h2>Savings Bar Container</h2>
+                  <img src={savingsContainer} style={{width: '100%'}}></img>
+                  <p>The container in the savings gauge represents the number of years before you reach retirement. This age is calculated by subtracting your desired retirement age from your current age.</p>
+                </div> 
+                <div className={`${classes.savingsBarFeatures}`}>
+                  <h2>Savings Bars</h2>
+                  <img src={savingLines} style={{width: "100%"}}></img>
+                  <p>There are 100 savings bars. Each bar represents 10% of the savings you need to be contributing to hit your retirement income goal. Increasing your monthly retirement savings contributions will add more bars.</p>
+                </div>                                                                             
               </div>
             </div>
           </div>
