@@ -28,10 +28,10 @@ class App extends Component {
               <div className="column col-12 col-lg-9" >
                 <p style={{color: "white"}}>“Step on the Retirement Scale Today!”</p>
                 <h1>It All Starts With<span className="paragraphBreak" style={{color: "gray"}}>a Retirement Checkup</span></h1>
-                <div style={{display:"flex"}}>
+                <div className="row">
                   <div className="col-2 hidden-md-down" style={{lineHeight: "0rem"}}>_________  </div>
-                  <div style={{position: "relative"}}>
-                    <p style={{marginTop: "0", color: "white", fontSize: "1.3rem"}}>Get started with our 5-minute questionnaire.</p>
+                  <div className="col-lg-8" style={{position: "relative"}}>
+                    <p style={{marginTop: "0", color: "white", fontSize: "1.2rem"}}>Get started with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
                     <button className="whtBlkWhtBtn">START MY CHECKUP</button>
                   </div>
@@ -41,7 +41,7 @@ class App extends Component {
           </div>
         </div>
         <div className={classes.wrapWht + ' ' + classes.tachSection}>
-          <div className="container">
+        <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`${classes.tachometer} column col-12 col-lg-5`}><img src={retireTach} style={{width: "100%"}} /></div>
               <div className={`${classes.wrapBlk} column col-12 offset-lg-1 col-lg-6`}>
