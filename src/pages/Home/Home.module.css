@@ -17,13 +17,13 @@ p {
     top: 0;
     bottom: 0;
     left: 0;
-    background: url("../assets/imgs/logo-large-bg.png");
+    background: url("../../assets/imgs/logo-large-bg.png");
     background-repeat: no-repeat;
     opacity: 0.8;
 }
 .savingsBarSection .container::after {
     content: ' ';
-    background: url("../assets/imgs/tachometer-low-opacity.png") no-repeat;
+    background: url("../../assets/imgs/tachometer-low-opacity.png") no-repeat;
     height: 619px;
     width: 95%;
     top: 3rem;
@@ -62,7 +62,7 @@ p {
 }
 .peopleLikeUsSection .container::after  {
     content: ' ';
-    background: url("../assets/imgs/corner-cap.png") no-repeat black;
+    background: url("../../assets/imgs/corner-cap.png") no-repeat black;
     height: 164px;
     width: 90%;
     top: 1.5rem;
@@ -116,7 +116,7 @@ p {
     }
     .savingsBarSection .container::after {
         content: ' ';
-        background: url("../assets/imgs/tachometer-low-opacity.png") no-repeat;
+        background: url("../../assets/imgs/tachometer-low-opacity.png") no-repeat;
         height: 619px;
         width: 668px;
         top: 3rem;
@@ -127,7 +127,7 @@ p {
     }
     .improveScoreSection {
         background: black;
-        background: url("../assets/imgs/improve-score-background.png") black;
+        background: url("../../assets/imgs/improve-score-background.png") black;
         background-repeat: no-repeat; 
         background-attachment: fixed;
         background-position: center;
@@ -144,7 +144,7 @@ p {
     }
     .peopleLikeUsSection .container::after  {
         content: ' ';
-        background: url("../assets/imgs/corner-cap.png") no-repeat black;
+        background: url("../../assets/imgs/corner-cap.png") no-repeat black;
         height: 212px;
         width: 650px;
         top: 3rem;

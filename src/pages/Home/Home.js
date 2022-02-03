@@ -1,26 +1,24 @@
-import React, { Component }  from 'react';
-import classes from './App.module.scss';
-import Navbar from '../components/Navbar/Navbar';
+import classes from './Home.module.css';
+import Navbar from '../../components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 
-import retireTach from '../assets/imgs/retirement-tachometer.png';
-import retireDots from '../assets/imgs/retirement-dots.png';
-import savingsBar from '../assets/imgs/savings-bar.png';
-import savingsContainer from '../assets/imgs/savings-container.png';
-import savingLines from '../assets/imgs/savings-lines.png';
-import consult1 from '../assets/imgs/consult-1.png';
-import consult2 from '../assets/imgs/consult-2.png';
-import riskalyze from '../assets/imgs/riskalyze.png';
-import sunpathPlanningWoman from '../assets/imgs/retirement-planning-with-sunpath-woman.png';
-import retirementSunset from '../assets/imgs/blissful-sunset-of-retirement.png';
-import crossIcon from '../assets/imgs/cross-icon.png';
-import crossIconExt from '../assets/imgs/cross-icon-extension.png';
-import webinars from '../assets/imgs/webinars.png';
+import retireTach from '../../assets/imgs/retirement-tachometer.png';
+import retireDots from '../../assets/imgs/retirement-dots.png';
+import savingsBar from '../../assets/imgs/savings-bar.png';
+import savingsContainer from '../../assets/imgs/savings-container.png';
+import savingLines from '../../assets/imgs/savings-lines.png';
+import consult1 from '../../assets/imgs/consult-1.png';
+import consult2 from '../../assets/imgs/consult-2.png';
+import riskalyze from '../../assets/imgs/riskalyze.png';
+import sunpathPlanningWoman from '../../assets/imgs/retirement-planning-with-sunpath-woman.png';
+import retirementSunset from '../../assets/imgs/blissful-sunset-of-retirement.png';
+import crossIcon from '../../assets/imgs/cross-icon.png';
+import crossIconExt from '../../assets/imgs/cross-icon-extension.png';
+import webinars from '../../assets/imgs/webinars.png';
 
-class App extends Component {
-  render() {
-    return(
-      <div className="bootstrap-wrapper">
+const Home = () => {
+    return (
+        <div className="bootstrap-wrapper">
         <div className={classes.wrapBlk}>
           <Navbar />    
           <div className={`container ${classes.mainSection} `}>
@@ -235,9 +233,8 @@ finance - we simply accomodate.</p>
             </div>                                                  
           </div>
         </div>               
-      </div>
+        </div>
     )
-  }
-} 
+};
 
-export default App;
+export default Home;
