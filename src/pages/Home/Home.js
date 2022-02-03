@@ -1,5 +1,5 @@
 import classes from './Home.module.css';
-import Navbar from '../../components/Navbar/Navbar';
+import Navbar from '../../components/Navigation/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 
 import retireTach from '../../assets/imgs/retirement-tachometer.png';

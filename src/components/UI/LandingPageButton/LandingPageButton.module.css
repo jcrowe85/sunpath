@@ -1,0 +1,18 @@
+.landingPageButton {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: 1px solid rgb(216, 140, 0);
+    border-radius: 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.landingPageButton:disabled {
+    background-color: rgb(185, 185, 185);
+    border: 1px solid rgb(189, 189, 189);
+    color: rgb(143, 143, 143);
+    text-shadow: none;
+    cursor: not-allowed;
+}

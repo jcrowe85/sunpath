@@ -1,14 +1,6 @@
-.landing-page {
+.landing_page h1, h2, h3, h4, h5, p {
+    font-family: helvetica;
+}
+.landing_page {
     width: 100%;
 }
-
-.landing-page .one {
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #d9e1e6;
-}
-
-.landing-page h1 {
-    font-size: 3.5rem;
-}
-
