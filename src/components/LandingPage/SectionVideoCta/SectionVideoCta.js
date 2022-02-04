@@ -1,10 +1,8 @@
 import classes from './SectionVideoCta.module.css';
 import { useEffect, useState } from 'react';
-import Button from '../../UI/LandingPageButton/LandingPageButton';
+import LandingPageForm from '../../UI/Forms/LandingPageForm/LandingPageForm';
 
 const SectionVideoCta = () => {
-
-    const [formIsValid, setFormIsValid] = useState(false);
 
     const [timer, setTimer] = useState([]);
 
@@ -42,10 +40,6 @@ const SectionVideoCta = () => {
 
     }, [setInterval]);
 
-    const submitHandler = (e) => {
-        e.preventDefault();
-    }
-
     return (
         <section className={classes.sectionVideoCta}>
             <h1 className={classes.title}>Social Security Education Event</h1>
@@ -82,13 +76,7 @@ const SectionVideoCta = () => {
                             <div>SECONDS</div>
                         </div>
                     </div>
-                    <form onSubmit={submitHandler}>
-                        <div className={classes.form_control}>
-                            <label htmlFor="fullName"></label>
-                            <input type="text" id="fullName"/>
-                        </div>
-                        <Button disabled={!formIsValid}/>
-                    </form>
+                    <LandingPageForm formFields={{ inputType: 'select' }} />
                 </div>
             </div>
         </section>

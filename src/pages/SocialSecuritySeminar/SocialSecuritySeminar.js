@@ -1,5 +1,5 @@
 import classes from './SocialSecuritySeminar.module.css';
-import LandingPageHeader from '../../components/LandingPage/LandingPageHeader';
+import LandingPageHeader from '../../components/LandingPage/Header/LandingPageHeader';
 import SectionVideoCta from '../../components/LandingPage/SectionVideoCta/SectionVideoCta';
 import logo from '../../assets/imgs/sunpath-social-security-logo.png';
 
