@@ -72,7 +72,7 @@ button {
     color: black;
     border: 1px solid black;
 }
-.whtWhtBlkBtn {
+.whtWhtBlkBtn { 
     background: transparent; 
     color: black;
     border: 1px solid transparent;
@@ -90,7 +90,7 @@ button {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 

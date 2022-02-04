@@ -1,85 +1,58 @@
-.sectionVideoCta {
+.section-video-cta {
     padding: 1rem 0;
     text-align: center;
 }
 
-.sectionVideoCta h1 {
+.section-video-cta__headings h1 {
     font-size: 3.5rem;
     font-weight: bold;
 }
 
-.sectionVideoCta .title {
+.section-video-cta__headings {
+    font-weight: normal;
+    font-size: 1.2rem
 }
 
-.sectionVideoCta .sub_head {
-    font-weight: lighter;
-}
-
-.sectionVideoCta .two_columns{
+.section-video-cta__two-columns{
     display: flex;
     flex-direction: column;
     margin: 2.5rem 0;
 }
 
-.sectionVideoCta .col_one {
+.two-columns__col-one {
+    width: 100%;
     margin: 0;
 }
 
-.sectionVideoCta .col_two {
+.two-columns__col-two {
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-.sectionVideoCta .timer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.sectionVideoCta .timer div {
-
-}
-
-.sectionVideoCta .timer div div:first-child  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(192, 37, 26);
-    font-weight: bold;
-    font-size: 1.5rem;
-    /* line-height: 50px; */
-    background-color: transparent;
-    border: 3px solid rgb(192, 37, 26);
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    margin: 1rem;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-
-.sectionVideoCta .timer div div:nth-child(2)  {
-    color: gray;
-    font-size: .7rem;
-    margin: 1rem;
-}
-
-form .form_control input{
     width: 100%;
-    padding: 0.7rem;
-    border: 1px solid lightgray;
-    border-radius: 0.3rem;
-    outline: none;
-    font: inherit;
+    padding: 1rem;
+}
+
+.two-columns__col-two h2{
+    font-size: 1.8rem
 }
 
 @media (min-width: 580px) {
-    .sectionVideoCta .two_columns {
+    .section-video-cta__two-columns {
         flex-direction: row;
         justify-content: center;
         gap: 2rem
+    }
+    .two-columns__col-one {
+        width: 66.66%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .two-columns__col-two {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 33.34%;
+        padding: 0;
     }
 }
 

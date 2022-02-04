@@ -15,11 +15,11 @@ header {
 
 }
 
-.logo img {
+.navigation__logo img {
     width: 300px
 }
 
-.help {
+.navigation__help {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -28,9 +28,5 @@ header {
 @media (min-width: 580px) {
     .navigation {
         flex-direction: row;
-    }
-
-    .help {
-        font-size: 2rem;
     }
 }
