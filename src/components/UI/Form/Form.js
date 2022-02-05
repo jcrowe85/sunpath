@@ -4,12 +4,14 @@ import Input from '../Input/Input';
 
 const Form = props => {
 
-    const [formIsValid, setFormIsValid] = useState(false);
-
+    //Set and validate form fields from props
     const formFields = props.formFields;
 
-    const fields = formFields.map(field => {
+    console.log(props.formFields[0])
 
+    let formIsValid = formFields.every(field => field.isValid === true);
+
+    const fields = formFields.map(field => {
         if (field.eleType === 'input') {
             return (
                 <Input 
@@ -20,6 +22,8 @@ const Form = props => {
                     value={field.value}
                     placeholder={field.placeholder}
                     onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    isInvalid={field.isInvalid}
                 />
             )
         };

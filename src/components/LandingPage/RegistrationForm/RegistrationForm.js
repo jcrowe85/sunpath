@@ -4,7 +4,7 @@ import Timer from '../Timer/Timer';
 const RegistrationForm = props => {
     return (
         <>
-            <h2>{props.title}</h2>
+            <h2>{props.formTitle}</h2>
             <Timer seminarDateTime={props.seminarDateTime}/>
             <Form formFields={props.formFields} />
         </>

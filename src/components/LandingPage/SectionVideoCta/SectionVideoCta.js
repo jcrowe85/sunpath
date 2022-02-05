@@ -15,7 +15,7 @@ const SectionVideoCta = props => {
                 </div>
                 <div className={classes['two-columns__col-two']}>
                     <RegistrationForm
-                        title='Reserve Your Seat Now!'
+                        formTitle={props.formTitle}
                         formFields={props.formFields}
                         seminarDateTime={props.seminarDateTime} />
                 </div>
