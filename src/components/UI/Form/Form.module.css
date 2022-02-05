@@ -1,0 +1,8 @@
+.custom-forms {
+    
+}
+
+.custom-forms input[type='checkbox'] {
+    visibility: hidden;
+}
+
