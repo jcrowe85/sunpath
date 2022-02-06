@@ -1,0 +1,92 @@
+.seminar-tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    border: 1rem solid lightgray;
+    border-radius: 0.5rem;
+}
+
+.seminar-tickets div{
+    transition: all 5s;
+}
+
+.seminar-tickets__ticket {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
+.ticket__admissions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5rem solid black;
+}
+
+.admissions__admit-amount {
+    font-size: 1.3rem;
+    font-weight: bold;
+    transform: rotate(90deg);
+}
+
+.ticket__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.ticket__registrant-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.registrant-info__event-title {
+    font-size: 1rem;
+}
+
+.registrant-info__guest-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.registrant-info__guest-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.registrant-info__live-event {
+    font-size: .8rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.ticket__event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.event-details__event-location {
+    color: gray;
+}
+
+.ticket__barcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px dotted gray;
+}
+
+.barcode__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+}

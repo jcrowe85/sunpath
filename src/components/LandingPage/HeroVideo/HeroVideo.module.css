@@ -6,6 +6,7 @@
     height: 0;
     overflow: hidden;
     border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
 }
 
 .video-container iframe, .video-container object, .video-container embed {

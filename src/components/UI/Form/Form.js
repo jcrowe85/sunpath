@@ -2,10 +2,14 @@ import { useState } from 'react';
 import classes from './Form.module.css';
 import Button from '../LandingPageButton/LandingPageButton';
 import Input from '../Input/Input';
+import { useDispatch, useSelector } from 'react-redux';
+import { customFieldsActions } from '../../../store/custom-fields';
+import { registrantActions } from '../../../store/registrant';
 
 const Form = props => {
 
-    const [showCustomForms, setShowCustomForms] = useState(false)
+    //Initialize dispatch method
+    const dispatch = useDispatch();
 
     //Import field object from props
     const formFields = props.formFields;
@@ -38,8 +42,11 @@ const Form = props => {
     });
 
     //Set and validate custom fields
+
+    const customFormFieldsIsActive = useSelector(state => state.customFieldsReducer.isActive)
+
     const showCustomFieldsHandler = () => {
-        setShowCustomForms(prevState => !prevState)
+        dispatch(customFieldsActions.toggleCustomFields())
     }
 
     const customFields = Object.keys(formFields).map((key, index) => {
@@ -71,12 +78,14 @@ const Form = props => {
             <div className={classes['custom-form-control']}>
                 <input type='checkbox' onChange={showCustomFieldsHandler} id='customFormCheckbox'/>
                 <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
-                {showCustomForms && customFields}
+                {customFormFieldsIsActive && customFields}
             </div>
     }
 
     const submitHandler = (e) => {
         e.preventDefault();
+        // console.log(e)
+        dispatch(registrantActions.addRegistrant('dicknose'))
     }
 
     return (

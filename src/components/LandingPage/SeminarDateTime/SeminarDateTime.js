@@ -5,7 +5,7 @@ const SeminarDateTime = props => {
     return (
         <div className={classes['date-time-box']}>
             <h1>
-                <i class="fa fa-calendar" aria-hidden="true" style={{ margin: '0 1rem' }}></i>
+                <i className="fa fa-calendar" aria-hidden="true" style={{ margin: '0 1rem' }}></i>
                 {props.dateTime}
             </h1>
         </div>
