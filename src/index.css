@@ -95,9 +95,6 @@ button {
 }
 
 @media screen and (min-width: 992px) {
-    h1 {
-        font-size: 4rem;
-    }
     .column {
         padding-left: 3rem !important;
         padding-right: 3rem !important;

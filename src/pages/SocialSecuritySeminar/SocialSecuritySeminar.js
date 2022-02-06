@@ -3,6 +3,7 @@ import LandingPageHeader from '../../components/LandingPage/Header/LandingPageHe
 import SectionVideoCta from '../../components/LandingPage/SectionVideoCta/SectionVideoCta';
 import logo from '../../assets/imgs/sunpath-social-security-logo.png';
 import userInput from '../../hooks/user-input';
+import SectionTopicsCovered from '../../components/LandingPage/SectionTopicsCovered/SectionTopicsCovered';
 
 const SocialSecuritySeminar = () => {
 
@@ -166,11 +167,14 @@ const SocialSecuritySeminar = () => {
             <LandingPageHeader image={logo} alt='Sunpath Social Security Logo' />
             <SectionVideoCta
                 heading='Social Security Education Event'
-                subHeading=' Hosted In Newport Beach, Miles from the Ocean -'
+                subHeading='- Hosted In Newport Beach, Miles from the Ocean -'
                 formTitle='Reserve Your Seat Now!'
                 formFields={formFields}
                 seminarDateTime='March 10, 2022 16:30:00'
+                dateTimeBox='Thursday, September 30th @ 6:30PM PST'
                 videoUrl='https://www.youtube.com/embed/MSH9GQUjgII' />
+            <SectionTopicsCovered 
+                pageBreakTitle='TOPICS WE&apos;LL COVER DURING THIS EVENT:'/>
         </div>
     )
 };

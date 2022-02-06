@@ -2,27 +2,19 @@ import classes from './Timer.module.css';
 import { useEffect, useState } from 'react';
 
 const Timer = props => {
+
     //Initial and set countdown timer
     const [timer, setTimer] = useState([]);
 
     useEffect(() => {
-
         setInterval(() => {
-
             const eventDate = new Date(props.seminarDateTime).getTime();
-
             const todaysDate = new Date().getTime();
-
             const timeToExpiration = eventDate - todaysDate;
-
             const daysToExpiration = Math.floor(timeToExpiration / (1000 * 60 * 60 * 24));
-
             const hoursToExpiration = Math.floor(((timeToExpiration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-
             const minutesToExpiration = Math.floor(((timeToExpiration % (1000 * 60 * 60)) / (1000 * 60)));
-
             const secondsToExpiration = Math.floor(((timeToExpiration % (1000 * 60)) / (1000)));
-
             setTimer(prevState => {
                 return {
                     ...prevState,

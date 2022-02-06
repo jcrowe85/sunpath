@@ -4,14 +4,19 @@
     border: 1px solid rgb(216, 140, 0);
     border-radius: 0.2rem;
     font-weight: bold;
-    font-size: 1rem;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    text-shadow: 0 0 1px #00000080;
     width: 100%;
 }
 
+.landingPageButton:hover {
+   background-color: rgb(255, 202, 103);
+}
+
+
 .landingPageButton:disabled {
-    background-color: rgb(185, 185, 185);
-    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(99, 99, 99);
+    border: 1px solid rgb(100, 100, 100);
     color: rgb(143, 143, 143);
     text-shadow: none;
     cursor: not-allowed;

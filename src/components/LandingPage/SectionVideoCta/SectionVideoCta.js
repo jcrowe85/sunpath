@@ -1,6 +1,7 @@
 import classes from './SectionVideoCta.module.css';
 import HeroVideo from '../HeroVideo/HeroVideo';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import SeminarDateTime from '../SeminarDateTime/SeminarDateTime';
 
 const SectionVideoCta = props => {
     return (
@@ -12,6 +13,7 @@ const SectionVideoCta = props => {
             <div className={classes['section-video-cta__two-columns']}>
                 <div className={classes['two-columns__col-one']}>
                     <HeroVideo url={props.videoUrl} />
+                    <SeminarDateTime dateTime={props.dateTimeBox}/>
                 </div>
                 <div className={classes['two-columns__col-two']}>
                     <RegistrationForm

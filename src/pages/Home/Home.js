@@ -25,7 +25,7 @@ const Home = () => {
             <div className="row">
               <div className="column col-12 col-lg-9" >
                 <p style={{color: "white"}}>“Step on the Retirement Scale Today!”</p>
-                <h1>It All Starts With<span className="paragraphBreak" style={{color: "gray"}}>a Retirement Checkup</span></h1>
+                <h1 className={classes.large}>It All Starts With<span className="paragraphBreak" style={{color: "gray"}}>a Retirement Checkup</span></h1>
                 <div className="row">
                   <div className="col-2 hidden-md-down" style={{lineHeight: "0rem"}}>_________  </div>
                   <div className="col-lg-8" style={{position: "relative"}}>
@@ -43,7 +43,7 @@ const Home = () => {
             <div className="row">
               <div className={`${classes.tachometer} column col-12 col-lg-5`}><img src={retireTach} style={{width: "100%"}} /></div>
               <div className={`${classes.wrapBlk} column col-12 offset-lg-1 col-lg-6`}>
-                <h1>A Checkup Will Provide Your Retirement Score</h1>
+                <h1 className={classes.large}>A Checkup Will Provide Your Retirement Score</h1>
                 <div>
                   <p style={{marginTop: "0", color: "white", fontSize: "1rem"}}>Get started with our 5-minute questionnaire.</p>
                   <p>Our complimentary retirement plan provides answers to the major retirement questions. Each plan is built by a fiduciary and reviewed by a CFP and CPA.</p>
@@ -64,7 +64,7 @@ const Home = () => {
           <div className={`container`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
-                <h1>The Higher Your Score, the Closer You are to Retiring</h1>
+                <h1 className={classes.large}>The Higher Your Score, the Closer You are to Retiring</h1>
                 <p style={{marginTop: "0", color: "white", fontSize: "1rem"}}>Get started with our 5-minute questionnaire.</p>
                 <p>The score compares your desired retirement age and income to your current ability to generate it. The score includes social security, pension(s), retirement savings, and all other major asset types. </p>
                 <div className="row" style={{padding: "0"}}>
@@ -86,7 +86,7 @@ const Home = () => {
             <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{zIndex: "4"}}>
                 <div className={classes.textRight}>
                   <p>The Question Everyone Wants an Answer To</p>
-                  <h1>We’ll Also Let You Know If You’re Saving Enough.</h1>
+                  <h1 className={classes.large}>We’ll Also Let You Know If You’re Saving Enough.</h1>
                   <div style={{position: "relative"}}>
                     <p>Found in the tachometer is a small savings gauge. The gauge represents the likeness of you reaching your retirement goal according to how much you’re currently saving.</p>
                     <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p>
@@ -125,7 +125,7 @@ const Home = () => {
           <div className={`container`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
-                <h1>Consult with a Retirement Specialist to Improve Score</h1>
+                <h1 className={classes.large}>Consult with a Retirement Specialist to Improve Score</h1>
                 <p> Get recommendations to improve your retirement score from a registered financial advisor. Our retirement specialist will provide you a complimentary custom retirement report that builds on the areas of weakness in your checkup.</p>
                 <div className="row" style={{padding: "1.5rem 0rem"}}>
                   <div className="col-6">
@@ -155,7 +155,7 @@ const Home = () => {
                 <img src={sunpathPlanningWoman}></img>                                                    
               </div>
               <div className={`column col-12 col-lg-5`}>
-                <h1>We Nerds do Everything Online.</h1>
+                <h1 className={classes.large}>We Nerds do Everything Online.</h1>
                 <div style={{position: "relative"}}>
                   <p>If you like convenience, you’re giong to love our process, because we’re an online retirement planning firm.</p>
                   <p>Working remotely solves the inefficiencies of driving to client homes, or having clients in office. Instead, we use that time to build our plans.</p>
@@ -178,7 +178,7 @@ const Home = () => {
             <div className="row">
               <div className={`column col-12 col-lg-6 order-lg-2`}>
                 <p>Numbers Keep Us Busy, People Keep Us Happy!</p>
-                <h1>We might be nerdy, but people actually like us!</h1>
+                <h1 className={classes.large}>We might be nerdy, but people actually like us!</h1>
                 <div style={{position: "relative"}}>
                   <p>Although we spend most our time with numbers, we definitely connect with our clients, espcially during our followups, and to be frank, most of our clients prefer to talk anything but 
 finance - we simply accomodate.</p>
@@ -218,7 +218,7 @@ finance - we simply accomodate.</p>
             <div className="row">
               <div className="column col-12 col-lg-7" >
                 <p>Your Financial Education Starts Here with Sunpath Webinars</p>
-                <h1>Successful Retirees<span className="paragraphBreak" style={{color: "gray"}}>Seek Education.</span> </h1>
+                <h1 className={classes.large}>Successful Retirees<span className="paragraphBreak" style={{color: "gray"}}>Seek Education.</span> </h1>
                 <p>Retirement brings new, yet unfamiliar challenges. It’s imperative to obtain a financial education. Our webinars are designed to help retirees understand the fundamentals and risks associated with retirement. </p>
                 <div className="row">
                   <div className="col-6">

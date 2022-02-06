@@ -1,0 +1,8 @@
+.registration-form {
+    background: rgb(227,227,227);
+    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(210,210,210,1) 49%, rgba(230,230,230,1) 100%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}

@@ -68,9 +68,9 @@ const Form = props => {
 
     if (formFields.customFields.length >= 1) {
         customForms =
-            <div className={classes['custom-forms']}>
+            <div className={classes['custom-form-control']}>
                 <input type='checkbox' onChange={showCustomFieldsHandler} id='customFormCheckbox'/>
-                <label htmlFor="customFormCheckbox">Deliver My Tickets</label>
+                <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
                 {showCustomForms && customFields}
             </div>
     }
