@@ -1,0 +1,17 @@
+.map-container {
+    width: 100vh;
+    height: 25vh;
+}
+
+.marker-info__marker {
+    color: white;
+    background: rgba(8, 8, 8, 0.8);
+    padding: 20px 10px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}

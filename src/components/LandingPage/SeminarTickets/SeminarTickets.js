@@ -1,8 +1,16 @@
 import classes from './SeminarTickets.module.css';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 const SeminarTickets = props => {
 
-    const { eventName, eventAddress, registrantName, seminarDateTime } = props.eventInfo;
+    const { eventName, eventAddress, seminarDateTime } = props;
+
+
+    const registrantInputs = useSelector(state => state.registrantReducer);
+
+    const { enteredName: registrantName } = registrantInputs;
+
 
     return (
         <div className={classes['seminar-tickets']}>
@@ -36,7 +44,7 @@ const SeminarTickets = props => {
                     </div>
                 </div>
             </div>
-            {/* <div className={classes['seminar-tickets__ticket']}>
+            <div className={classes['seminar-tickets__ticket']}>
                 <div className={classes['ticket__admissions']}>
                     <div className={classes['admissions__admit-amount']}>
                         Admit one
@@ -65,7 +73,7 @@ const SeminarTickets = props => {
                         <span>12 0120 9292</span>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 };

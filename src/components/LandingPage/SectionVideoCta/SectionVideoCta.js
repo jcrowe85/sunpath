@@ -5,9 +5,10 @@ import SeminarDateTime from '../SeminarDateTime/SeminarDateTime';
 import SeminarTickets from '../SeminarTickets/SeminarTickets';
 import { useSelector } from 'react-redux';
 
+
 const SectionVideoCta = props => {
 
-    const { eventName, seminarDateTime, eventLocation, formTitle, dateTimeBox } = props.eventInfo;
+    const { eventName, eventAddress, seminarDateTime, eventLocation, formTitle, dateTimeBox, heroUrl } = props.pageInfo;
 
     const customFormFieldsIsActive = useSelector(state => state.customFieldsReducer.isActive)
 
@@ -19,13 +20,14 @@ const SectionVideoCta = props => {
             </div>
             <div className={classes['section-video-cta__two-columns']}>
                 <div className={classes['two-columns__col-one']}>
-                    <HeroVideo url={props.videoUrl} />
+                    <HeroVideo heroUrl={heroUrl} />
                     <SeminarDateTime dateTime={dateTimeBox} />
                     {customFormFieldsIsActive &&
                         <SeminarTickets
                             seminarDateTime={seminarDateTime} 
-                            enteredFormValues={props.enteredFormValues}
-                            eventInfo={props.eventInfo} 
+                            eventName={eventName}
+                            eventAddress={eventAddress}
+                            seminarDateTime={seminarDateTime}
                         />}
                 </div>
                 <div className={classes['two-columns__col-two']}>

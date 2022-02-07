@@ -1,191 +1,50 @@
 import classes from './SocialSecuritySeminar.module.css';
+import logo from '../../assets/imgs/sunpath-social-security-logo.png';
 import LandingPageHeader from '../../components/LandingPage/Header/LandingPageHeader';
 import SectionVideoCta from '../../components/LandingPage/SectionVideoCta/SectionVideoCta';
-import logo from '../../assets/imgs/sunpath-social-security-logo.png';
-import userInput from '../../hooks/user-input';
 import SectionTopicsCovered from '../../components/LandingPage/SectionTopicsCovered/SectionTopicsCovered';
+import SectionEventDetails from '../../components/LandingPage/SectionEventDetails/SectionEventDetails';
 
 const SocialSecuritySeminar = () => {
 
-    const {
-        value: enteredName,
-        hasError: nameInputHasError,
-        isValid: nameIsValid,
-        valueChangeHandler: nameChangeHandler,
-        inputBlurHandler: nameBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    const {
-        value: enteredPhoneNumber,
-        hasError: phoneNumberInputHasError,
-        isValid: phoneNumberIsValid,
-        valueChangeHandler: phoneNumberChangeHandler,
-        inputBlurHandler: phoneNumberBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    const {
-        value: enteredEmail,
-        hasError: emailInputHasError,
-        isValid: emailIsValid,
-        valueChangeHandler: emailChangeHandler,
-        inputBlurHandler: emailBlurHandler
-    } = userInput(value => value.includes('@'));
-
-    const {
-        value: enteredFullAddress,
-        hasError: fullAddressInputHasError,
-        isValid: fullAddressIsValid,
-        valueChangeHandler: fullAddressChangeHandler,
-        inputBlurHandler: fullAddressBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    const {
-        value: enteredCityName,
-        hasError: cityNameInputHasError,
-        isValid: cityNameIsValid,
-        valueChangeHandler: cityNameChangeHandler,
-        inputBlurHandler: cityNameBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    const {
-        value: enteredStateName,
-        hasError: stateNameInputHasError,
-        isValid: stateNameIsValid,
-        valueChangeHandler: stateNameChangeHandler,
-        inputBlurHandler: stateNameBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    const {
-        value: enteredZipCode,
-        hasError: zipCodeInputHasError,
-        isValid: zipCodeIsValid,
-        valueChangeHandler: zipCodeChangeHandler,
-        inputBlurHandler: zipCodeBlurHandler
-    } = userInput(value => value.trim() !== '');
-
-    //Set form fields
-    const formFields = {
-        basicFields: [
-            {
-                id: 'input1',
-                eleType: 'input',
-                type: 'text',
-                name: 'fullName',
-                label: '',
-                value: enteredName,
-                placeholder: 'Your Full Name Here...',
-                isValid: nameIsValid,
-                isInvalid: nameInputHasError,
-                onBlur: nameBlurHandler,
-                onChange: nameChangeHandler,
-            },
-            {
-                id: 'input2',
-                eleType: 'input',
-                type: 'phone',
-                name: 'phoneNumber',
-                label: '',
-                value: enteredPhoneNumber,
-                placeholder: 'Your Phone Number Here...',
-                isValid: phoneNumberIsValid,
-                isInvalid: phoneNumberInputHasError,
-                onBlur: phoneNumberBlurHandler,
-                onChange: phoneNumberChangeHandler,
-            },
-            {
-                id: 'input3',
-                eleType: 'input',
-                type: 'email',
-                name: 'email',
-                label: '',
-                value: enteredEmail,
-                placeholder: 'Your Email Here...',
-                isValid: emailIsValid,
-                isInvalid: emailInputHasError,
-                onBlur: emailBlurHandler,
-                onChange: emailChangeHandler,
+    const pageInfo = {
+        sectionVideoCta: {
+            eventName: 'Social Security Dinner Event',
+            seminarDateTime: 'March 10, 2022 16:30:00',
+            eventLocation: '- Hosted In Newport Beach, Miles from the Ocean -',
+            eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
+            formTitle: 'Reserve Your Seat Now!',
+            dateTimeBox: 'Thursday, September 30th @ 6:30PM PST',
+            heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
+        },
+        sectionTopicsCovered: {
+            pageBreakTitle: 'TOPICS WE\'LL COVER DURING THIS EVENT:',
+            videoInfo: {
+                topicOne: {
+                    topicOneTitle: 'Guaranteed 8% Raise',
+                    topicOneUrl: 'https://www.youtube.com/embed/Gp_aL5swiJQ'
+                },
+                topicTwo: {
+                    topicTwoTitle: 'Breakeven Analysis',
+                    topicTwoUrl: 'https://www.youtube.com/embed/j5uUYJDkfFg',
+                },
+                topicThree: {
+                    topicThreeTitle: 'Claiming Spousal Benefit',
+                    topicThreeUrl: 'https://www.youtube.com/embed/VFhOsAH8rRE'
+                },
             }
-        ],
-        customFields: [
-            {
-                id: 'customInput1',
-                eleType: 'input',
-                type: 'text',
-                name: 'fullAddress',
-                label: '',
-                value: enteredFullAddress,
-                placeholder: 'Your Full Address...',
-                isValid: fullAddressIsValid,
-                isInvalid: fullAddressInputHasError,
-                onBlur: fullAddressBlurHandler,
-                onChange: fullAddressChangeHandler,
-            },
-            {
-                id: 'customInput2',
-                eleType: 'input',
-                type: 'text',
-                name: 'cityName',
-                label: '',
-                value: enteredCityName,
-                placeholder: 'Your City Name...',
-                isValid: cityNameIsValid,
-                isInvalid: cityNameInputHasError,
-                onBlur: cityNameBlurHandler,
-                onChange: cityNameChangeHandler,
-            },
-            {
-                id: 'customInput3',
-                eleType: 'input',
-                type: 'text',
-                name: 'state',
-                label: '',
-                value: enteredStateName,
-                placeholder: 'Your State Name...',
-                isValid: stateNameIsValid,
-                isInvalid: stateNameInputHasError,
-                onBlur: stateNameBlurHandler,
-                onChange: stateNameChangeHandler,
-            },
-            {
-                id: 'customInput4',
-                eleType: 'input',
-                type: 'text',
-                name: 'zipCode',
-                label: '',
-                value: enteredZipCode,
-                placeholder: 'Your Zip Code...',
-                isValid: zipCodeIsValid,
-                isInvalid: zipCodeInputHasError,
-                onBlur: zipCodeBlurHandler,
-                onChange: zipCodeChangeHandler,
-            },
-        ],
-    };
-
-    const eventInfo = {
-        eventName: 'Social Security Dinner Event',
-        seminarDateTime: 'March 10, 2022 16:30:00',
-        eventLocation: '- Hosted In Newport Beach, Miles from the Ocean -',
-        eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
-        formTitle: 'Reserve Your Seat Now!',
-        dateTimeBox: 'Thursday, September 30th @ 6:30PM PST',
-        registrantName: enteredName
-    }
-
-    const enteredFormValues = {
-        enteredName: enteredName,
+        },
+        sectionEventDetails: {
+            pageBreakTitle: 'Details For this Event:'
+        }
     }
 
     return (
         <div className={classes['landing-page']}>
             <LandingPageHeader image={logo} alt='Sunpath Social Security Logo' />
-            <SectionVideoCta
-                eventInfo={eventInfo}
-                formFields={formFields}
-                videoUrl='https://www.youtube.com/embed/MSH9GQUjgII'
-                enteredFormValues={enteredFormValues} />
-            <SectionTopicsCovered
-                pageBreakTitle='TOPICS WE&apos;LL COVER DURING THIS EVENT:' />
+            <SectionVideoCta pageInfo={pageInfo.sectionVideoCta} />
+            <SectionTopicsCovered pageInfo={pageInfo.sectionTopicsCovered} />
+            <SectionEventDetails pageInfo={pageInfo.sectionEventDetails} />
         </div>
     )
 };

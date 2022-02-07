@@ -1,4 +1,11 @@
 .date-time-box {
     border: 5px dotted rgb(211, 11, 11);
     padding: 0.5rem;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        border-color: rgb(83, 0, 0);
+    }
 }
