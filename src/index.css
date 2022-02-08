@@ -90,7 +90,7 @@ button {
 }
 
 .wrapper {
-    max-width: 1170px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -105,4 +105,8 @@ button {
     .savingsBarSection {
         margin-top: 500rem;
     } 
+    .wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 }

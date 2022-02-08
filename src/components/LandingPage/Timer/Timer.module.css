@@ -14,20 +14,21 @@
     justify-content: center;
     color: rgb(192, 37, 26);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* line-height: 50px; */
     background-color: transparent;
     border: 4px solid rgb(192, 37, 26);
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    margin: 0.5rem;
+    font-size: 2rem;
+    margin: 0.2rem;
     width: 75px;
     height: 75px;
 }
 
 .timer div div:nth-child(2)  {
     color: gray;
-    font-size: .7rem;
-    margin: 1rem;
+    font-size: .6rem;
+    margin-top: 0.5rem;
 }

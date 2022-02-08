@@ -7,9 +7,13 @@ const SectionTopicsCovered = props => {
     const { pageBreakTitle, videoInfo } = props.pageInfo;
 
     const {
-        topicOne: { topicOneTitle, topicOneUrl },
-        topicTwo: { topicTwoTitle, topicTwoUrl },
-        topicThree: { topicThreeTitle, topicThreeUrl }
+        topicOne: { topicOneTitle, topicOneUrl, topicOneDescription },
+        topicTwo: { topicTwoTitle, topicTwoUrl, topicTwoDescription },
+        topicThree: { topicThreeTitle, topicThreeUrl, topicThreeDescription },
+        topicFour: { topicFourTitle, topicFourImage, topicFourDescription },
+        topicFive: { topicFiveTitle, topicFiveImage, topicFiveDescription },
+        topicSix: { topicSixTitle, topicSixImage, topicSixDescription }
+
     } = videoInfo;
 
     return (
@@ -22,24 +26,47 @@ const SectionTopicsCovered = props => {
                         <div className={classes['video-container']} >
                             <iframe src={`${topicOneUrl}?autoplay=0&amp;modestbranding=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;hd=1&amp;wmode=transparent" frameBorder="0" allowFullScreen="" wmode="opaque" id="fitvid687039`}></iframe>
                         </div>
-                        <p>Find out how you can receive an 8 % annual raise to your benefit through the power of deferral.</p>
+                        <p>{topicOneDescription}</p>
                     </div>
                     <div>
                         <h2>{topicTwoTitle}</h2>
                         <div className={classes['video-container']} >
                             <iframe src={`${topicTwoUrl}?autoplay=0&amp;modestbranding=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;hd=1&amp;wmode=transparent" frameBorder="0" allowFullScreen="" wmode="opaque" id="fitvid687039`}></iframe>
                         </div>
-                        <p>Find out how you can receive an 8 % annual raise to your benefit through the power of deferral.</p>
+                        <p>{topicTwoDescription}</p>
                     </div>
                     <div>
                         <h2>{topicThreeTitle}</h2>
                         <div className={classes['video-container']} >
                             <iframe src={`${topicThreeUrl}?autoplay=0&amp;modestbranding=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;hd=1&amp;wmode=transparent" frameBorder="0" allowFullScreen="" wmode="opaque" id="fitvid687039`}></iframe>
                         </div>
-                        <p>Find out how you can receive an 8 % annual raise to your benefit through the power of deferral.</p>
+                        <p>{topicThreeDescription}</p>
                     </div>
-
                 </div>
+                <div className={classes['section-topics-covered__three-column']}>
+                    <div>
+                        <h2>{topicFourTitle}</h2>
+                        <div className={classes['video-container']} >
+                            <img src={topicFourImage}/>
+                        </div>
+                        <p>{topicFourDescription}</p>
+                    </div>
+                    <div>
+                        <h2>{topicFiveTitle}</h2>
+                        <div className={classes['video-container']} >
+                        <img src={topicFiveImage}/>
+                        </div>
+                        <p>{topicFiveDescription}</p>
+                    </div>
+                    <div>
+                        <h2>{topicSixTitle}</h2>
+                        <div className={classes['video-container']} >
+                        <img src={topicSixImage}/>
+                        </div>
+                        <p>{topicSixDescription}</p>
+                    </div>
+                </div>
+
             </section>
         </>
     )

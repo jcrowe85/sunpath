@@ -1,6 +1,11 @@
 .section-topics-covered {
     padding: 3rem 0;
 }
+
+.section-topics-covered h2{ 
+    font-weight: bold;
+}
+
 .section-topics-covered__three-column {
     display: flex;
     flex-direction: column;

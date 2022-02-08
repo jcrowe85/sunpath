@@ -4,8 +4,18 @@
     animation: blinker 1s linear infinite;
 }
 
+.date-time-box h1 {
+    font-size: 1.2rem;
+}
+
 @keyframes blinker {
     50% {
         border-color: rgb(83, 0, 0);
+    }
+}
+
+@media (min-width: 992px) {
+    .date-time-box h1 {
+        font-size: 2rem;
     }
 }
