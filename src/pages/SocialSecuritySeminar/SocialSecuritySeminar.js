@@ -7,6 +7,10 @@ import SectionEventDetails from '../../components/LandingPage/SectionEventDetail
 import RmdTaxImg from '../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../assets/imgs/protect-investments.jpg';
+import EventImgOne from '../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
+import EventImgTwo from '../../assets/imgs/sunpath-conference-room.jpg';
+import EventImgThree from '../../assets/imgs/sunpath-financial-newport-beach-office.jpg';
+import EventImgFour from '../../assets/imgs/sunpath-financial-100-bayview-circle-office-building.jpg';
 
 const SocialSecuritySeminar = () => {
 
@@ -15,6 +19,7 @@ const SocialSecuritySeminar = () => {
             eventName: 'Learn How to Maximize Your Social Secuirty Benefit & Reduce Your Taxes',
             eventLocation: '- A Complimentary Dinner Event in Newport Beach -',
             seminarDateTime: 'March 10, 2022 16:30:00',
+            companyName: 'Sunpath Financial',
             eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
             formTitle: 'Reserve Your Seat Now!',
             dateTimeBox: 'Thursday, September 30th @ 6:30PM PST',
@@ -56,7 +61,24 @@ const SocialSecuritySeminar = () => {
             }
         },
         sectionEventDetails: {
-            pageBreakTitle: 'Details For this Event:'
+            pageBreakTitle: 'Dinner Details and Event Location:',
+            mapCoordinates: {
+                center: {
+                    lat: 33.65605544419939,
+                    lng: -117.86781907081604
+                },
+                zoom: 14
+            },
+            companyName: 'Sunpath Financial',
+            eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
+            companyPhone: '949-674-5248',
+            companyEmail: 'contact@sunpathfinancial.com',
+            eventImagesAlts: {
+                eventImageOne: {imgOne: EventImgOne, alt: 'Sunpath Financial Newport Beach Office'},
+                eventImageTwo: {imgTwo: EventImgTwo, alt: 'Sunpath Financial Newport Beach Office'},
+                eventImageThree: {imgThree: EventImgThree, alt: 'Sunpath Financial Newport Beach Office'},
+                eventImageFour: {imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office'}
+            }
         }
     }
 

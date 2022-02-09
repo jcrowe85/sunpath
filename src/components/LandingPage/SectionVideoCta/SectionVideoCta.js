@@ -5,7 +5,6 @@ import SeminarDateTime from '../SeminarDateTime/SeminarDateTime';
 import SeminarTickets from '../SeminarTickets/SeminarTickets';
 import { useSelector } from 'react-redux';
 
-
 const SectionVideoCta = props => {
 
     const { eventName, eventAddress, seminarDateTime, eventLocation, formTitle, dateTimeBox, heroUrl } = props.pageInfo;
