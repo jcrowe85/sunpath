@@ -1,0 +1,47 @@
+.section-meet-your-presenter p {
+    line-height: 2rem;
+    margin: 0;
+}
+
+.section-meet-your-presenter {
+    padding: 3rem 0;;
+}
+
+.section-meet-your-presenter__two-columns {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.two-columns__col-one, .two-columns__col-two  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+@media (min-width: 992px) {
+    .section-meet-your-presenter__two-columns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2.5rem 0;
+    }
+
+    .two-columns__col-one {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .two-columns__col-two {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+}

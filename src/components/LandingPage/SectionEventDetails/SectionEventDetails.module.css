@@ -1,5 +1,10 @@
+.section-event-details p {
+    line-height: 2rem;
+    margin: 0;
+}
+
 .section-event-details {
-    padding: 3rem 0;
+    padding: 3rem 0;;
 }
 
 .section-event-details__two-columns {
@@ -21,6 +26,9 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    /* background-color: rgb(218, 218, 218); */
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .two-columns__row-one, .two-columns__row-two, .two-columns__row-three  {
@@ -30,6 +38,10 @@
     width: 100%;
     margin: 0;
     padding: 1rem;
+}
+
+.two-columns__row-two {
+    padding: 0 1rem;
 }
 
 .section-event-details__row img {

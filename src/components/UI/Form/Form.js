@@ -180,7 +180,7 @@ const Form = props => {
             enteredStateName,
             enteredZipCode
         }))
-    }, [enteredName])
+    }, [enteredName, enteredEmail, enteredPhoneNumber, enteredFullAddress, enteredCityName, enteredStateName, enteredZipCode])
 
     //Set and validate basic fields
     let basicFormIsValid = Object.keys(formFields).map((key, index) => {

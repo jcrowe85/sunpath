@@ -1,18 +1,26 @@
 import classes from './SeminarTickets.module.css';
 import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
 
 const SeminarTickets = props => {
-
     const { eventName, eventAddress, seminarDateTime } = props;
-
 
     const registrantInputs = useSelector(state => state.registrantReducer);
 
-    const { enteredName: registrantName } = registrantInputs;
+    const { enteredName: registrantName, enteredFullAddress, enteredCityName, enteredStateName, enteredZipCode } = registrantInputs;
 
+    console.log(registrantInputs)
 
     return (
+        <>
+        <div className={classes['seminar-tickets-overlay']}>
+        <h2>Complete registration and we'll mail your RSVP tickets!</h2>
+        <ul>
+            <li>Mail to:</li>
+            <li>{registrantName}</li>
+            <li>{enteredFullAddress}</li>
+            <li>{enteredCityName} {enteredStateName} {enteredZipCode}</li>
+        </ul>
+    </div>
         <div className={classes['seminar-tickets']}>
             <div className={classes['seminar-tickets__ticket']}>
                 <div className={classes['ticket__admissions']}>
@@ -75,6 +83,7 @@ const SeminarTickets = props => {
                 </div>
             </div>
         </div>
+        </>
     )
 };
 

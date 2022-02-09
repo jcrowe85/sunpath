@@ -3,14 +3,9 @@ import classes from './EventLocationMap.module.css';
 
 
 const EventLocationMap = props => {
-
-    console.log(props.mapCoordinates.center)
-
     const lattitude = props.mapCoordinates.center.lat;
     const longitude = props.mapCoordinates.center.lng;
     const zoom = props.mapCoordinates.zoom;
-
-    console.log(lattitude)
 
     const defaultProps = {
         center: {

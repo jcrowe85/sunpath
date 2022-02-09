@@ -5,6 +5,39 @@
     text-transform: uppercase;
     border: 1rem solid lightgray;
     border-radius: 0.5rem;
+    position: relative;
+}
+
+.seminar-tickets::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.seminar-tickets-overlay {
+    padding: 1.5rem;
+    color: rgb(184, 29, 29);
+    background-color: rgb(240, 240, 240);
+    border: 5px solid rgb(184, 29, 29);
+}
+
+.seminar-tickets-overlay h2 {
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+}
+
+.seminar-tickets-overlay ul{
+    list-style: none;
+}
+
+.seminar-tickets-overlay ul li{ 
+    margin: 0.5rem;
 }
 
 .seminar-tickets div{
@@ -113,5 +146,12 @@
         align-items: center;
         border: none;
         border-left: 2px dotted gray;
+    }
+    .seminar-tickets-overlay h2 {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .seminar-tickets-overlay::before {
+        height: 66%;
     }
 }
