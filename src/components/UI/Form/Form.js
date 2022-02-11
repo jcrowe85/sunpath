@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import classes from './Form.module.css';
 import Button from '../LandingPageButton/LandingPageButton';
 import Input from '../Input/Input';
@@ -7,11 +6,15 @@ import { customFieldsActions } from '../../../store/custom-fields';
 import { registrantActions } from '../../../store/registrant';
 import userInput from '../../../hooks/user-input';
 import { useEffect } from 'react';
+import { sendRegistrantData } from '../../../store/registrant-actions';
 
 const Form = props => {
 
     //Initialize dispatch method
     const dispatch = useDispatch();
+
+    //Import registrant inputs
+    const registrant = useSelector(state => state.registrantReducer);
 
     //Form inputs and validations
     const {
@@ -19,7 +22,8 @@ const Form = props => {
         hasError: nameInputHasError,
         isValid: nameIsValid,
         valueChangeHandler: nameChangeHandler,
-        inputBlurHandler: nameBlurHandler
+        inputBlurHandler: nameBlurHandler,
+        reset: resetNameInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -27,7 +31,8 @@ const Form = props => {
         hasError: phoneNumberInputHasError,
         isValid: phoneNumberIsValid,
         valueChangeHandler: phoneNumberChangeHandler,
-        inputBlurHandler: phoneNumberBlurHandler
+        inputBlurHandler: phoneNumberBlurHandler,
+        reset: phoneNumberInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -35,7 +40,8 @@ const Form = props => {
         hasError: emailInputHasError,
         isValid: emailIsValid,
         valueChangeHandler: emailChangeHandler,
-        inputBlurHandler: emailBlurHandler
+        inputBlurHandler: emailBlurHandler,
+        reset: emailInput
     } = userInput(value => value.includes('@'));
 
     const {
@@ -43,7 +49,8 @@ const Form = props => {
         hasError: fullAddressInputHasError,
         isValid: fullAddressIsValid,
         valueChangeHandler: fullAddressChangeHandler,
-        inputBlurHandler: fullAddressBlurHandler
+        inputBlurHandler: fullAddressBlurHandler,
+        reset: addressInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -51,7 +58,8 @@ const Form = props => {
         hasError: cityNameInputHasError,
         isValid: cityNameIsValid,
         valueChangeHandler: cityNameChangeHandler,
-        inputBlurHandler: cityNameBlurHandler
+        inputBlurHandler: cityNameBlurHandler,
+        reset: cityNameInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -59,7 +67,8 @@ const Form = props => {
         hasError: stateNameInputHasError,
         isValid: stateNameIsValid,
         valueChangeHandler: stateNameChangeHandler,
-        inputBlurHandler: stateNameBlurHandler
+        inputBlurHandler: stateNameBlurHandler,
+        reset: stateNameInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -67,7 +76,8 @@ const Form = props => {
         hasError: zipCodeInputHasError,
         isValid: zipCodeIsValid,
         valueChangeHandler: zipCodeChangeHandler,
-        inputBlurHandler: zipCodeBlurHandler
+        inputBlurHandler: zipCodeBlurHandler,
+        reset: zipCodeInput
     } = userInput(value => value.trim() !== '');
 
     //Form fields
@@ -182,7 +192,7 @@ const Form = props => {
         }))
     }, [enteredName, enteredEmail, enteredPhoneNumber, enteredFullAddress, enteredCityName, enteredStateName, enteredZipCode])
 
-    //Set and validate basic fields
+    //Set and validate basic fields, if form inputs are valid set formIsValid: true
     let basicFormIsValid = Object.keys(formFields).map((key, index) => {
         return formFields[key].every(field => field.isValid === true)
     })
@@ -209,9 +219,9 @@ const Form = props => {
         }
     });
 
-    //Set and validate custom fields 
+    //Show custom fields if checkbox is selected, validate custom fields on input
     const customFormFieldsIsActive = useSelector(state => state.customFieldsReducer.isActive)
-
+    
     const showCustomFieldsHandler = () => {
         dispatch(customFieldsActions.toggleCustomFields())
     }
@@ -238,12 +248,13 @@ const Form = props => {
         }
     });
 
+    //Show custom fields if array is not empty
     let customForms;
 
     if (formFields.customFields.length >= 1) {
         customForms =
             <div className={classes['custom-form-control']}>
-                <input type='checkbox' onChange={showCustomFieldsHandler} id='customFormCheckbox'/>
+                <input type='checkbox' checked={customFormFieldsIsActive} onChange={showCustomFieldsHandler} id='customFormCheckbox'/>
                 <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
                 {customFormFieldsIsActive && customFields}
             </div>
@@ -251,8 +262,19 @@ const Form = props => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        // console.log(e)
-        
+
+        //Save registrant details to database
+        dispatch(sendRegistrantData(registrant));
+
+        //reset form fields
+        resetNameInput();
+        phoneNumberInput();
+        emailInput();
+        addressInput();
+        cityNameInput();
+        stateNameInput();
+        zipCodeInput();
+        dispatch(customFieldsActions.toggleCustomFields())
     }
 
     return (

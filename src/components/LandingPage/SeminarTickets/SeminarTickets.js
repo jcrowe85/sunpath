@@ -8,8 +8,6 @@ const SeminarTickets = props => {
 
     const { enteredName: registrantName, enteredFullAddress, enteredCityName, enteredStateName, enteredZipCode } = registrantInputs;
 
-    console.log(registrantInputs)
-
     return (
         <>
         <div className={classes['seminar-tickets-overlay']}>
