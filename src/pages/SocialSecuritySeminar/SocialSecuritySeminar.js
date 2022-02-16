@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import classes from './SocialSecuritySeminar.module.css';
 import logo from '../../assets/imgs/sunpath-social-security-logo.png';
 import LandingPageHeader from '../../components/LandingPage/Header/LandingPageHeader';
@@ -25,7 +26,7 @@ const SocialSecuritySeminar = () => {
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
             eventLocation: '- A Complimentary Dinner Event in Newport Beach -',
-            seminarDateTime: 'February 24, 2022 18:30:00',
+            seminarDateTime: 'March 3, 2022 18:30:00',
             companyName: 'Sunpath Financial',
             eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
             formTitle: 'Reserve Your Seat Now!',
@@ -118,6 +119,7 @@ const SocialSecuritySeminar = () => {
             <SectionEventDetails pageInfo={pageInfo.sectionEventDetails} />
             <SectionMeetYourPresenter pageInfo={pageInfo.sectionMeetYourPresenter} />
             <LandingPageFooter pageInfo={pageInfo.footer} />
+            <Outlet />
         </div>
     )
 };

@@ -1,20 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import classes from './Form.module.css';
-import Button from '../LandingPageButton/LandingPageButton';
-import Input from '../Input/Input';
-import { useDispatch, useSelector } from 'react-redux';
-import { customFieldsActions } from '../../../store/custom-fields';
-import { registrantActions } from '../../../store/registrant';
 import userInput from '../../../hooks/user-input';
 import { useEffect } from 'react';
-import { sendRegistrantData } from '../../../store/registrant-actions';
+import Button from '../LandingPageButton/LandingPageButton';
+import Input from '../Input/Input';
+
 
 const Form = props => {
 
-    //Initialize dispatch method
-    const dispatch = useDispatch();
-
-    //Import registrant inputs
-    const registrant = useSelector(state => state.registrantReducer);
+    const navigate = useNavigate();
 
     //Form inputs and validations
     const {
@@ -32,7 +26,7 @@ const Form = props => {
         isValid: phoneNumberIsValid,
         valueChangeHandler: phoneNumberChangeHandler,
         inputBlurHandler: phoneNumberBlurHandler,
-        reset: phoneNumberInput
+        reset: resetPhoneNumberInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -41,7 +35,7 @@ const Form = props => {
         isValid: emailIsValid,
         valueChangeHandler: emailChangeHandler,
         inputBlurHandler: emailBlurHandler,
-        reset: emailInput
+        reset: resetEmailInput
     } = userInput(value => value.includes('@'));
 
     const {
@@ -50,7 +44,7 @@ const Form = props => {
         isValid: fullAddressIsValid,
         valueChangeHandler: fullAddressChangeHandler,
         inputBlurHandler: fullAddressBlurHandler,
-        reset: addressInput
+        reset: resetAddressInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -59,7 +53,7 @@ const Form = props => {
         isValid: cityNameIsValid,
         valueChangeHandler: cityNameChangeHandler,
         inputBlurHandler: cityNameBlurHandler,
-        reset: cityNameInput
+        reset: resetCityNameInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -68,7 +62,7 @@ const Form = props => {
         isValid: stateNameIsValid,
         valueChangeHandler: stateNameChangeHandler,
         inputBlurHandler: stateNameBlurHandler,
-        reset: stateNameInput
+        reset: resetStateNameInput
     } = userInput(value => value.trim() !== '');
 
     const {
@@ -77,7 +71,7 @@ const Form = props => {
         isValid: zipCodeIsValid,
         valueChangeHandler: zipCodeChangeHandler,
         inputBlurHandler: zipCodeBlurHandler,
-        reset: zipCodeInput
+        reset: resetZipCodeInput
     } = userInput(value => value.trim() !== '');
 
     //Form fields
@@ -179,9 +173,18 @@ const Form = props => {
         ],
     };
 
-    //Dispatch form values to store 'registrants' for cross-component access
+    const formInputData = {
+        enteredName,
+        enteredEmail,
+        enteredPhoneNumber,
+        enteredFullAddress,
+        enteredCityName,
+        enteredStateName,
+        enteredZipCode
+    };
+
     useEffect(() => {
-        dispatch(registrantActions.registrantInputs({
+        props.addRegistrantInfo({
             enteredName,
             enteredEmail,
             enteredPhoneNumber,
@@ -189,10 +192,18 @@ const Form = props => {
             enteredCityName,
             enteredStateName,
             enteredZipCode
-        }))
-    }, [enteredName, enteredEmail, enteredPhoneNumber, enteredFullAddress, enteredCityName, enteredStateName, enteredZipCode])
+        });
+    }, [
+        enteredName,
+        enteredEmail,
+        enteredPhoneNumber,
+        enteredFullAddress,
+        enteredCityName,
+        enteredStateName,
+        enteredZipCode
+    ])
 
-    //Set and validate basic fields, if form inputs are valid set formIsValid: true
+    //Initialize and validate basic fields, set form to valid if there are no errors
     let basicFormIsValid = Object.keys(formFields).map((key, index) => {
         return formFields[key].every(field => field.isValid === true)
     })
@@ -219,13 +230,7 @@ const Form = props => {
         }
     });
 
-    //Show custom fields if checkbox is selected, validate custom fields on input
-    const customFormFieldsIsActive = useSelector(state => state.customFieldsReducer.isActive)
-    
-    const showCustomFieldsHandler = () => {
-        dispatch(customFieldsActions.toggleCustomFields())
-    }
-
+    //Show custom fields if checkbox is checked and validate inputs
     const customFields = Object.keys(formFields).map((key, index) => {
         if (key === 'customFields') {
             return formFields[key].map(field => {
@@ -254,27 +259,58 @@ const Form = props => {
     if (formFields.customFields.length >= 1) {
         customForms =
             <div className={classes['custom-form-control']}>
-                <input type='checkbox' checked={customFormFieldsIsActive} onChange={showCustomFieldsHandler} id='customFormCheckbox'/>
+                <input type='checkbox' checked={props.customFormIsActive} onChange={props.showCustomFields} id='customFormCheckbox' />
                 <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
-                {customFormFieldsIsActive && customFields}
+                {props.customFormIsActive && customFields}
             </div>
     }
+
+    async function saveRegistrant() {
+        try {
+            const response = await fetch('https://sunpath-ad580-default-rtdb.firebaseio.com/registrants.json', {
+                method: 'POST',
+                body: JSON.stringify({
+                    enteredName,
+                    enteredEmail,
+                    enteredPhoneNumber,
+                    enteredFullAddress,
+                    enteredCityName,
+                    enteredStateName,
+                    enteredZipCode
+                }),
+                headers: {
+                    'Content-type': 'application/json'
+                },
+            });
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.message || 'Count not save registrant to database')
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 
     const submitHandler = (e) => {
         e.preventDefault();
 
-        //Save registrant details to database
-        dispatch(sendRegistrantData(registrant));
+        saveRegistrant();
 
-        //reset form fields
+        //Reset form fields
         resetNameInput();
-        phoneNumberInput();
-        emailInput();
-        addressInput();
-        cityNameInput();
-        stateNameInput();
-        zipCodeInput();
-        dispatch(customFieldsActions.toggleCustomFields())
+        resetEmailInput();
+        resetAddressInput();
+        resetPhoneNumberInput();
+        resetCityNameInput();
+        resetStateNameInput();
+        resetZipCodeInput();
+        props.showCustomFields();
+
+        //Redirect to thank you page
+        navigate('/social-security-seminar/thank-you');
+
     }
 
     return (

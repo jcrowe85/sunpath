@@ -6,8 +6,12 @@ const RegistrationForm = props => {
     return (
         <div className={classes['registration-form']}>
             <h2>{props.formTitle}</h2>
-            <Timer seminarDateTime={props.seminarDateTime}/>
-            <Form formFields={props.formFields} />
+            <Timer seminarDateTime={props.seminarDateTime} />
+            <Form
+                formFields={props.formFields}
+                addRegistrantInfo={props.addRegistrantInfo}
+                showCustomFields={props.onShowCustomFields}
+                customFormIsActive={props.customFormIsActive} />
         </div>
     )
 };
