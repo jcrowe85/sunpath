@@ -1,5 +1,5 @@
 import classes from './SectionTopicsCovered.module.css';
-import PageBreak from '../PageBreak/PageBreak';
+import PageBreak from '../../../../UI/PageBreak/PageBreak';
 
 const SectionTopicsCovered = props => {
 

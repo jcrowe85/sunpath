@@ -1,4 +1,4 @@
-import Form from '../../../UI/Form/Form';
+import Form from '../../../../UI/Form/Form';
 import Timer from '../Timer/Timer';
 import classes from './RegistrationForm.module.css';
 

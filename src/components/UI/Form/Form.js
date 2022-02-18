@@ -1,7 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import classes from './Form.module.css';
 import userInput from '../../../hooks/user-input';
-import { useEffect } from 'react';
 import Button from '../LandingPageButton/LandingPageButton';
 import Input from '../Input/Input';
 
@@ -9,6 +9,10 @@ import Input from '../Input/Input';
 const Form = props => {
 
     const navigate = useNavigate();
+
+    const location = useLocation();
+
+    console.log(location.pathname)
 
     //Form inputs and validations
     const {
@@ -309,7 +313,7 @@ const Form = props => {
         props.showCustomFields();
 
         //Redirect to thank you page
-        navigate('/social-security-seminar/thank-you');
+        navigate(`${location.pathname}/thank-you`);
 
     }
 

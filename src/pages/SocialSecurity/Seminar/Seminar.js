@@ -1,20 +1,19 @@
-import { Outlet } from 'react-router-dom';
-import classes from './SocialSecuritySeminar.module.css';
-import logo from '../../assets/imgs/sunpath-social-security-logo.png';
-import LandingPageHeader from './Header/LandingPageHeader';
-import SectionVideoCta from './SectionVideoCta/SectionVideoCta';
-import SectionTopicsCovered from './SectionTopicsCovered/SectionTopicsCovered';
-import SectionEventDetails from './SectionEventDetails/SectionEventDetails';
-import SectionMeetYourPresenter from './SectionMeetYourPresenter/SectionMeetYourPresenter';
-import LandingPageFooter from './Footer/Footer';
-import RmdTaxImg from '../../assets/imgs/ira-tax-rmd.jpg';
-import LifetimeTax from '../../assets/imgs/slash-lifetime-tax.jpg';
-import ProtectAssets from '../../assets/imgs/protect-investments.jpg';
-import EventImgOne from '../../assets/imgs/steak-dinner.jpg';
-import EventImgTwo from '../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
-import EventImgFour from '../../assets/imgs/sunpath-conference-room.jpg';
-import PresenterImg from '../../assets/imgs/josh-beach.jpg';
+import classes from './Seminar.module.css';
+import LandingPageHeader from '../../../components/LandingPages/SocialSecuritySeminar/components/Header/LandingPageHeader';
+import SectionVideoCta from '../../../components/LandingPages/SocialSecuritySeminar/Sections/SectionVideoCta/SectionVideoCta';
+import SectionTopicsCovered from '../../../components/LandingPages/SocialSecuritySeminar/Sections/SectionTopicsCovered/SectionTopicsCovered';
+import SectionEventDetails from '../../../components/LandingPages/SocialSecuritySeminar/Sections/SectionEventDetails/SectionEventDetails';
+import SectionMeetYourPresenter from '../../../components/LandingPages/SocialSecuritySeminar/Sections/SectionMeetYourPresenter/SectionMeetYourPresenter';
+import LandingPageFooter from '../../../components/LandingPages/SocialSecuritySeminar/components/Footer/Footer';
+import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
+import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
+import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
+import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
+import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
+import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
+import EventImgThree from '../../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
+import EventImgFour from '../../../assets/imgs/sunpath-conference-room.jpg';
+import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
 
 const SocialSecuritySeminar = () => {
     const pageInfo = {
@@ -107,20 +106,23 @@ const SocialSecuritySeminar = () => {
         },
         footer: {
             footerImg: logo,
-            footerDisclosure: 'Disclosure: Sunpath Financial is a Registered Investment Advisory firm (RIA) and insurance broker who specializes in providing financial advice and education, to the general public, on a series of topics including retirement, social security, medicare, and investments. Sunpath Financial, and its constituents, are not associated, sponsored, or in any other way affiliated with any governmental association. The material discussed and covered in their lectures and literatures, may or may not be of their own opinion and may not accurately reflect current or accurate data. Sunpath Financial is not, and does not claim to be, tax professionals, and advises all spectators, readers, and listeners to seek professional tax help when applicable.' 
+            footerDisclosure: 'Disclosure: Sunpath Financial is a Registered Investment Advisory firm (RIA) and insurance broker who specializes in providing financial advice and education, to the general public, on a series of topics including retirement, social security, medicare, and investments. Sunpath Financial, and its constituents, are not associated, sponsored, or in any other way affiliated with any governmental association. The material discussed and covered in their lectures and literatures, may or may not be of their own opinion and may not accurately reflect current or accurate data. Sunpath Financial is not, and does not claim to be, tax professionals, and advises all spectators, readers, and listeners to seek professional tax help when applicable.'
         }
     }
 
     return (
-        <div className={classes['landing-page']}>
-            <LandingPageHeader pageInfo={pageInfo.header} />
-            <SectionVideoCta pageInfo={pageInfo.sectionVideoCta} />
-            <SectionTopicsCovered pageInfo={pageInfo.sectionTopicsCovered} />
-            <SectionEventDetails pageInfo={pageInfo.sectionEventDetails} />
-            <SectionMeetYourPresenter pageInfo={pageInfo.sectionMeetYourPresenter} />
-            <LandingPageFooter pageInfo={pageInfo.footer} />
-            <Outlet />
-        </div>
+        <>
+            <div className={classes.main}>
+                <LandingPageHeader pageInfo={pageInfo.header} />
+                <SectionVideoCta pageInfo={pageInfo.sectionVideoCta} />
+                <SectionTopicsCovered pageInfo={pageInfo.sectionTopicsCovered} />
+                <SectionEventDetails pageInfo={pageInfo.sectionEventDetails} />
+                <SectionMeetYourPresenter pageInfo={pageInfo.sectionMeetYourPresenter} />
+            </div>
+            <footer>
+                <LandingPageFooter pageInfo={pageInfo.footer} />
+            </footer>
+        </>
     )
 };
 

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import classes from './SectionVideoCta.module.css';
-import HeroVideo from '../HeroVideo/HeroVideo';
-import RegistrationForm from '../RegistrationForm/RegistrationForm';
-import SeminarDateTime from '../SeminarDateTime/SeminarDateTime';
-import SeminarTickets from '../SeminarTickets/SeminarTickets';
+import HeroVideo from '../../components/HeroVideo/HeroVideo';
+import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
+import SeminarDateTime from '../../components/SeminarDateTime/SeminarDateTime';
+import SeminarTickets from '../../components/SeminarTickets/SeminarTickets';
 
 const SectionVideoCta = props => {
 
