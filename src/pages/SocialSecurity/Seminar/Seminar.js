@@ -29,7 +29,7 @@ const SocialSecuritySeminar = () => {
             companyName: 'Sunpath Financial',
             eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
             formTitle: 'Reserve Your Seat Now!',
-            dateTimeBox: 'Thursday, February 24th @ 6:30PM PST',
+            dateTimeBox: 'Thursday, March 3rd @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
         },
         sectionTopicsCovered: {
