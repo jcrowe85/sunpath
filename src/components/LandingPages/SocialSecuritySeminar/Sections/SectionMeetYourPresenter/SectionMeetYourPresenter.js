@@ -3,11 +3,11 @@ import PageBreak from '../../../../UI/PageBreak/PageBreak';
 
 const SectionMeetYourPresenter = props => {
 
-    const { pageBreakTitle, presenterImg, presenterImgAlt, presenterBio: { bioTitle, sectionOne, sectionTwo, sectionThree, sectionFour, sectionFive } } = props.pageInfo;
+    const { pageBreak, presenterImg, presenterImgAlt, presenterBio: { bioTitle, sectionOne, sectionTwo, sectionThree, sectionFour, sectionFive } } = props.pageInfo;
 
     return (
         <>
-            <PageBreak pageBreakTitle={pageBreakTitle} />
+            <PageBreak pageBreak={pageBreak} />
             <section className={`${classes['section-meet-your-presenter']} wrapper`} >
                 <div className={classes['section-meet-your-presenter__two-columns']} >
                     <div className={classes['two-columns__col-one']}>

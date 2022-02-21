@@ -4,7 +4,7 @@ import PageBreak from '../../../../UI/PageBreak/PageBreak';
 const SectionTopicsCovered = props => {
 
     //Section title and Video urls
-    const { pageBreakTitle, videoInfo } = props.pageInfo;
+    const { pageBreak, videoInfo } = props.pageInfo;
 
     const {
         topicOne: { topicOneTitle, topicOneUrl, topicOneDescription },
@@ -18,7 +18,7 @@ const SectionTopicsCovered = props => {
 
     return (
         <>
-            <PageBreak pageBreakTitle={pageBreakTitle} />
+            <PageBreak pageBreak={pageBreak} />
             <section className={`${classes['section-topics-covered']} wrapper`}>
                 <div className={classes['section-topics-covered__three-column']}>
                     <div>

@@ -4,11 +4,11 @@ import EventLocationMap from '../../components/EventLocationMap/EventLocationMap
 
 const SectionEventDetails = props => {
 
-    const { pageBreakTitle, mapCoordinates: { center, zoom }, companyName, companyPhone, companyEmail, eventAddress, eventImagesAlts: { eventImageOne, eventImageTwo, eventImageThree, eventImageFour}, locationAndDirections: { sectionOne, sectionTwo}  } = props.pageInfo;
+    const { pageBreak, mapCoordinates: { center, zoom }, companyName, companyPhone, companyEmail, eventAddress, eventImagesAlts: { eventImageOne, eventImageTwo, eventImageThree, eventImageFour}, locationAndDirections: { sectionOne, sectionTwo}  } = props.pageInfo;
 
     return (
         <>
-            <PageBreak pageBreakTitle={pageBreakTitle} />
+            <PageBreak pageBreak={pageBreak} />
             <section className={`${classes['section-event-details']} wrapper`} >
                 <div className={classes['section-event-details__two-columns']} >
                     <div className={classes['two-columns__col-one']}>

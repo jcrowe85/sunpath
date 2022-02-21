@@ -20,7 +20,7 @@ const EventLocationMap = props => {
                 bootstrapURLKeys={{ key: 'AIzaSyAANRoCIxUdSCS_NScvyo07GrYOW8By2wA' }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}>
-                <div className={classes['marker-info__marker']} lat={33.65605544419939} lng={-117.86781907081604}>
+                <div className={classes['marker-info__marker']} lat={defaultProps.center.lat} lng={defaultProps.center.lng}>
                     Sunpath Financial
                 </div>
             </GoogleMapReact>
