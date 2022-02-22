@@ -9,6 +9,7 @@ import SocialSecuritySeminarAlisoViejoMarch24th from './pages/SocialSecurity/Sem
 import SocialSecuritySeminarRanchoCucamongaApril21st from './pages/SocialSecurity/Seminar/SocialSecuritySeminarRanchoCucamongaApril21st';
 import RetirementIncomeTaxesInflationNewportBeachMay12th from './pages/RetirementIncome/Seminar/RetirementIncomeTaxesInflationNewportBeachMay12th';
 import SocialSecuritySeminarVictorvilleJune2nd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarVictorvilleJune2nd';
+import SocialSecuritySeminarAnaheimJune23rd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarAnaheimJune23rd';
 import ThankYou from './pages/SocialSecurity/ThankYou/ThankYou';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='aliso-viejo-march-24th' element={<SocialSecuritySeminarAlisoViejoMarch24th />} />
           <Route path='rancho-cucamonga-april-21st' element={<SocialSecuritySeminarRanchoCucamongaApril21st />} />
           <Route path='victorville-june-2nd' element={<SocialSecuritySeminarVictorvilleJune2nd />} />
+          <Route path='anaheim-june-23rd' element={<SocialSecuritySeminarAnaheimJune23rd />} />
           <Route path=':location/thank-you' element={<ThankYou />} />
         </Route>
         <Route path='retirement-income/seminar' element={<SocialSecurity />} >
