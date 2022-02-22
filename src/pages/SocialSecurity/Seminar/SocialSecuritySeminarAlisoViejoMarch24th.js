@@ -25,10 +25,10 @@ const SocialSecuritySeminar = () => {
         },
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
-            eventLocation: '- A Complimentary Dinner Event in Aliso Veijo -',
+            eventLocation: '- A Complimentary Dinner Event in Aliso Viejo -',
             seminarDateTime: 'March 24, 2022 18:30:00',
             companyName: 'Sunpath Financial',
-            eventAddress: '65 Enterprise 3rd Floor, Aliso Veijo, Ca 92656',
+            eventAddress: '65 Enterprise 3rd Floor, Aliso Viejo, Ca 92656',
             formTitle: 'Reserve Your Seat Now!',
             dateTimeBox: 'Thursday, March 24th @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
@@ -95,7 +95,7 @@ const SocialSecuritySeminar = () => {
             },
             locationAndDirections: {
                 sectionOne: 'The event will be held at our partner office in Aliso Viejo, right off of the 73 and Aliso Viejo Parkway.',
-                sectionTwo: 'From the CA-73 North take exit 4 for Aliso Creek Road and turn right. Turn left onto Aliso Veijo Parkway, and a final left onto Summit. Enter the first parking lot on your right and make a left to park.'
+                sectionTwo: 'From the CA-73 North take exit 4 for Aliso Creek Road and turn right. Turn left onto Aliso Viejo Parkway, and a final left onto Summit. Enter the first parking lot on your right and make a left to park.'
             }
         },
         sectionMeetYourPresenter: {

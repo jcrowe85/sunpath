@@ -18,7 +18,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path='social-security/seminar' element={<SocialSecurity />} >
           <Route path='newport-beach-march-3rd' element={<SocialSecuritySeminarNewportBeachMarch3rd />} />
-          <Route path='aliso-veijo-march-24th' element={<SocialSecuritySeminarAlisoViejoMarch24th />} />
+          <Route path='aliso-viejo-march-24th' element={<SocialSecuritySeminarAlisoViejoMarch24th />} />
           <Route path='rancho-cucamonga-april-21st' element={<SocialSecuritySeminarRanchoCucamongaApril21st />} />
           <Route path='victorville-june-2nd' element={<SocialSecuritySeminarVictorvilleJune2nd />} />
           <Route path=':location/thank-you' element={<ThankYou />} />
