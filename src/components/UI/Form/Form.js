@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import classes from './Form.module.css';
 import userInput from '../../../hooks/user-input';
 import Button from '../LandingPageButton/LandingPageButton';
@@ -12,7 +12,9 @@ const Form = props => {
 
     const location = useLocation();
 
-    console.log(location.pathname)
+    const [searchParams] = useSearchParams();
+    
+    const eventLocation = searchParams.get('location');
 
     //Form inputs and validations
     const {
@@ -119,6 +121,17 @@ const Form = props => {
                 isInvalid: emailInputHasError,
                 onBlur: emailBlurHandler,
                 onChange: emailChangeHandler,
+            },
+            {
+                id: 'input4',
+                eleType: 'input',
+                type: 'hidden',
+                name: 'eventLocation',
+                value: eventLocation,
+                isValid: emailIsValid,
+                isInvalid: emailInputHasError,
+                onBlur: emailBlurHandler,
+                onChange: emailChangeHandler,
             }
         ],
         customFields: [
@@ -177,16 +190,6 @@ const Form = props => {
         ],
     };
 
-    const formInputData = {
-        enteredName,
-        enteredEmail,
-        enteredPhoneNumber,
-        enteredFullAddress,
-        enteredCityName,
-        enteredStateName,
-        enteredZipCode
-    };
-
     useEffect(() => {
         props.addRegistrantInfo({
             enteredName,
@@ -195,7 +198,8 @@ const Form = props => {
             enteredFullAddress,
             enteredCityName,
             enteredStateName,
-            enteredZipCode
+            enteredZipCode,
+            eventLocation
         });
     }, [
         enteredName,
@@ -204,7 +208,8 @@ const Form = props => {
         enteredFullAddress,
         enteredCityName,
         enteredStateName,
-        enteredZipCode
+        enteredZipCode,
+        eventLocation
     ])
 
     //Initialize and validate basic fields, set form to valid if there are no errors
@@ -280,7 +285,8 @@ const Form = props => {
                     enteredFullAddress,
                     enteredCityName,
                     enteredStateName,
-                    enteredZipCode
+                    enteredZipCode,
+                    eventLocation
                 }),
                 headers: {
                     'Content-type': 'application/json'

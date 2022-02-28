@@ -11,8 +11,8 @@ import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
 import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
 import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../../assets/imgs/anaheim-exterior.jpg';
-import EventImgFour from '../../../assets/imgs/anaheim-interior.jpg';
+import EventImgThree from '../../../assets/imgs/aliso-vejio-industrious-exterior.png';
+import EventImgFour from '../../../assets/imgs/aliso-veijo-industrious-conference-room.png';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
 
 const SocialSecuritySeminar = () => {
@@ -25,10 +25,10 @@ const SocialSecuritySeminar = () => {
         },
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
-            eventLocation: '- A Complimentary Dinner Event in Anaheim -',
+            eventLocation: '- A Complimentary Dinner Event in Aliso Viejo -',
             seminarDateTime: 'June 23, 2022 18:30:00',
             companyName: 'Sunpath Financial',
-            eventAddress: '2390 E Orangewood Ave Ste 100 Anaheim, CA 92806',
+            eventAddress: '65 Enterprise 3rd Floor, Aliso Viejo, Ca 92656',
             formTitle: 'Reserve Your Seat Now!',
             dateTimeBox: 'Thursday, June 23rd @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
@@ -78,13 +78,13 @@ const SocialSecuritySeminar = () => {
             },
             mapCoordinates: {
                 center: {
-                    lat: 33.796,
-                    lng: -117.882371
+                    lat: 33.5828674,
+                    lng: -117.7277625
                 },
                 zoom: 14
             },
-            companyName: 'Karl Strauss Brewing Company',
-            eventAddress: '2390 E Orangewood Ave Ste 100 Anaheim, CA 92806',
+            companyName: 'Sunpath Financial',
+            eventAddress: '65 Enterprise 3rd floor, Aliso Viejo, CA 92656',
             companyPhone: '949-674-5248',
             companyEmail: 'contact@sunpathfinancial.com',
             eventImagesAlts: {
@@ -94,8 +94,8 @@ const SocialSecuritySeminar = () => {
                 eventImageFour: { imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office' }
             },
             locationAndDirections: {
-                sectionOne: 'The event will be held in Anaheim at Karl Strauss Brewing Company across the street from the Anaheim Angel Stadium.',
-                sectionTwo: 'Take CA-57 freeway toward Anaheim and follow the exit signs for 1B onto Orangewood Avenue. Make a left to travel down E Orangewood Avenue, then make a sharp left onto W Orangewood Ave. Make two more lefts to enter the parking lot.'
+                sectionOne: 'The event will be held at our partner office in Aliso Viejo, right off of the 73 and Aliso Viejo Parkway.',
+                sectionTwo: 'From the CA-73 North take exit 4 for Aliso Creek Road and turn right. Turn left onto Aliso Viejo Parkway, and a final left onto Summit. Enter the first parking lot on your right and make a left to park.'
             }
         },
         sectionMeetYourPresenter: {
