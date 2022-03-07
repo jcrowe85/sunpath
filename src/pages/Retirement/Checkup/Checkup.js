@@ -1,4 +1,4 @@
-import classes from './Seminar.module.css';
+import classes from './Checkup.module.css';
 import LandingPageHeader from '../../../components/LandingPages/Header/LandingPageHeader';
 import SectionVideoCta from '../../../components/LandingPages/Sections/SectionVideoCta/SectionVideoCta';
 import SectionTopicsCovered from '../../../components/LandingPages/Sections/SectionTopicsCovered/SectionTopicsCovered';
@@ -11,32 +11,31 @@ import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
 import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
 import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../../assets/imgs/royal-tax-exterior.png';
-import EventImgFour from '../../../assets/imgs/royal-tax-interior.png';
+import EventImgThree from '../../../assets/imgs/aliso-vejio-industrious-exterior.png';
+import EventImgFour from '../../../assets/imgs/aliso-veijo-industrious-conference-room.png';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
 
-const SocialSecuritySeminar = () => {
+const Checkup = () => {
     const pageInfo = {
         header: {
             logoImg: logo,
             logoImgAlt: 'Sunpath Social Security Logo',
-            backgroundColor: '#002a5c',
+            backgroundColor: 'black',
             companyPhone: '949-674-5248'
         },
         sectionVideoCta: {
-            eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
-            eventLocation: '- A Complimentary Dinner Event in Victorville -',
-            seminarDateTime: 'June 2, 2022 18:30:00',
+            eventName: 'Start Your Complimentary Retirement Plan with a Licenced Planner',
+            eventLocation: '- Discover Your Progress Towards Retirement -',
             companyName: 'Sunpath Financial',
-            eventAddress: '12044 Dunia Rd, Victorville, CA 92392',
-            formTitle: 'Reserve Your Seat Now!',
-            dateTimeBox: 'Thursday, June 2nd @ 6:30PM PST',
+            eventAddress: '65 Enterprise 3rd Floor, Aliso Viejo, Ca 92656',
+            formTitle: 'This is a Complimentary Offer Valued at $3,500',
+           
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
         },
         sectionTopicsCovered: {
             pageBreak: {
                 pageBreakTitle: 'Event Topics We\'ll Cover:', 
-                pageBreakBackgroundColor: '#002a5c'
+                pageBreakBackgroundColor: 'black'
             },
             videoInfo: {
                 topicOne: {
@@ -74,17 +73,17 @@ const SocialSecuritySeminar = () => {
         sectionEventDetails: {
             pageBreak: {
                 pageBreakTitle: 'Dinner Details and Event Location:', 
-                pageBreakBackgroundColor: '#002a5c'
+                pageBreakBackgroundColor: 'black'
             },
             mapCoordinates: {
                 center: {
-                    lat: 34.4696,
-                    lng: -117.3540072
+                    lat: 33.5828674,
+                    lng: -117.7277625
                 },
                 zoom: 14
             },
-            companyName: 'Royal Tax Service',
-            eventAddress: '12044 Dunia Rd, Victorville, CA 92392',
+            companyName: 'Sunpath Financial',
+            eventAddress: '65 Enterprise 3rd floor, Aliso Viejo, CA 92656',
             companyPhone: '949-674-5248',
             companyEmail: 'contact@sunpathfinancial.com',
             eventImagesAlts: {
@@ -94,14 +93,14 @@ const SocialSecuritySeminar = () => {
                 eventImageFour: { imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office' }
             },
             locationAndDirections: {
-                sectionOne: 'The event will be held at our partner office, Royal Tax, off Bear Valley Road in the Kohl\'s shopping center next to Verizon and Alaska Credit Union.',
-                sectionTwo: 'Take Bear Valley Road West toward the 395 and the Mall of Victorvalley. Turn left onto Dunia Road and make the second right to enter the parking lot.'
+                sectionOne: 'The event will be held at our partner office in Aliso Viejo, right off of the 73 and Aliso Viejo Parkway.',
+                sectionTwo: 'From the CA-73 North take exit 4 for Aliso Creek Road and turn right. Turn left onto Aliso Viejo Parkway, and a final left onto Summit. Enter the first parking lot on your right and make a left to park.'
             }
         },
         sectionMeetYourPresenter: {
             pageBreak: {
                 pageBreakTitle: 'Meet Your Presenter: Million Dollar Advisor, Joshua J. Crowe:', 
-                pageBreakBackgroundColor: '#002a5c'
+                pageBreakBackgroundColor: 'black'
             },
             presenterImg: PresenterImg,
             presenterImgAlt: 'Joshua J. Crowe Owner of Retirement and Wealth Management Firm Sunpath Financial in Newport Beach, Ca',
@@ -116,7 +115,7 @@ const SocialSecuritySeminar = () => {
         },
         footer: {
             footerImg: logo,
-            backgroundColor: '#002a5c',
+            backgroundColor: 'black',
             footerDisclosure: 'Disclosure: Sunpath Financial is a Registered Investment Advisory firm (RIA) and insurance broker who specializes in providing financial advice and education, to the general public, on a series of topics including retirement, social security, medicare, and investments. Sunpath Financial, and its constituents, are not associated, sponsored, or in any other way affiliated with any governmental association. The material discussed and covered in their lectures and literatures, may or may not be of their own opinion and may not accurately reflect current or accurate data. Sunpath Financial is not, and does not claim to be, tax professionals, and advises all spectators, readers, and listeners to seek professional tax help when applicable.'
         }
     }
@@ -137,4 +136,4 @@ const SocialSecuritySeminar = () => {
     )
 };
 
-export default SocialSecuritySeminar;
+export default Checkup;

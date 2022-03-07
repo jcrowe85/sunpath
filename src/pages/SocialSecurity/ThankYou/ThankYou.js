@@ -1,8 +1,8 @@
-import Header from '../../../components/LandingPages/SocialSecuritySeminar/components/Header/LandingPageHeader';
-import Footer from '../../../components/LandingPages/SocialSecuritySeminar/components/Footer/Footer';
+import Header from '../../../components/LandingPages/Header/LandingPageHeader';
+import Footer from '../../../components/LandingPages/Footer/Footer';
 import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
 import classes from './ThankYou.module.css';
-import HeroVideo from '../../../components/LandingPages/SocialSecuritySeminar/components/HeroVideo/HeroVideo';
+import HeroVideo from '../../../components/LandingPages/HeroVideo/HeroVideo';
 
 const ThankYou = () => {
 

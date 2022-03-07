@@ -1,5 +1,5 @@
 import classes from './SectionMeetYourPresenter.module.css';
-import PageBreak from '../../../../UI/PageBreak/PageBreak';
+import PageBreak from '../../../UI/PageBreak/PageBreak';
 
 const SectionMeetYourPresenter = props => {
 

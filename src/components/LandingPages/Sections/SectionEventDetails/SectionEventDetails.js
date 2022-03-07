@@ -1,6 +1,6 @@
 import classes from './SectionEventDetails.module.css';
-import PageBreak from '../../../../UI/PageBreak/PageBreak';
-import EventLocationMap from '../../components/EventLocationMap/EventLocationMap';
+import PageBreak from '../../../UI/PageBreak/PageBreak';
+import EventLocationMap from '../../EventLocationMap/EventLocationMap';
 
 const SectionEventDetails = props => {
 

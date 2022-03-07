@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import classes from './SectionVideoCta.module.css';
-import HeroVideo from '../../components/HeroVideo/HeroVideo';
-import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
-import SeminarDateTime from '../../components/SeminarDateTime/SeminarDateTime';
-import SeminarTickets from '../../components/SeminarTickets/SeminarTickets';
+import HeroVideo from '../../HeroVideo/HeroVideo';
+import RegistrationForm from '../../RegistrationForm/RegistrationForm';
+import SeminarDateTime from '../../SeminarDateTime/SeminarDateTime';
+import SeminarTickets from '../../SeminarTickets/SeminarTickets';
 
 const SectionVideoCta = props => {
 
-   
+
     const [isCustomFieldsActive, setIsCustomFieldsActive] = useState(false);
 
     const [registrantInfo, setRegistrantInfo] = useState();
@@ -25,15 +25,15 @@ const SectionVideoCta = props => {
         })
     }
 
-    const { 
-        eventName, 
-        eventAddress, 
-        seminarDateTime, 
-        eventLocation, 
-        formTitle, 
-        dateTimeBox, 
+    const {
+        eventName,
+        eventAddress,
+        seminarDateTime,
+        eventLocation,
+        formTitle,
+        dateTimeBox,
         heroUrl } = props.pageInfo;
-    
+
     const showCustomFieldsHandler = () => {
         setIsCustomFieldsActive(prevState => !prevState)
     }
@@ -47,7 +47,7 @@ const SectionVideoCta = props => {
             <div className={classes['section-video-cta__two-columns']}>
                 <div className={classes['two-columns__col-one']}>
                     <HeroVideo heroUrl={heroUrl} />
-                    <SeminarDateTime dateTime={dateTimeBox} />
+                    {dateTimeBox && <SeminarDateTime dateTime={dateTimeBox} />}
                     {isCustomFieldsActive &&
                         <SeminarTickets
                             seminarDateTime={seminarDateTime}
