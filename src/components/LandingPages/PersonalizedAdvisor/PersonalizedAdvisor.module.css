@@ -1,0 +1,25 @@
+.personalized-advisor {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+    background: orange;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+    border-radius: 0.5rem;
+    border: 3px solid rgb(190, 190, 190);
+}
+
+.personalized-advisor img {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    padding: .2rem
+}
+
+.personalized-advisor h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.personalized-advisor p {
+    text-align: left;
+}

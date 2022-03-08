@@ -5,7 +5,7 @@ import SectionTopicsCovered from '../../../components/LandingPages/Sections/Sect
 import SectionEventDetails from '../../../components/LandingPages/Sections/SectionEventDetails/SectionEventDetails';
 import SectionMeetYourPresenter from '../../../components/LandingPages/Sections/SectionMeetYourPresenter/SectionMeetYourPresenter';
 import LandingPageFooter from '../../../components/LandingPages/Footer/Footer';
-import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
+import logo from '../../../assets/imgs/sunpath-full-logo-no-bg.png';
 import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
@@ -14,6 +14,7 @@ import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
 import EventImgThree from '../../../assets/imgs/aliso-vejio-industrious-exterior.png';
 import EventImgFour from '../../../assets/imgs/aliso-veijo-industrious-conference-room.png';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
+import advisorImg from '../../../assets/imgs/joshua-crowe-beach-haedshot.png';
 
 const Checkup = () => {
     const pageInfo = {
@@ -28,13 +29,21 @@ const Checkup = () => {
             eventLocation: '- Discover Your Progress Towards Retirement -',
             companyName: 'Sunpath Financial',
             eventAddress: '65 Enterprise 3rd Floor, Aliso Viejo, Ca 92656',
-            formTitle: 'This is a Complimentary Offer Valued at $3,500',
-           
-            heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
+            formTitle: 'Start Your Complimentary $3,500 Retirement Checkup!',
+            formSubTitle: 'There\'s a correlation between successful and happy retirees and a plan, yet only 18% of all current and soon-to-be retirees have one. Don\'t be a statistic, disover your progress towards retirement and get your plan in writing today..',
+            heroUrl: 'https://www.youtube.com/embed/nfeWhmYUUY0',
+            sendTicketsCheckbox: false,
+            ctaButtonText: 'START MY CHECKUP!',
+            advisor: {
+                
+                advisorImg: advisorImg,
+                advisorTitle: 'Meet Your Retirement Planner',
+                advisorDescription: 'Meet Joshua J. Crowe, The Million Dollar Advisor, founder and owner of Sunpath Financial, Author of \'The Ultimate Guide to Retirement\', Forbes Published and Recognized for Top-25 Retirement Articles.'
+            }
         },
         sectionTopicsCovered: {
             pageBreak: {
-                pageBreakTitle: 'Event Topics We\'ll Cover:', 
+                pageBreakTitle: 'Your Personalized Checkup Will Include:', 
                 pageBreakBackgroundColor: 'black'
             },
             videoInfo: {

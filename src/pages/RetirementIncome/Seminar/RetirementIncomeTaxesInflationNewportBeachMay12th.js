@@ -32,6 +32,7 @@ const SocialSecuritySeminar = () => {
             formTitle: 'Reserve Your Seat Now!',
             dateTimeBox: 'Thursday, March 3rd @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/KV1s9spytSE',
+            ctaButtonText: 'RESERVE MY SEAT!'
         },
         sectionTopicsCovered: {
             pageBreak: {

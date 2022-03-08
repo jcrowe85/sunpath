@@ -10,5 +10,11 @@
 .registration-form h2 {
     margin: 1rem 0;
     line-height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.registration-form__sub-title {
+    font-size: 1rem;
+    line-height: 1.8rem;
 }

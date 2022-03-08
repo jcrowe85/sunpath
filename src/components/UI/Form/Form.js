@@ -238,6 +238,18 @@ const Form = props => {
             })
         }
     });
+    
+    //Show custom fields if array is not empty
+    let customForms;
+
+    if (props.sendTicketsCheckbox || props.sendTicketsCheckbox === undefined) {
+        customForms =
+            <div className={classes['custom-form-control']}>
+                <input type='checkbox' checked={props.customFormIsActive} onChange={props.showCustomFields} id='customFormCheckbox' />
+                <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
+                {props.customFormIsActive && customFields}
+            </div>
+    }
 
     //Show custom fields if checkbox is checked and validate inputs
     const customFields = Object.keys(formFields).map((key, index) => {
@@ -261,18 +273,6 @@ const Form = props => {
             })
         }
     });
-
-    //Show custom fields if array is not empty
-    let customForms;
-
-    if (formFields.customFields.length >= 1) {
-        customForms =
-            <div className={classes['custom-form-control']}>
-                <input type='checkbox' checked={props.customFormIsActive} onChange={props.showCustomFields} id='customFormCheckbox' />
-                <label htmlFor="customFormCheckbox">SEND MY TICKETS</label>
-                {props.customFormIsActive && customFields}
-            </div>
-    }
 
     async function saveRegistrant() {
         try {
@@ -327,7 +327,7 @@ const Form = props => {
         <form onSubmit={submitHandler}>
             {basicFields}
             {customForms}
-            <Button disabled={!basicFormIsValid[0]} />
+            <Button disabled={!basicFormIsValid[0]} ctaButtonText={props.ctaButtonText}/>
         </form>
     )
 };
