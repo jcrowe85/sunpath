@@ -1,18 +1,19 @@
 .personalized-advisor {
     display: flex;
     gap: 1rem;
-    padding: .5rem;
-    background: orange;
+    padding: .8rem;
+    background: rgb(221, 221, 221);
     box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
     border-radius: 0.5rem;
-    border: 3px solid rgb(190, 190, 190);
+    border: 3px solid rgba(228, 228, 228, 0.507);
 }
 
 .personalized-advisor img {
     border-radius: 50%;
     width: 125px;
     height: 125px;
-    padding: .2rem
+    padding: .2rem;
+    background-color: rgb(126, 126, 126);
 }
 
 .personalized-advisor h2 {

@@ -9,10 +9,10 @@ import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
 import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
-import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
-import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../../assets/imgs/anaheim-exterior.jpg';
-import EventImgFour from '../../../assets/imgs/anaheim-interior.jpg';
+import EventImgOne from '../../../assets/imgs/roys-restaurant-front.png';
+import EventImgTwo from '../../../assets/imgs/roys-private-room.jpg';
+import EventImgThree from '../../../assets/imgs/roys-steak-dinner.jpg';
+import EventImgFour from '../../../assets/imgs/roys-chocolate-cake.png';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
 
 const SocialSecuritySeminar = () => {
@@ -26,7 +26,7 @@ const SocialSecuritySeminar = () => {
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
             eventLocation: '- A Complimentary Dinner Event in Anaheim -',
-            seminarDateTime: 'June 23, 2022 18:30:00',
+            seminarDateTime: 'March 24, 2022 18:30:00',
             companyName: 'Sunpath Financial',
             eventAddress: '2390 E Orangewood Ave Ste 100 Anaheim, CA 92806',
             formTitle: 'Reserve Your Seat Now!',
@@ -78,21 +78,22 @@ const SocialSecuritySeminar = () => {
                 pageBreakBackgroundColor: '#002a5c'
             },
             mapCoordinates: {
+                locationName: 'Roy\'s Steak & Seafood',
                 center: {
-                    lat: 33.796,
-                    lng: -117.882371
+                    lat: 33.8057349,
+                    lng: -117.9114951
                 },
                 zoom: 14
             },
-            companyName: 'Karl Strauss Brewing Company',
-            eventAddress: '2390 E Orangewood Ave Ste 100 Anaheim, CA 92806',
-            companyPhone: '949-674-5248',
+            companyName: 'Roy\'s Steak and Seafood Restaurant',
+            eventAddress: '321 W Katella Ave, Anaheim, CA 92802',
+            companyPhone: '(949) 674-5248',
             companyEmail: 'contact@sunpathfinancial.com',
             eventImagesAlts: {
-                eventImageOne: { imgOne: EventImgOne, alt: 'Sunpath Financial Newport Beach Office' },
-                eventImageTwo: { imgTwo: EventImgTwo, alt: 'Sunpath Financial Newport Beach Office' },
-                eventImageThree: { imgThree: EventImgThree, alt: 'Sunpath Financial Newport Beach Office' },
-                eventImageFour: { imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office' }
+                eventImageOne: { imgOne: EventImgOne, alt: 'Roy\'s Steak & Seafood Dinner Event' },
+                eventImageTwo: { imgTwo: EventImgTwo, alt: 'Roy\'s Steak & Seafood Dinner Event' },
+                eventImageThree: { imgThree: EventImgThree, alt: 'Roy\'s Steak & Seafood Dinner Event' },
+                eventImageFour: { imgFour: EventImgFour, alt: 'Roy\'s Steak & Seafood Dinner Event' }
             },
             locationAndDirections: {
                 sectionOne: 'The event will be held in Anaheim at Karl Strauss Brewing Company across the street from the Anaheim Angel Stadium.',

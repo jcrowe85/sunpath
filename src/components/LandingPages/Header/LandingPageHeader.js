@@ -1,11 +1,12 @@
 import classes from './LandingPageHeader.module.css';
+import { Link } from 'react-router-dom';
 
 const LandingPageHeader = props => {
     const { logoImg, logoImgAlt, companyPhone, backgroundColor } = props.pageInfo;
     return (
         <header style={{'backgroundColor' : `${backgroundColor}`}}>
             <div className={`${classes.navigation} wrapper `}>
-                <div className={classes['navigation__logo']}><img src={logoImg} alt={logoImgAlt} /></div>
+                <Link to='/'><div className={classes['navigation__logo']}><img src={logoImg} alt={logoImgAlt} /></div></Link>
                 <div className={classes['navigation__help']}>Need Help? {companyPhone}</div>
             </div>
         </header>

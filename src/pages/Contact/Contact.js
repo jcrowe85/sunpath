@@ -1,21 +1,21 @@
-import classes from './Checkup.module.css';
-import LandingPageHeader from '../../../components/LandingPages/Header/LandingPageHeader';
-import SectionVideoCta from '../../../components/LandingPages/Sections/SectionVideoCta/SectionVideoCta';
-import SectionCheckupIncludes from '../../../components/LandingPages/Sections/SectionCheckupIncludes/SectionCheckupIncludes';
-import SectionContactInformation from '../../../components/LandingPages/Sections/SectionContactInformation/SectionContactInformation';
-import LandingPageFooter from '../../../components/LandingPages/Footer/Footer';
-import logo from '../../../assets/imgs/sunpath-full-logo-no-bg.png';
-import RetirementIncomeReport from '../../../assets/imgs/retirement-income-report.jpg';
-import TaxInflationReport from '../../../assets/imgs/tax-report.jpg';
-import InvestmentReport from '../../../assets/imgs/investment-report.jpg'
-import EventImgOne from  '../../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
-import EventImgTwo from '../../../assets/imgs/newport-bayview-lobby.jpg';
-import EventImgThree from '../../../assets/imgs/industrious-newport-lounge-one.jpg';
-import EventImgFour from '../../../assets/imgs/industrious-newport-lounge-two.jpg';
-import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
-import advisorImg from '../../../assets/imgs/joshua-crowe-beach-haedshot.png';
+import classes from './Contact.module.css';
+import LandingPageHeader from '../../components/LandingPages/Header/LandingPageHeader';
+import SectionVideoCta from '../../components/LandingPages/Sections/SectionVideoCta/SectionVideoCta';
+import SectionCheckupIncludes from '../../components/LandingPages/Sections/SectionCheckupIncludes/SectionCheckupIncludes';
+import SectionContactInformation from '../../components/LandingPages/Sections/SectionContactInformation/SectionContactInformation';
+import LandingPageFooter from '../../components/LandingPages/Footer/Footer';
+import logo from '../../assets/imgs/sunpath-full-logo-no-bg.png';
+import RetirementIncomeReport from '../../assets/imgs/retirement-income-report.jpg';
+import TaxInflationReport from '../../assets/imgs/tax-report.jpg';
+import InvestmentReport from '../../assets/imgs/investment-report.jpg'
+import EventImgOne from  '../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
+import EventImgTwo from '../../assets/imgs/newport-bayview-lobby.jpg';
+import EventImgThree from '../../assets/imgs/industrious-newport-lounge-one.jpg';
+import EventImgFour from '../../assets/imgs/industrious-newport-lounge-two.jpg';
+import PresenterImg from '../../assets/imgs/josh-beach.jpg';
+import advisorImg from '../../assets/imgs/joshua-crowe-beach-haedshot.png';
 
-const Checkup = () => {
+const Contact = () => {
     const pageInfo = {
         header: {
             logoImg: logo,
@@ -64,10 +64,7 @@ const Checkup = () => {
             }
         },
         sectionContactInformation: {
-            pageBreak: {
-                pageBreakTitle: 'Meeting Location and Contact Information:', 
-                pageBreakBackgroundColor: 'black'
-            },
+
             mapCoordinates: {
                 center: {
                     lat: 33.65605544419939,
@@ -117,8 +114,6 @@ const Checkup = () => {
         <>
             <div className={classes.main}>
                 <LandingPageHeader pageInfo={pageInfo.header} />
-                <SectionVideoCta pageInfo={pageInfo.sectionVideoCta} />
-                <SectionCheckupIncludes pageInfo={pageInfo.sectionCheckupIncludes} />
                 <SectionContactInformation pageInfo={pageInfo.sectionContactInformation} />
             </div>
             <footer>
@@ -128,4 +123,4 @@ const Checkup = () => {
     )
 };
 
-export default Checkup;
+export default Contact;

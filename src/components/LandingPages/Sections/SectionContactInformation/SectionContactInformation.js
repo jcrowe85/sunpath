@@ -1,37 +1,34 @@
 import classes from './SectionEventDetails.module.css';
 import PageBreak from '../../../UI/PageBreak/PageBreak';
 import EventLocationMap from '../../EventLocationMap/EventLocationMap';
+import ADV from '../../../../assets/docs/adv.pdf';
 
-const SectionEventDetails = props => {
+const SectionContactInformation = props => {
 
-    const { pageBreak, mapCoordinates: { locationName, center, zoom }, companyName, companyPhone, companyEmail, eventAddress, eventImagesAlts: { eventImageOne, eventImageTwo, eventImageThree, eventImageFour}, locationAndDirections: { sectionOne, sectionTwo}  } = props.pageInfo;
+    const { pageBreak, mapCoordinates: { center, zoom }, companyName, companyPhone, companyEmail, eventAddress, eventImagesAlts: { eventImageOne, eventImageTwo, eventImageThree, eventImageFour }, locationAndDirections: { sectionOne, sectionTwo } } = props.pageInfo;
 
     return (
         <>
-            <PageBreak pageBreak={pageBreak} />
+            {pageBreak && <PageBreak pageBreak={pageBreak} />}
             <section className={`${classes['section-event-details']} wrapper`} >
                 <div className={classes['section-event-details__two-columns']} >
                     <div className={classes['two-columns__col-one']}>
                         <div className={classes['section-event-details__company-details']}>
                             <h1>{companyName}</h1>
                             <p>
-                                <span style={{display: 'block'}}>{eventAddress}</span>
-                                <span style={{display: 'block'}}>Phone: {companyPhone}</span>
-                                <span style={{display: 'block'}}>Email: {companyEmail}</span>
+                                <span style={{ display: 'block' }}>{eventAddress}</span>
+                                <span style={{ display: 'block' }}>Phone: {companyPhone}</span>
+                                <span style={{ display: 'block' }}>Email: {companyEmail}</span>
                             </p>
                         </div>
-                        <h2>Join us for Dinner & an Unforgettable Evening</h2>
+                        <p>CRD #: 312343, SEC BrokerCheck <a href="https://adviserinfo.sec.gov/firm/summary/312343">link</a>, California License #: 6004991, California License Check <a href="https://cdicloud.insurance.ca.gov/cal/LicenseDetail">link</a>.</p>
+
+                        <h2>Sunpath Financial Products and Services</h2>
                         <p>
-                            You are cordially invited to join us for a complimentary dinner. Seating is limited
-                            for social distancing purposes and the safety of our guest.
+                            Sunpath Financial operates as a Registered Investment Advisor under the State of California and SEC. We hold ourselves to the fiduciary standard, to provide our prospects and clients with conflict-free advise.
                         </p>
                         <p>
-                            Registrations fill up quickly,
-                            so you'll want to RSVP by completing the form at the top of this page immediately.
-                        </p>
-                        <p>
-                            Dinner includes a choice of chicken or steak, two to three sides, and dessert.
-                            Drinks include beer, wine, soda, and both sparkline and regular water.
+                            Our services includes retirement and tax planning, wealth and asset management, and insurance advise under Sunpath Financial & Insurance Group. You can read more about the firm and it's filing via our ADV by clicking here: <a href={ADV}>Sunpath's ADV</a>
                         </p>
                         <h2>Location and Directions</h2>
                         <p>
@@ -48,7 +45,7 @@ const SectionEventDetails = props => {
                                 <img src={eventImageTwo.imgTwo} alt={eventImageTwo.alt} />
                             </div>
                             <div className={classes['two-columns__row-two']} >
-                                <EventLocationMap mapCoordinates={{ locationName, center, zoom }} />
+                                <EventLocationMap mapCoordinates={{ center, zoom }} />
                             </div>
                             <div className={classes['two-columns__row-three']} >
                                 <img src={eventImageThree.imgThree} alt={eventImageThree.alt} />
@@ -62,4 +59,4 @@ const SectionEventDetails = props => {
     )
 };
 
-export default SectionEventDetails;
+export default SectionContactInformation;

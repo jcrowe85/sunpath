@@ -47,26 +47,25 @@ const SectionTopicsCovered = props => {
                     <div>
                         <h2>{topicFourTitle}</h2>
                         <div className={classes['video-container']} >
-                            <img src={topicFourImage}/>
+                            <img src={topicFourImage} />
                         </div>
                         <p>{topicFourDescription}</p>
                     </div>
                     <div>
                         <h2>{topicFiveTitle}</h2>
                         <div className={classes['video-container']} >
-                        <img src={topicFiveImage}/>
+                            <img src={topicFiveImage} />
                         </div>
                         <p>{topicFiveDescription}</p>
                     </div>
                     <div>
                         <h2>{topicSixTitle}</h2>
                         <div className={classes['video-container']} >
-                        <img src={topicSixImage}/>
+                            <img src={topicSixImage} />
                         </div>
                         <p>{topicSixDescription}</p>
                     </div>
                 </div>
-
             </section>
         </>
     )

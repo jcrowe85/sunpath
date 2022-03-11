@@ -16,7 +16,7 @@ const MenuItems = [
     }, 
     {
         title: "Contact Us",
-        url: "#contact"
+        url: "contact"
     },         
     {
         title: "Blog",

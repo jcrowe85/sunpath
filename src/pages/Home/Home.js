@@ -15,6 +15,7 @@ import retirementSunset from '../../assets/imgs/blissful-sunset-of-retirement.pn
 import crossIcon from '../../assets/imgs/cross-icon.png';
 import crossIconExt from '../../assets/imgs/cross-icon-extension.png';
 import webinars from '../../assets/imgs/webinars.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -31,7 +32,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{position: "relative"}}>
                     <p style={{marginTop: "0", color: "white", fontSize: "1.2rem"}}>Get started with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
-                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
+                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                 </div>
               </div>
@@ -49,7 +50,7 @@ const Home = () => {
                   <p>Our complimentary retirement plan provides answers to the major retirement questions. Each plan is built by a fiduciary and reviewed by a CFP and CPA.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button className="whtBlkWhtBtn">START MY CHECKUP</button>
+                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -69,7 +70,7 @@ const Home = () => {
                 <p>The score compares your desired retirement age and income to your current ability to generate it. The score includes social security, pension(s), retirement savings, and all other major asset types. </p>
                 <div className="row" style={{padding: "0"}}>
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
+                  <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                   <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -94,7 +95,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                     <div className="col-7">
-                      <button className="blkWhtBlkBtn">START MY CHECKUP</button>
+                    <Link to='/retirement/checkup'><button className="blkWhtBlkBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="whtWhtBlkBtn">LEARN MORE</button>
@@ -137,14 +138,14 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn">START MY CHECKUP</button>
+                  <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                   <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
                   </div>
                 </div>
               </div>
-              <div className={`${classes.dotsChart} column col-12 col-lg-5 offset-lg-1`}><img src={riskalyze} style={{width: "100%"}} /></div>
+              <div className={`${classes.dotsChart} column col-12 col-lg-5 offset-lg-1`}><img src={riskalyze} style={{width: "100%"}} /></div> 
             </div>                                                  
           </div>
         </div>
@@ -162,7 +163,7 @@ const Home = () => {
                   <p>Security? Don’t worry, our systems are highly secure...find out more here.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button className="blkWhtBlkBtn">START MY CHECKUP</button>
+                    <Link to='/retirement/checkup'><button className="blkWhtBlkBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="whtWhtBlkBtn">LEARN MORE</button>
@@ -184,7 +185,7 @@ const Home = () => {
 finance - we simply accomodate.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                      <button className="whtBlkWhtBtn">START MY CHECKUP</button>
+                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
