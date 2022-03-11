@@ -8,13 +8,15 @@
 }
 
 .registration-form h2 {
-    margin: 1rem 0;
-    line-height: 2rem;
-    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem 0;
+    line-height: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .registration-form__sub-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
+    padding: 0;
+    margin-top: 0;
 }

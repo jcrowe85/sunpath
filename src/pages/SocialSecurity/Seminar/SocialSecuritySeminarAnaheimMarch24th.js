@@ -25,12 +25,13 @@ const SocialSecuritySeminar = () => {
         },
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
-            eventLocation: '- A Complimentary Dinner Event in Anaheim -',
+            eventLocation: '- A Complimentary Private Dining Event In Anaheim -',
             seminarDateTime: 'March 24, 2022 18:30:00',
             companyName: 'Sunpath Financial',
             eventAddress: '2390 E Orangewood Ave Ste 100 Anaheim, CA 92806',
-            formTitle: 'Reserve Your Seat Now!',
-            dateTimeBox: 'Thursday, June 23rd @ 6:30PM PST',
+            formTitle: 'RESERVE YOUR SEAT TODAY!',
+            formSubTitle: 'ONLY 30 SEATS AVAILABLE ',
+            dateTimeBox: 'Thursday, March 24th @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
             ctaButtonText: 'RESERVE MY SEAT!'
         },
