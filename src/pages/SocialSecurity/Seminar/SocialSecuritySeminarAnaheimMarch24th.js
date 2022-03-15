@@ -97,8 +97,8 @@ const SocialSecuritySeminar = () => {
                 eventImageFour: { imgFour: EventImgFour, alt: 'Roy\'s Steak & Seafood Dinner Event' }
             },
             locationAndDirections: {
-                sectionOne: 'The event will be held in Anaheim at Karl Strauss Brewing Company across the street from the Anaheim Angel Stadium.',
-                sectionTwo: 'Take CA-57 freeway toward Anaheim and follow the exit signs for 1B onto Orangewood Avenue. Make a left to travel down E Orangewood Avenue, then make a sharp left onto W Orangewood Ave. Make two more lefts to enter the parking lot.'
+                sectionOne: 'The event will be held at Roy\'s Restaurant on Katella Avenue off the I-5 and right down the street from Disney Land.',
+                sectionTwo: 'Heading North on the I-5 toward Santa Ana, take exit 109 toward Katella Ave/Disney Way. Drive to E Katella Avenue and merge onto South Anaheim Way. Use the left 2 lanes to turn left onto East Katella Avenue. The destination will be on your right. Please park in the parking garage, validation will be provided.'
             }
         },
         sectionMeetYourPresenter: {
