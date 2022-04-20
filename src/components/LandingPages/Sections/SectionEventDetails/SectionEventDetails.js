@@ -30,8 +30,8 @@ const SectionEventDetails = props => {
                             so you'll want to RSVP by completing the form at the top of this page immediately.
                         </p>
                         <p>
-                            Dinner includes a choice of chicken or steak, two to three sides, and dessert.
-                            Drinks include beer, wine, soda, and both sparkline and regular water.
+                            Dinner includes appetizers, house salad, a choice of filet steak, chicken, or fish, with two to three sides, and dessert.
+                            *Alcohol is not included.
                         </p>
                         <h2>Location and Directions</h2>
                         <p>

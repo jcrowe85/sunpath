@@ -9,10 +9,10 @@ import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
 import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
-import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
-import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../../assets/imgs/rancho-cucamonga-exterior.png';
-import EventImgFour from '../../../assets/imgs/rancho-cucamonga-interior.png';
+import EventImgOne from '../../../assets/imgs/flemmings-logo.png';
+import EventImgTwo from '../../../assets/imgs/flemmings-interior.jpg';
+import EventImgThree from '../../../assets/imgs/flemmings-dinner.png';
+import EventImgFour from '../../../assets/imgs/flemmings-dessert.jpg';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
 
 const SocialSecuritySeminar = () => {
@@ -26,11 +26,11 @@ const SocialSecuritySeminar = () => {
         sectionVideoCta: {
             eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
             eventLocation: '- A Complimentary Dinner Event in Rancho Cucamonga -',
-            seminarDateTime: 'April 21, 2022 18:30:00',
+            seminarDateTime: 'May 5, 2022 18:30:00',
             companyName: 'Sunpath Financial',
-            eventAddress: '11481 Mission Vista Dr, Rancho Cucamonga, CA 91730',
+            eventAddress: '7905 Monet Avenue, Rancho Cucamonga, Ca 91739',
             formTitle: 'Reserve Your Seat Now!',
-            dateTimeBox: 'Thursday, April 21st @ 6:30PM PST',
+            dateTimeBox: 'Thursday, May 5th @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/MSH9GQUjgII',
             ctaButtonText: 'RESERVE MY SEAT!'
         },
@@ -84,8 +84,8 @@ const SocialSecuritySeminar = () => {
                 },
                 zoom: 14
             },
-            companyName: 'Sunpath Financial',
-            eventAddress: '11481 Mission Vista Dr, Rancho Cucamonga, CA 91730',
+            companyName: 'Flemings Prime Steakhouse',
+            eventAddress: '7905 Monet Avenue, Rancho Cucamonga, Ca 91739',
             companyPhone: '949-674-5248',
             companyEmail: 'contact@sunpathfinancial.com',
             eventImagesAlts: {
@@ -95,8 +95,8 @@ const SocialSecuritySeminar = () => {
                 eventImageFour: { imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office' }
             },
             locationAndDirections: {
-                sectionOne: 'The event will be held the Hilton Garden Inn in Ontario just minutes off of the I-15 freeway and behind the Ontario Mills.',
-                sectionTwo: 'From the I-15 South, take exit 110 for 4th street and make a right. Continue down 4th street for .5 miles and make a right onto Richmond Pl. The first left, the second right into the parking lot.'
+                sectionOne: 'The event will be held at Fleming\'s Prime Steakhouse off Foothill Blvd. in the Victoria Gardens Mall.',
+                sectionTwo: 'Take the I-15 to exit CA-66/Foothill Blvd. Drive West on Foothill Blvd. toward Victoria Gardens Mall (left hand turn if Driving North on I-15 or a right if driving South on I-15). Turn right onto Monet Avenue and the destination will be on your right.'
             }
         },
         sectionMeetYourPresenter: {
