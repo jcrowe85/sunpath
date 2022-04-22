@@ -7,7 +7,7 @@ import SocialSecurity from './pages/SocialSecurity';
 import SocialSecuritySeminarNewportBeachMarch3rd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarNewportBeachMarch3rd';
 import SocialSecuritySeminarAlisoViejoJune23rd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarAlisoViejoJune23rd';
 import SocialSecuritySeminarRanchoCucamongaMay5th from './pages/SocialSecurity/Seminar/SocialSecuritySeminarRanchoCucamongaMay5th';
-import RetirementIncomeTaxesInflationNewportBeachMay12th from './pages/RetirementIncome/Seminar/RetirementIncomeTaxesInflationNewportBeachMay12th';
+import RetirementIncomeTaxesInflationRanchoCucamongaMay5th from './pages/RetirementIncome/Seminar/RetirementIncomeTaxesInflationRanchoCucamongaMay5th';
 import SocialSecuritySeminarVictorvilleJune2nd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarVictorvilleJune2nd';
 import SocialSecuritySeminarAnaheimMarch24th from './pages/SocialSecurity/Seminar/SocialSecuritySeminarAnaheimMarch24th';
 import Retirement from './pages/Retirement';
@@ -31,7 +31,7 @@ const App = () => {
           <Route path=':location/thank-you' element={<ThankYou />} />
         </Route>
         <Route path='retirement-income/seminar' element={<SocialSecurity />} >
-          <Route path='newport-beach-may-12th' element={<RetirementIncomeTaxesInflationNewportBeachMay12th />} />
+          <Route path='rancho-cucamonga-may-5th' element={<RetirementIncomeTaxesInflationRanchoCucamongaMay5th />} />
           <Route path=':location/thank-you' element={<ThankYou />} />
         </Route>
         <Route path='retirement' element={<Retirement />} >

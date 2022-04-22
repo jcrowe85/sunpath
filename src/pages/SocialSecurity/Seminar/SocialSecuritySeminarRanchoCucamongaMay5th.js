@@ -5,7 +5,8 @@ import SectionTopicsCovered from '../../../components/LandingPages/Sections/Sect
 import SectionEventDetails from '../../../components/LandingPages/Sections/SectionEventDetails/SectionEventDetails';
 import SectionMeetYourPresenter from '../../../components/LandingPages/Sections/SectionMeetYourPresenter/SectionMeetYourPresenter';
 import LandingPageFooter from '../../../components/LandingPages/Footer/Footer';
-import logo from '../../../assets/imgs/sunpath-social-security-logo.png';
+import traditionalLogo from '../../../assets/imgs/logo-no-background-white-200-px.png';
+import socialSecurityLogo from '../../../assets/imgs/sunpath-social-security-logo.png';
 import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
@@ -14,8 +15,28 @@ import EventImgTwo from '../../../assets/imgs/flemmings-interior.jpg';
 import EventImgThree from '../../../assets/imgs/flemmings-dinner.png';
 import EventImgFour from '../../../assets/imgs/flemmings-dessert.jpg';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
+import { useSearchParams } from 'react-router-dom';
 
 const SocialSecuritySeminar = () => {
+
+    const [searchParams] = useSearchParams();
+
+    const params = Object.fromEntries([...searchParams]);
+
+    let eventName;
+    if (params.eventName) {
+        eventName = params.eventName;
+    } else {
+        eventName = 'Join Sunpath Financial and Presenters for this Unforgettable Event'
+    }
+
+    let logo;
+    if (params.logo === 'social-security') {
+        logo = socialSecurityLogo
+    } else {
+        logo = traditionalLogo
+    }
+
     const pageInfo = {
         header: {
             logoImg: logo,
@@ -24,7 +45,7 @@ const SocialSecuritySeminar = () => {
             companyPhone: '949-674-5248'
         },
         sectionVideoCta: {
-            eventName: 'Maximize Your Social Secuirty Benefit & Reduce Your Retirement Taxes',
+            eventName: eventName,
             eventLocation: '- A Complimentary Dinner Event in Rancho Cucamonga -',
             seminarDateTime: 'May 5, 2022 18:30:00',
             companyName: 'Sunpath Financial',

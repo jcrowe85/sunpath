@@ -14,7 +14,9 @@ const Form = props => {
 
     const [searchParams] = useSearchParams();
     
-    const eventLocation = searchParams.get('eventLocation');
+    const eventLocation = searchParams.get('location');
+
+    console.log(eventLocation)
 
     //Form inputs and validations
     const {

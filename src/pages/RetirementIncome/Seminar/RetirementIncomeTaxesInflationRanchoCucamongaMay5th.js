@@ -9,13 +9,26 @@ import logo from '../../../assets/imgs/logo-no-background-white.png';
 import RmdTaxImg from '../../../assets/imgs/ira-tax-rmd.jpg';
 import LifetimeTax from '../../../assets/imgs/slash-lifetime-tax.jpg';
 import ProtectAssets from '../../../assets/imgs/protect-investments.jpg';
-import EventImgOne from '../../../assets/imgs/steak-dinner.jpg';
-import EventImgTwo from '../../../assets/imgs/wine-buckets.jpg';
-import EventImgThree from '../../../assets/imgs/sunpath-financial-100-bayview-circle.jpg';
-import EventImgFour from '../../../assets/imgs/sunpath-conference-room.jpg';
+import EventImgOne from '../../../assets/imgs/flemmings-logo.png';
+import EventImgTwo from '../../../assets/imgs/flemmings-interior.jpg';
+import EventImgThree from '../../../assets/imgs/flemmings-dinner.png';
+import EventImgFour from '../../../assets/imgs/flemmings-dessert.jpg';
 import PresenterImg from '../../../assets/imgs/josh-beach.jpg';
+import { useSearchParams } from 'react-router-dom';
 
 const SocialSecuritySeminar = () => {
+
+    const [searchParams] = useSearchParams();
+
+    const params = Object.fromEntries([...searchParams]);
+
+    let eventName;
+    if (params.eventName) {
+        eventName = params.eventName;
+    } else {
+        eventName = 'Join Sunpath Financial and Presenters for this Unforgettable Event'
+    }
+
     const pageInfo = {
         header: {
             logoImg: logo,
@@ -24,13 +37,13 @@ const SocialSecuritySeminar = () => {
             companyPhone: '949-674-5248'
         },
         sectionVideoCta: {
-            eventName: 'Retirement Income, Taxes, and Inflation Educational Dinner Event',
-            eventLocation: '- A Complimentary Dinner Event in Newport Beach -',
-            seminarDateTime: 'May 12, 2022 18:30:00',
+            eventName: eventName,
+            eventLocation: '- A Complimentary Dinner Event in Rancho Cucamonga -',
+            seminarDateTime: 'May 5, 2022 18:30:00',
             companyName: 'Sunpath Financial',
-            eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
+            eventAddress: '7905 Monet Avenue, Rancho Cucamonga, Ca 91739',
             formTitle: 'Reserve Your Seat Now!',
-            dateTimeBox: 'Thursday, March 3rd @ 6:30PM PST',
+            dateTimeBox: 'Thursday, May 5th @ 6:30PM PST',
             heroUrl: 'https://www.youtube.com/embed/KV1s9spytSE',
             ctaButtonText: 'RESERVE MY SEAT!'
         },
@@ -84,8 +97,8 @@ const SocialSecuritySeminar = () => {
                 },
                 zoom: 14
             },
-            companyName: 'Sunpath Financial',
-            eventAddress: '100 Bayview Circle, Newport Beach, Ca 92660',
+            companyName: 'Fleming\'s Prime Steakhouse',
+            eventAddress: '7905 Monet Avenue, Rancho Cucamonga, Ca 91739',
             companyPhone: '949-674-5248',
             companyEmail: 'contact@sunpathfinancial.com',
             eventImagesAlts: {
@@ -95,8 +108,8 @@ const SocialSecuritySeminar = () => {
                 eventImageFour: { imgFour: EventImgFour, alt: 'Sunpath Financial Newport Beach Office' }
             },
             locationAndDirections: {
-                sectionOne: 'The event will be held at our home office in Newport Beach, off Jamboree and North Bristol Street. From the 405 (North or South Bound) take exit 15 to merge onto the CA-73 S (no toll fee).',
-                sectionTwo: 'Exit SE Bristol Street and continnue for 0.5 miles and make a right onto Bayview Place. Turn left on Bayview Circle (first light), and immediately make a right into the parking garage.We will provide you with a validation sticker after the event has concluded.'
+                sectionOne: 'The event will be held at Fleming\'s Prime Steakhouse off Foothill Blvd. in the Victoria Gardens Mall.',
+                sectionTwo: 'Take the I-15 to exit CA-66/Foothill Blvd. Drive West on Foothill Blvd. toward Victoria Gardens Mall (left hand turn if Driving North on I-15 or a right if driving South on I-15). Turn right onto Monet Avenue and the destination will be on your right.'
             }
         },
         sectionMeetYourPresenter: {
