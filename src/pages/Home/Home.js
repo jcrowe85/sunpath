@@ -32,7 +32,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{position: "relative"}}>
                     <p style={{marginTop: "0", color: "white", fontSize: "1.2rem"}}>Get started with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
-                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Home = () => {
                   <p>Our complimentary retirement plan provides answers to the major retirement questions. Each plan is built by a fiduciary and reviewed by a CFP and CPA.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -70,7 +70,7 @@ const Home = () => {
                 <p>The score compares your desired retirement age and income to your current ability to generate it. The score includes social security, pension(s), retirement savings, and all other major asset types. </p>
                 <div className="row" style={{padding: "0"}}>
                   <div className="col-7">
-                  <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                  <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                   <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -95,7 +95,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                     <div className="col-7">
-                    <Link to='/retirement/checkup'><button className="blkWhtBlkBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="whtWhtBlkBtn">LEARN MORE</button>
@@ -138,7 +138,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                  <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                  <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                   <div className="col-5">
                     <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -163,7 +163,7 @@ const Home = () => {
                   <p>Security? Don’t worry, our systems are highly secure...find out more here.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                    <Link to='/retirement/checkup'><button className="blkWhtBlkBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="whtWhtBlkBtn">LEARN MORE</button>
@@ -185,7 +185,7 @@ const Home = () => {
 finance - we simply accomodate.</p>
                   <div className="row" style={{padding: "0"}}>
                     <div className="col-7">
-                    <Link to='/retirement/checkup'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                     <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
