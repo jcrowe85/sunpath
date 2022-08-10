@@ -13,6 +13,7 @@ import SocialSecuritySeminarAnaheimMarch24th from './pages/SocialSecurity/Semina
 import Retirement from './pages/Retirement';
 import Checkup from './pages/Retirement/Checkup/Checkup';
 import Contact from './pages/Contact/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 import ThankYou from './pages/SocialSecurity/ThankYou/ThankYou';
 
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='retirement' element={<Retirement />} >
           <Route path='checkup' element={<Checkup />} />
         </Route>
+        <Route path='privacy-policy' element={<PrivacyPolicy />} ></Route>
       </Route>
     </Routes>
   )
