@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom';
 
 const Checkup = () => {
     return (
+    <div className={classes.checkup}>
       <div className="bootstrap-wrapper">
         <div className={classes.wrapBlk}>
           <Navbar />    
@@ -232,7 +233,8 @@ finance - we simply accomodate.</p>
             </div>                                                  
           </div>
         </div>               
-        </div>
+      </div>
+    </div>
     )
 };
 
