@@ -12,6 +12,7 @@ import SocialSecuritySeminarVictorvilleJune2nd from './pages/SocialSecurity/Semi
 import SocialSecuritySeminarAnaheimMarch24th from './pages/SocialSecurity/Seminar/SocialSecuritySeminarAnaheimMarch24th';
 import Retirement from './pages/Retirement';
 import Checkup from './pages/Retirement/Checkup/Checkup';
+import CheckupVideoLander from './pages/Retirement/CheckupVideoLander/CheckupVideoLander';
 import Contact from './pages/Contact/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
@@ -37,6 +38,7 @@ const App = () => {
         </Route>
         <Route path='retirement' element={<Retirement />} >
           <Route path='checkup' element={<Checkup />} />
+          <Route path='checkup-video-lander' element={<CheckupVideoLander />} />
         </Route>
         <Route path='privacy-policy' element={<PrivacyPolicy />} ></Route>
       </Route>
