@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import classes from "./Home.module.css";
 import Navbar from "../../components/Navigation/Navbar";
 import { Link } from "react-router-dom";
@@ -12,7 +13,8 @@ import laternFestival from '../../assets/imgs/lantern-festival.jpg';
 import friendsTraveling from '../../assets/imgs/friends-traveling.jpg';
 import friendsTrain from '../../assets/imgs/train-friends.jpg';
 import workingWithClients from '../../assets/imgs/working-with-clients.jpg';
-import React, { useState } from "react";
+import testimonial from '../../assets/imgs/testimonial.jpg';
+
 
 const Home = () => {
 
@@ -134,6 +136,71 @@ const Home = () => {
           reviewing your progress
           https://www.evelyn.com/services/financial-planning/a-full-financial-plan/
         */}
+        <div className={classes.wrapWht + ' ' + classes.ourServicesSection}>
+          <div className={`container ${classes.container}`}>
+            <div className="row">
+            <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{zIndex: "4"}}>
+                <div className={classes.textRight}>
+                  <p>Comprehensive Income, Tax, and Investment Planning</p>
+                  <h1 className={classes.large}>We Help Our Clients Build and Maintain Their Finances.</h1>
+                  <div style={{position: "relative"}}>
+                    <p>Building and maintaing a retirement plan is challenging, but if you equip yourself with the right team of advisors, you can turn a burden into your dream retirement.</p>
+                    {/* <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p> */}
+                    <p>Sunpath's fiduciaries are ready to help you tackle your retirement challenges, so that you can spend time enjoying the fruits of your labor.</p>
+                  </div>
+                </div>
+                <div className="row">
+                    <div className="col-7">
+                    <Link to='/'><button className="navyWhtWhtBtn">START MY CHECKUP</button></Link>
+                    </div>
+                    <div className="col-5">
+                      {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
+                    </div>
+                  </div>                
+              </div>              
+              <div className={`column col-12 col-lg-5 order-lg-1 ${classes.serviceList}`} style={{zIndex: "4"}} >
+                <div className={`${classes.ourServicesFeatures}`}>
+                  <h2>Social Security and Pensions</h2>
+                  {/* <img style={{width: '100%'}}></img> */}
+                  {/* <p>The process for filing and collecting your social security and pension benefits is confusing yet critical, and your decision is irreversible. Our income planning process ensures you get the right education to make the absolute best decision.</p> */}
+                  <p>Applying for your social security and pension benefit is complex and irreversible. Our professionals can help you maximize your benefit and complete your application.</p>
+                </div>
+                <div className={`${classes.ourServicesFeatures}`}>
+                  <h2>Tax Management</h2>
+                  {/* <img  style={{width: '100%'}}></img> */}
+                  <p>With sophisticated software and years of experience, we're able to work with clients and our/their CPAs to dramtically decrease their lifetime tax liability.</p>
+                </div> 
+                <div className={`${classes.ourServicesFeatures}`}>
+                  <h2>Investments: 401k, IRA, Roth</h2>
+                  {/* <img  style={{width: "100%"}}></img> */}
+                  <p>We assist our clients with tax-free rollovers, income distributions, and build well diversified, customized portfolios to balance their risk reward.</p>
+                </div>                                                                             
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div className={classes.wrapNavy + ' ' + classes.testimonialSection}>
+          <div className="container">
+            <div className="row">
+              <div className={`column col-12 col-lg-5`}>
+                <h1 className={classes.large}>Hear It For Yourself.</h1>
+                <div style={{position: "relative"}}>
+                  <p>We work hard to help our clients meet their financial goals, we strive to protect the financial freedom they worked so hard for.</p>
+                  <p>The work is challenging, but the compliments we receive from our clientele helps us to persevere.</p>
+                  <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
+                  <div className="row" style={{padding: "0"}}>
+                    <div className="col-7">
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column col-12 col-lg-7" style={{margin: "auto"}}>
+               <a href="https://www.youtube.com/watch?v=nfeWhmYUUY0" target="_blank"><img src={testimonial}></img></a>
+              </div>       
+              </div>              
+           </div>
+        </div>               
       </div>
     </div>
   )

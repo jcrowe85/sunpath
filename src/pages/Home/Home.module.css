@@ -50,10 +50,12 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.retirementWorthLivingSection .container {
+.retirementWorthLivingSection .container,
+.ourServicesSection .container {
   position: relative;
   z-index: 999;
 }
+
 .retirementWorthLivingSection img,
 .retirementWorthLivingSection p,
 .retirementWorthLivingSection h1,
@@ -75,6 +77,18 @@
   margin-bottom: 1.5rem;
 }
 
+.serviceList {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #05204a;
+  color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ourServicesFeatures {
+  z-index: 4;
+}
 
 @media screen and (min-width: 992px) {
   h1.large {
@@ -119,6 +133,18 @@
     align-items: center;
     justify-content: center;
     display: flex;
-} 
-  
+  }
+
+  .ourServicesSection .container::before {
+    content: " ";
+    position: absolute;
+    border: 2px solid rgb(179, 179, 179);
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 6rem 0rem 6rem 5rem;
+    z-index: 2;
+    top: 0;
+}
+
 }
