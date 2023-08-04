@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap");
 
 .wrapNavy {
   background: #05204a;
@@ -6,8 +6,13 @@
   position: relative;
 }
 
-.wrapNavy:before {
-  content: ' ';
+.wrapWht {
+  background: #e4e4e4;
+  color: black;
+}
+
+.mainSection:before {
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -15,7 +20,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  background: url('../../assets/imgs/newport-beach.jpg');
+  background: url("../../assets/imgs/newport-beach.jpg");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
@@ -27,7 +32,7 @@
 }
 
 .mainSection .container::after {
-  content: ' ';
+  content: " ";
   background: url("../../assets/imgs/corner-cap.png") no-repeat;
   height: 200px;
   width: 50%;
@@ -42,8 +47,34 @@
 }
 
 .mainImg img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
+
+.retirementWorthLivingSection .container {
+  position: relative;
+  z-index: 999;
+}
+.retirementWorthLivingSection img,
+.retirementWorthLivingSection p,
+.retirementWorthLivingSection h1,
+.retirementWorthLivingSection h1 {
+  z-index: 999;
+  position: relative;
+}
+
+.worthLivingMainImg img {
+  margin: 2rem;
+  width: 100%;
+}
+
+.worthLivingImages {
+  margin-top: 1.5rem;
+}
+
+.worthLivingImages div:nth-child(3) {
+  margin-bottom: 1.5rem;
+}
+
 
 @media screen and (min-width: 992px) {
   h1.large {
@@ -55,7 +86,7 @@
   }
 
   .mainSection .container::after {
-    content: ' ';
+    content: " ";
     background: url("../../assets/imgs/corner-cap.png") no-repeat;
     height: 200px;
     width: 50%;
@@ -64,4 +95,30 @@
     position: absolute;
     z-index: 1;
   }
+
+  .crossIcon {
+    margin-top: 2rem;
+  }
+
+  .crossIconExt {
+    height: 57px;
+    position: absolute;
+    left: -6rem;
+    top: 4rem;
+  }
+
+  .worthLivingMainImg img {
+    margin: 2rem;
+  }
+
+  .worthLivingImages {
+    margin-top: 2rem;
+  }
+
+  .workingWithClients {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
+  
 }
