@@ -50,7 +50,7 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.retirementWorthLivingSection .container,
+.retirementWorthLivingSection .container, .eventSection .container,
 .ourServicesSection .container {
   position: relative;
   z-index: 999;
@@ -59,21 +59,23 @@
 .retirementWorthLivingSection img,
 .retirementWorthLivingSection p,
 .retirementWorthLivingSection h1,
-.retirementWorthLivingSection h1 {
+.eventSection img,
+.eventSection p,
+.eventSection h1 {
   z-index: 999;
   position: relative;
 }
 
-.worthLivingMainImg img {
+.worthLivingMainImg img, .eventsMainImg img {
   margin: 2rem;
   width: 100%;
 }
 
-.worthLivingImages {
+.worthLivingImages, .eventImages {
   margin-top: 1.5rem;
 }
 
-.worthLivingImages div:nth-child(3) {
+.worthLivingImages div:nth-child(3), .eventImages div:nth-child(3) {
   margin-bottom: 1.5rem;
 }
 
@@ -88,6 +90,10 @@
 
 .ourServicesFeatures {
   z-index: 4;
+}
+
+.footerSection p {
+  color: gray;
 }
 
 @media screen and (min-width: 992px) {

@@ -14,15 +14,32 @@ import friendsTraveling from '../../assets/imgs/friends-traveling.jpg';
 import friendsTrain from '../../assets/imgs/train-friends.jpg';
 import workingWithClients from '../../assets/imgs/working-with-clients.jpg';
 import testimonial from '../../assets/imgs/testimonial.jpg';
+import flemmingsRanchoJosh from '../../assets/imgs/flemmings-rancho-josh.jpg'
+import flemmingsRanchoJoshCloseUp from '../../assets/imgs/flemmings-rancho-josh-close-up.jpg'
+import flemmingsRanchoJoshBackRoom from '../../assets/imgs/flemmings-rancho-josh-back-room-left.jpg'
+import roysAnaheimTim from '../../assets/imgs/roys-anaheim-tim.jpg'
+import officeNewportDisplay from '../../assets/imgs/office-newport-display.jpg'
+import roysAnaheimTim2 from '../../assets/imgs/roys-anaheim-tim-2.jpg'
+import flemmingsRanchoJoshCrowd from '../../assets/imgs/flemmings-rancho-josh-crowd.jpg'
+import officeNewportKitchen from '../../assets/imgs/office-newport-kitchen.jpg'
+import officeNewportTim from '../../assets/imgs/office-newport-tim-2.jpg'
+import office1 from '../../assets/imgs/office-1.jpg'
+import office2 from '../../assets/imgs/office-2.jpg'
+import webinars from '../../assets/imgs/webinars.png';
 
 
 const Home = () => {
 
   const [worthLivingImgActive, setWorthLivingImgActive] = useState(boating);
+  const [eventsImgActive, setEventsImgActive] = useState(flemmingsRanchoJoshCloseUp);
 
   const updateWorthLivingImgHandler = (event) => {
     setWorthLivingImgActive(event.target.dataset.url);
   } 
+
+  const updateEventsImgHandler = (event) => {
+    setEventsImgActive(event.target.dataset.url);
+  }
 
   return (
     <div className={classes.home}>
@@ -89,7 +106,6 @@ const Home = () => {
                     </div> */}
                   </div>
               </div>
-              
               <div className="column col-12 col-lg-6" >
                 <div className={classes.worthLivingMainImg}>
                   <img src={worthLivingImgActive}></img>
@@ -107,7 +123,8 @@ const Home = () => {
               </div>
             </div>
           </div>   
-          <div className={classes.wrapNavy + ' ' + classes.ourServicesSection}>
+        </div>  
+        <div className={classes.wrapNavy + ' ' + classes.ourServicesSection}>
               <div className={`container`}>
                 <div className="row">
                   <div className="column col-12 col-lg-6" >
@@ -127,7 +144,6 @@ const Home = () => {
                 </div>
               </div>           
           </div>
-        </div>  
         {/* 
           A comprehensive financial plan
           Your tax situation
@@ -200,7 +216,94 @@ const Home = () => {
               </div>       
               </div>              
            </div>
-        </div>               
+        </div>  
+        <div className={classes.wrapWht + ' ' + classes.eventSection}>
+          <div className={`container ${classes.container}`}>
+            <div className="row">
+              <div className={`column col-12 col-lg-6 order-lg-2`}>
+                <p style={{margin: "0"}}>Successful Retirees Seek an Education!</p>
+                <h1 className={classes.large} style={{marginTop: "15px", marginBottom: "15px"}}>Join Our Live Educational Dinner Events!</h1>
+                <div style={{position: "relative"}}>
+                  <p style={{margin: "0"}}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
+                </div>
+                <div className={`row ${classes['eventImages']}`} style={{display: "flex"}}>
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshCloseUp}>
+                      <img src={flemmingsRanchoJoshCloseUp} data-url={flemmingsRanchoJoshCloseUp}/>
+                    </div> 
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={roysAnaheimTim2}>
+                      <img src={roysAnaheimTim2} data-url={roysAnaheimTim2}/>
+                    </div>
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshBackRoom}>
+                      <img src={flemmingsRanchoJoshBackRoom} data-url={flemmingsRanchoJoshBackRoom}/>
+                    </div>                 
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportKitchen}>
+                      <img src={officeNewportKitchen} data-url={officeNewportKitchen}/>
+                    </div>
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportDisplay}>
+                      <img src={officeNewportDisplay} data-url={officeNewportDisplay}/>
+                    </div>
+                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportTim}>
+                      <img src={officeNewportTim} data-url={officeNewportTim}/>
+                    </div>
+                  </div>
+                  <div className="row" style={{padding: "0", marginTop: "1.5rem"}}>
+                    <div className="col-7">
+                    <Link to='/'><button className="navyWhtWhtBtn">Register for Event</button></Link>
+                    </div>
+                    {/* <div className="col-5">
+                      <button className="blkBlkWhtBtn">LEARN MORE</button>
+                    </div> */}
+                  </div>
+              </div>
+              <div className="column col-12 col-lg-6" >
+                <div className={classes.eventsMainImg}>
+                  <img src={eventsImgActive}></img>
+                </div>
+                <div className="row">
+                  <div className="col-12 col-lg-4 hidden-md-down">
+                    {/* <img src={crossIcon} className={classes.crossIcon}></img> */}
+                  </div>
+                  {/* <div className="col-12 col-lg-8 order-lg-1" style={{fontStyle: "italic", borderLeft: "5px solid lightgray"}}>
+                    <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
+                    <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
+                    <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
+                  </div> */}
+                </div>                                                                             
+              </div>
+            </div>
+          </div>   
+        </div>  
+        <div className={classes.wrapNavy + ' ' + classes.location}>
+          <div className={`container`}>
+            <div className="row">
+              <div className="column col-12 col-lg-6" >
+                <h1 className={classes.large}>Located in Beautiful Newport Beach</h1>
+                <p>Neslted against Newport Backbay, just off Hwy-73 and Jamboree, Sunpath's central location makes serving Southern California a breeze.</p>
+                <div className="row" style={{padding: "1.5rem 0rem"}}>
+                  <div className="col-6">
+                   <img  src={office1} style={{width: "100%"}}></img>
+                  </div>
+                  <div className="col-6">
+                    <img src={office2} style={{width: "100%"}}></img>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-7">
+                  <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                  </div>
+                </div>
+              </div>
+              <div className={` column col-12 col-lg-5 offset-lg-1`}><img  style={{width: "100%"}} /></div> 
+            </div>                                                  
+          </div>
+        </div>
+        <div className={classes.wrapWht + ' ' + classes.footerSection}>
+          <div className={`container ${classes.container}`}>
+            <div className="row">
+                  <p> © 2023 Sunpath Financial, Inc. and its related entities, Sunpath Financial Group, Sunpath Financial & Insurance Agency, the Sunpath logo are service marks of Sunpath Financial and its related entities, are registered jurisdictions.</p>
+            </div>
+          </div>
+        </div>             
       </div>
     </div>
   )
