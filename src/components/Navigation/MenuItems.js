@@ -12,7 +12,7 @@ const MenuItems = [
     }, 
     {
         title: "About Us",
-        url: "#about"
+        url: "about"
     }, 
     {
         title: "Contact Us",

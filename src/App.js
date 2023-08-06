@@ -14,6 +14,7 @@ import Retirement from './pages/Retirement';
 import Checkup from './pages/Retirement/Checkup/Checkup';
 import CheckupVideoLander from './pages/Retirement/CheckupVideoLander/CheckupVideoLander';
 import Contact from './pages/Contact/Contact';
+import AboutUs from './pages/AboutUs/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 import ThankYou from './pages/SocialSecurity/ThankYou/ThankYou';
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
         <Route path='contact' element={<Contact />} />
+        <Route path="about" element={<AboutUs />} />
         <Route path='social-security/seminar' element={<SocialSecurity />} >
           <Route path='newport-beach-march-3rd' element={<SocialSecuritySeminarNewportBeachMarch3rd />} />
           <Route path='anaheim-march-24th' element={<SocialSecuritySeminarAnaheimMarch24th />} />

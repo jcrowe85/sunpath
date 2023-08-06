@@ -23,9 +23,13 @@ import roysAnaheimTim2 from '../../assets/imgs/roys-anaheim-tim-2.jpg'
 import flemmingsRanchoJoshCrowd from '../../assets/imgs/flemmings-rancho-josh-crowd.jpg'
 import officeNewportKitchen from '../../assets/imgs/office-newport-kitchen.jpg'
 import officeNewportTim from '../../assets/imgs/office-newport-tim-2.jpg'
-import office1 from '../../assets/imgs/office-1.jpg'
-import office2 from '../../assets/imgs/office-2.jpg'
+import office1 from '../../assets/imgs/office1.jpg'
+import office2 from '../../assets/imgs/office2.jpg'
+import office3 from '../../assets/imgs/office3.jpg'
+import office4 from '../../assets/imgs/office4.jpg'
 import webinars from '../../assets/imgs/webinars.png';
+import CookieConsent from "react-cookie-consent";
+import EventLocationMap from "../../components/LandingPages/EventLocationMap/EventLocationMap";
 
 
 const Home = () => {
@@ -35,7 +39,7 @@ const Home = () => {
 
   const updateWorthLivingImgHandler = (event) => {
     setWorthLivingImgActive(event.target.dataset.url);
-  } 
+  }
 
   const updateEventsImgHandler = (event) => {
     setEventsImgActive(event.target.dataset.url);
@@ -45,17 +49,15 @@ const Home = () => {
     <div className={classes.home}>
       <div className="bootstrap-wrapper">
         <div className={`${classes.wrapNavy} ${classes.mainSection}`}>
-        <Navbar />
+          <Navbar />
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6`}>
-                {/* <p style={{color: "white", fontSize: "1rem", color: "black"}}>“A New Beginning Awaits: Find Your Retirement Freedom.”</p> */}
-                {/* <h1 className={classes.large}>It All Starts With<span className="paragraphBreak">a Retirement Checkup</span></h1> */}
                 <h1 className={classes.large}>Newport Beach Retirement & Tax Planners</h1>
                 <div className="row">
-                  <div className="col-2 hidden-md-down" style={{lineHeight: "0rem"}}>________</div>
+                  <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem" }}>________</div>
                   <div className="col-lg-8" style={{ position: "relative" }}>
-                    <p style={{ marginTop: "0", fontSize: "1.2rem"}}>Are you ready for retirement? Find out with our 5-minute questionnaire.</p>
+                    <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
                     <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
@@ -71,40 +73,40 @@ const Home = () => {
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 order-lg-2`}>
-                <p style={{margin: "0"}}>A Well Managed Plan Makes Dreams a Reality!</p>
-                <h1 className={classes.large} style={{marginTop: "15px", marginBottom: "15px"}}>Let Us Help You Live a Fulfilled Retirement!</h1>
-                <div style={{position: "relative"}}>
-                  <p style={{margin: "0"}}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
+                <p style={{ margin: "0" }}>A Well Managed Plan Makes Dreams a Reality!</p>
+                <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Let Us Help You Live a Fulfilled Retirement!</h1>
+                <div style={{ position: "relative" }}>
+                  <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
 
                 </div>
-                <div className={`row ${classes['worthLivingImages']}`} style={{display: "flex"}}>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={boating}>
-                      <img src={boating} data-url={boating}/>
-                    </div>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleCamping}>
-                      <img src={coupleCamping} data-url={coupleCamping}/>
-                    </div>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleRome}>
-                      <img src={coupleRome} data-url={coupleRome}/>
-                    </div>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={couplePyramids}>
-                      <img src={couplePyramids} data-url={couplePyramids}/>
-                    </div>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={friendsTraveling}>
-                      <img src={friendsTraveling} data-url={friendsTraveling}/>
-                    </div>
-                    <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={friendsTrain}>
-                      <img src={friendsTrain} data-url={friendsTrain}/>
-                    </div>
+                <div className={`row ${classes['worthLivingImages']}`} style={{ display: "flex" }}>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={boating}>
+                    <img src={boating} data-url={boating} />
                   </div>
-                  <div className="row" style={{padding: "0", marginTop: "1.5rem"}}>
-                    <div className="col-7">
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleCamping}>
+                    <img src={coupleCamping} data-url={coupleCamping} />
+                  </div>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleRome}>
+                    <img src={coupleRome} data-url={coupleRome} />
+                  </div>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={couplePyramids}>
+                    <img src={couplePyramids} data-url={couplePyramids} />
+                  </div>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={friendsTraveling}>
+                    <img src={friendsTraveling} data-url={friendsTraveling} />
+                  </div>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={friendsTrain}>
+                    <img src={friendsTrain} data-url={friendsTrain} />
+                  </div>
+                </div>
+                <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
+                  <div className="col-7">
                     <Link to='/'><button className="navyWhtWhtBtn">START MY CHECKUP</button></Link>
-                    </div>
-                    {/* <div className="col-5">
+                  </div>
+                  {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div> */}
-                  </div>
+                </div>
               </div>
               <div className="column col-12 col-lg-6" >
                 <div className={classes.worthLivingMainImg}>
@@ -114,36 +116,36 @@ const Home = () => {
                   <div className="col-12 col-lg-4 hidden-md-down">
                     {/* <img src={crossIcon} className={classes.crossIcon}></img> */}
                   </div>
-                  <div className="col-12 col-lg-8 order-lg-1" style={{fontStyle: "italic", borderLeft: "5px solid lightgray"}}>
-                    <p>“I wanted to know where I was, if I had enough. These guys are the pros. They put together a detailed plan, and explained it to me in words I understood.</p>
+                  <div className="col-12 col-lg-8 order-lg-1" style={{ fontStyle: "italic", borderLeft: "5px solid lightgray" }}>
+                    <p>“I wanted to know where I was, if I had enough. These guys are the experts. They put together a detailed plan, and explained it to me in words I understood.</p>
                     <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
                     <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
                   </div>
-                </div>                                                                             
+                </div>
               </div>
             </div>
-          </div>   
-        </div>  
+          </div>
+        </div>
         <div className={classes.wrapNavy + ' ' + classes.ourServicesSection}>
-              <div className={`container`}>
-                <div className="row">
-                  <div className="column col-12 col-lg-6" >
-                    <h1 className={classes.large}>Registered Fiduciaries Put Your Interest First</h1>
-                    <p style={{marginTop: "0", color: "white", fontSize: "1rem"}}>Sunpath's Fiduciaries Represent the Gold Standard</p>
-                    <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
-                    <div className="row" style={{padding: "0"}}>
-                      <div className="col-7">
-                      <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
-                      </div>
-                      {/* <div className="col-5">
+          <div className={`container`}>
+            <div className="row">
+              <div className="column col-12 col-lg-6" >
+                <h1 className={classes.large}>Registered Fiduciaries Put Your Interest First</h1>
+                <p style={{ marginTop: "0", color: "white", fontSize: "1rem" }}>Sunpath's Fiduciaries Represent the Gold Standard</p>
+                <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
+                <div className="row" style={{ padding: "0" }}>
+                  <div className="col-7">
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                  </div>
+                  {/* <div className="col-5">
                         <button className="blkBlkWhtBtn">LEARN MORE</button>
                       </div> */}
-                    </div>
-                  </div>
-                  <div className={`${classes.workingWithClients} column col-12 col-lg-6`}><img src={workingWithClients} style={{width: "100%"}} /></div>
                 </div>
-              </div>           
+              </div>
+              <div className={`${classes.workingWithClients} column col-12 col-lg-6`}><img src={workingWithClients} style={{ width: "100%" }} /></div>
+            </div>
           </div>
+        </div>
         {/* 
           A comprehensive financial plan
           Your tax situation
@@ -155,26 +157,26 @@ const Home = () => {
         <div className={classes.wrapWht + ' ' + classes.ourServicesSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-            <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{zIndex: "4"}}>
+              <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{ zIndex: "4" }}>
                 <div className={classes.textRight}>
                   <p>Comprehensive Income, Tax, and Investment Planning</p>
                   <h1 className={classes.large}>We Help Our Clients Build and Maintain Their Finances.</h1>
-                  <div style={{position: "relative"}}>
+                  <div style={{ position: "relative" }}>
                     <p>Building and maintaing a retirement plan is challenging, but if you equip yourself with the right team of advisors, you can turn a burden into your dream retirement.</p>
                     {/* <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p> */}
                     <p>Sunpath's fiduciaries are ready to help you tackle your retirement challenges, so that you can spend time enjoying the fruits of your labor.</p>
                   </div>
                 </div>
                 <div className="row">
-                    <div className="col-7">
+                  <div className="col-7">
                     <Link to='/'><button className="navyWhtWhtBtn">START MY CHECKUP</button></Link>
-                    </div>
-                    <div className="col-5">
-                      {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
-                    </div>
-                  </div>                
-              </div>              
-              <div className={`column col-12 col-lg-5 order-lg-1 ${classes.serviceList}`} style={{zIndex: "4"}} >
+                  </div>
+                  <div className="col-5">
+                    {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
+                  </div>
+                </div>
+              </div>
+              <div className={`column col-12 col-lg-5 order-lg-1 ${classes.serviceList}`} style={{ zIndex: "4" }} >
                 <div className={`${classes.ourServicesFeatures}`}>
                   <h2>Social Security and Pensions</h2>
                   {/* <img style={{width: '100%'}}></img> */}
@@ -185,77 +187,77 @@ const Home = () => {
                   <h2>Tax Management</h2>
                   {/* <img  style={{width: '100%'}}></img> */}
                   <p>With sophisticated software and years of experience, we're able to work with clients and our/their CPAs to dramtically decrease their lifetime tax liability.</p>
-                </div> 
+                </div>
                 <div className={`${classes.ourServicesFeatures}`}>
                   <h2>Investments: 401k, IRA, Roth</h2>
                   {/* <img  style={{width: "100%"}}></img> */}
                   <p>We assist our clients with tax-free rollovers, income distributions, and build well diversified, customized portfolios to balance their risk reward.</p>
-                </div>                                                                             
+                </div>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
         <div className={classes.wrapNavy + ' ' + classes.testimonialSection}>
           <div className="container">
             <div className="row">
               <div className={`column col-12 col-lg-5`}>
                 <h1 className={classes.large}>Hear It For Yourself.</h1>
-                <div style={{position: "relative"}}>
+                <div style={{ position: "relative" }}>
                   <p>We work hard to help our clients meet their financial goals, we strive to protect the financial freedom they worked so hard for.</p>
                   <p>The work is challenging, but the compliments we receive from our clientele helps us to persevere.</p>
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
-                  <div className="row" style={{padding: "0"}}>
+                  <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                      <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="column col-12 col-lg-7" style={{margin: "auto"}}>
-               <a href="https://www.youtube.com/watch?v=nfeWhmYUUY0" target="_blank"><img src={testimonial}></img></a>
-              </div>       
-              </div>              
-           </div>
-        </div>  
+              <div className="column col-12 col-lg-7" style={{ margin: "auto" }}>
+                <a href="https://www.youtube.com/watch?v=nfeWhmYUUY0" target="_blank"><img src={testimonial}></img></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={classes.wrapWht + ' ' + classes.eventSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 order-lg-2`}>
-                <p style={{margin: "0"}}>Successful Retirees Seek an Education!</p>
-                <h1 className={classes.large} style={{marginTop: "15px", marginBottom: "15px"}}>Join Our Live Educational Dinner Events!</h1>
-                <div style={{position: "relative"}}>
-                  <p style={{margin: "0"}}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
+                <p style={{ margin: "0" }}>Successful Retirees Seek an Education!</p>
+                <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Join Our Live Educational Dinner Events!</h1>
+                <div style={{ position: "relative" }}>
+                  <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
                 </div>
-                <div className={`row ${classes['eventImages']}`} style={{display: "flex"}}>
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshCloseUp}>
-                      <img src={flemmingsRanchoJoshCloseUp} data-url={flemmingsRanchoJoshCloseUp}/>
-                    </div> 
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={roysAnaheimTim2}>
-                      <img src={roysAnaheimTim2} data-url={roysAnaheimTim2}/>
-                    </div>
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshBackRoom}>
-                      <img src={flemmingsRanchoJoshBackRoom} data-url={flemmingsRanchoJoshBackRoom}/>
-                    </div>                 
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportKitchen}>
-                      <img src={officeNewportKitchen} data-url={officeNewportKitchen}/>
-                    </div>
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportDisplay}>
-                      <img src={officeNewportDisplay} data-url={officeNewportDisplay}/>
-                    </div>
-                    <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportTim}>
-                      <img src={officeNewportTim} data-url={officeNewportTim}/>
-                    </div>
+                <div className={`row ${classes['eventImages']}`} style={{ display: "flex" }}>
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshCloseUp}>
+                    <img src={flemmingsRanchoJoshCloseUp} data-url={flemmingsRanchoJoshCloseUp} />
                   </div>
-                  <div className="row" style={{padding: "0", marginTop: "1.5rem"}}>
-                    <div className="col-7">
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={roysAnaheimTim2}>
+                    <img src={roysAnaheimTim2} data-url={roysAnaheimTim2} />
+                  </div>
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshBackRoom}>
+                    <img src={flemmingsRanchoJoshBackRoom} data-url={flemmingsRanchoJoshBackRoom} />
+                  </div>
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportKitchen}>
+                    <img src={officeNewportKitchen} data-url={officeNewportKitchen} />
+                  </div>
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportDisplay}>
+                    <img src={officeNewportDisplay} data-url={officeNewportDisplay} />
+                  </div>
+                  <div className="col-4" onClick={updateEventsImgHandler} data-url={officeNewportTim}>
+                    <img src={officeNewportTim} data-url={officeNewportTim} />
+                  </div>
+                </div>
+                <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
+                  <div className="col-7">
                     <Link to='/'><button className="navyWhtWhtBtn">Register for Event</button></Link>
-                    </div>
-                    {/* <div className="col-5">
+                  </div>
+                  {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div> */}
-                  </div>
+                </div>
               </div>
-              <div className="column col-12 col-lg-6" >
+              <div className="column col-12 col-lg-6" style={{ margin: "auto" }}>
                 <div className={classes.eventsMainImg}>
                   <img src={eventsImgActive}></img>
                 </div>
@@ -268,43 +270,61 @@ const Home = () => {
                     <p>I pulled the trigger on retirement in 2014, not a day goes by that I don’t miss work, but I have found plenty of things to keep me busy.</p>
                     <p>Nowadays, I worry more about what I am going to do tomorrow than I do my finances...I trust these guys..and I never quite like finances anyhow.”</p>
                   </div> */}
-                </div>                                                                             
+                </div>
               </div>
             </div>
-          </div>   
-        </div>  
+          </div>
+        </div>
         <div className={classes.wrapNavy + ' ' + classes.location}>
           <div className={`container`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
                 <h1 className={classes.large}>Located in Beautiful Newport Beach</h1>
-                <p>Neslted against Newport Backbay, just off Hwy-73 and Jamboree, Sunpath's central location makes serving Southern California a breeze.</p>
-                <div className="row" style={{padding: "1.5rem 0rem"}}>
+                <p>Neslted against Newport Backbay, across the street from Fletcher Jones Mercedes Benz, off SR-73 and Jamboree, Sunpath's headquarter is a central lcoation and makes serving Southern California a breeze.</p>
+                <p style={{ borderLeft: "1px solid white", paddingLeft: "1rem" }}><span style={{ fontWeight: "bold" }}>Sunpath Financial, Inc.</span><span className="paragraphBreak">100 Bayview Circle, Suite 100</span><span className="paragraphBreak">Newport Beach, Ca 92660</span></p>
+                {/* <div className="row" style={{padding: "1.5rem 0rem"}}>
                   <div className="col-6">
-                   <img  src={office1} style={{width: "100%"}}></img>
+                   <img src={office1} style={{width: "100%"}}></img>
                   </div>
                   <div className="col-6">
                     <img src={office2} style={{width: "100%"}}></img>
                   </div>
-                </div>
+                </div> */}
                 <div className="row">
                   <div className="col-7">
-                  <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
                   </div>
                 </div>
               </div>
-              <div className={` column col-12 col-lg-5 offset-lg-1`}><img  style={{width: "100%"}} /></div> 
-            </div>                                                  
+              <div className="" style={{ padding: "0" }}>
+                <div className={classes['two-columns__col-two']}>
+                  <div className={classes['section-event-details__row']} style={{ margin: '0', padding: '0' }}>
+                    <div className={classes['two-columns__row-one']} >
+                      <img src={office1} />
+                      <img src={office2} />
+                    </div>
+                    <div className={classes['two-columns__row-two']} >
+                      <EventLocationMap mapCoordinates={{ center: { lat: 33.65605544419939, lng: -117.86781907081604 }, zoom: 14 }} />
+                    </div>
+                    <div className={classes['two-columns__row-three']} >
+                      <img src={office3} />
+                      <img src={office4} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className={classes.wrapWht + ' ' + classes.footerSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-                  <p> © 2023 Sunpath Financial, Inc. and its related entities, Sunpath Financial Group, Sunpath Financial & Insurance Agency, the Sunpath logo are service marks of Sunpath Financial and its related entities, are registered jurisdictions.</p>
+              <p> © 2023 Sunpath Financial, Inc. and its related entities, Sunpath Financial Group, Sunpath Financial & Insurance Agency, the Sunpath logo are service marks of Sunpath Financial and its related entities, are registered jurisdictions.</p>
             </div>
           </div>
-        </div>             
+        </div>
       </div>
+      <CookieConsent style={{ fontSize: ".8rem" }}>This website uses cookies to enhance the user experience.</CookieConsent>
     </div>
   )
 }

@@ -16,7 +16,7 @@ const EventLocationMap = props => {
         zoom: zoom
     };
     return (
-        <div className={classes['map-container']}>
+        <div className={classes['map-container']} style={{height: `${props.height ? props.height : ""}`}}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAANRoCIxUdSCS_NScvyo07GrYOW8By2wA' }}
                 defaultCenter={defaultProps.center}
