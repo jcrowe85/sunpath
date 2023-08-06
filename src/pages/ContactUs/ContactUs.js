@@ -147,7 +147,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="row">
                                         <div className="col-12">
-                                            <button className="whtBlkWhtBtn" style={{ width: "100%" }}>SUBMIT</button>
+                                            <button className="navyWhtWhtBtn" style={{ width: "100%" }}>SUBMIT</button>
                                         </div>
                                     </div>
                                 </form>
