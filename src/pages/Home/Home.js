@@ -59,7 +59,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
-                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn">BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -126,7 +126,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={classes.wrapNavy + ' ' + classes.ourServicesSection}>
+        <div className={classes.wrapNavy + ' ' + classes.fiduciaryAdvisorSection}>
           <div className={`container`}>
             <div className="row">
               <div className="column col-12 col-lg-6" >
@@ -135,7 +135,7 @@ const Home = () => {
                 <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
                 <div className="row" style={{ padding: "0" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                   {/* <div className="col-5">
                         <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -169,7 +169,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn">BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                   <div className="col-5">
                     {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
@@ -208,7 +208,7 @@ const Home = () => {
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
                   <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                      <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
+                      <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn">Register for Event</button></Link>
+                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => alert("We do not have any events scheduled at this time. Please try back soon.")}>Register for Event</button></Link>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -292,7 +292,7 @@ const Home = () => {
                 </div> */}
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
               </div>

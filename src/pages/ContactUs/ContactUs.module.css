@@ -4,10 +4,16 @@
     position: relative;
   }
 
+  .wrapWht {
+    background: #e4e4e4;
+    color: black;
+  }
+
   .contactUs input[type=text], .contactUs input[type=email], textarea {
     margin: 0.5rem 0rem;
     width: 100%;
     padding: .5rem;
+    border: none;
   }
 
   .contactUs input[type=text]:focus, .contactUs input[type=email]:focus, textarea:focus {
