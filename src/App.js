@@ -13,8 +13,9 @@ import SocialSecuritySeminarAnaheimMarch24th from './pages/SocialSecurity/Semina
 import Retirement from './pages/Retirement';
 import Checkup from './pages/Retirement/Checkup/Checkup';
 import CheckupVideoLander from './pages/Retirement/CheckupVideoLander/CheckupVideoLander';
-import Contact from './pages/Contact/Contact';
 import AboutUs from './pages/AboutUs/AboutUs';
+import OurProcess from './pages/OurProcess/OurProcess';
+import ContactUs from './pages/ContactUs/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 import ThankYou from './pages/SocialSecurity/ThankYou/ThankYou';
@@ -24,8 +25,9 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='contact' element={<ContactUs />} />
         <Route path="about" element={<AboutUs />} />
+        <Route path="our-process" element={<OurProcess />} />
         <Route path='social-security/seminar' element={<SocialSecurity />} >
           <Route path='newport-beach-march-3rd' element={<SocialSecuritySeminarNewportBeachMarch3rd />} />
           <Route path='anaheim-march-24th' element={<SocialSecuritySeminarAnaheimMarch24th />} />

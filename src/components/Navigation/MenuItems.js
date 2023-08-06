@@ -3,25 +3,25 @@ import classes from './Navbar.module.scss';
 
 const MenuItems = [
     {
-        title: "Why Sunpath?", 
-        url: "#why"
-    }, 
-    {
-        title: "Process",
-        url: "#process"
+        title: "Home", 
+        url: "/"
     }, 
     {
         title: "About Us",
         url: "about"
     }, 
     {
+        title: "Process",
+        url: "our-process"
+    }, 
+    {
         title: "Contact Us",
         url: "contact"
     },         
-    {
-        title: "Blog",
-        url: "/wordpress"
-    },       
+    // {
+    //     title: "Blog",
+    //     url: "/wordpress"
+    // },       
     
 
 ]

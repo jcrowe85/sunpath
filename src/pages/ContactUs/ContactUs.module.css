@@ -1,0 +1,26 @@
+.wrapNavy {
+    background: #05204a;
+    color: white;
+    position: relative;
+  }
+
+  .contactUs input[type=text], .contactUs input[type=email], textarea {
+    margin: 0.5rem 0rem;
+    width: 100%;
+    padding: .5rem;
+  }
+
+  .contactUs input[type=text]:focus, .contactUs input[type=email]:focus, textarea:focus {
+    outline: none;
+  }
+
+.formControl {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px){
+    h1.large {
+        font-size: 4rem;
+      }
+    
+}

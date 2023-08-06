@@ -59,7 +59,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out with our 5-minute questionnaire.</p>
                     <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
-                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Home = () => {
                 <p style={{ margin: "0" }}>A Well Managed Plan Makes Dreams a Reality!</p>
                 <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Let Us Help You Live a Fulfilled Retirement!</h1>
                 <div style={{ position: "relative" }}>
-                  <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
+                  <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burden of your finances, so that you can begin the life you worked so hard for.</p>
 
                 </div>
                 <div className={`row ${classes['worthLivingImages']}`} style={{ display: "flex" }}>
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="navyWhtWhtBtn">BOOK CONSULTATION</button></Link>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -135,7 +135,7 @@ const Home = () => {
                 <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
                 <div className="row" style={{ padding: "0" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
                   </div>
                   {/* <div className="col-5">
                         <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -169,7 +169,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="navyWhtWhtBtn">BOOK CONSULTATION</button></Link>
                   </div>
                   <div className="col-5">
                     {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
@@ -208,7 +208,7 @@ const Home = () => {
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
                   <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                      <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                      <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
                     </div>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ const Home = () => {
                 <p style={{ margin: "0" }}>Successful Retirees Seek an Education!</p>
                 <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Join Our Live Educational Dinner Events!</h1>
                 <div style={{ position: "relative" }}>
-                  <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burder of budgeting and investing, so that you can begin to the life you worked so hard for.</p>
+                  <p style={{ margin: "0" }}>Our educational dinner events were designed to help retirees understand the fundamentals of retirement. From social security and pensions, to tax planning, medicare and estate planning, Sunpath covers all the major topics of retirement.</p>
                 </div>
                 <div className={`row ${classes['eventImages']}`} style={{ display: "flex" }}>
                   <div className="col-4" onClick={updateEventsImgHandler} data-url={flemmingsRanchoJoshCloseUp}>
@@ -292,7 +292,7 @@ const Home = () => {
                 </div> */}
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn">START MY CHECKUP</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn">BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
               </div>
