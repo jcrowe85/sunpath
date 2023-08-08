@@ -19,6 +19,7 @@ import ContactUs from './pages/ContactUs/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 import ThankYou from './pages/SocialSecurity/ThankYou/ThankYou';
+import AppointmentConfirmation from './pages/AppointmentConfirmation/AppointmentConfirmation';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='contact' element={<ContactUs />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="our-process" element={<OurProcess />} />
+        <Route path="appointment-confirmation" element={<AppointmentConfirmation />} />
         <Route path='social-security/seminar' element={<SocialSecurity />} >
           <Route path='newport-beach-march-3rd' element={<SocialSecuritySeminarNewportBeachMarch3rd />} />
           <Route path='anaheim-march-24th' element={<SocialSecuritySeminarAnaheimMarch24th />} />

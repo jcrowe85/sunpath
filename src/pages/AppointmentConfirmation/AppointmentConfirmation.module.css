@@ -1,0 +1,97 @@
+.wrapNavy {
+  background: #05204a;
+  color: white;
+  position: relative;
+}
+
+.wrapWht {
+  background: #e4e4e4;
+  color: black;
+}
+
+.contactUs input[type=text], .contactUs input[type=email], textarea {
+  margin: 0.5rem 0rem;
+  width: 100%;
+  padding: .5rem;
+  border: none;
+}
+
+.contactUs input[type=text]:focus, .contactUs input[type=email]:focus, textarea:focus {
+  outline: none;
+}
+
+.formControl {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  height: 24px;
+  width: 24px;
+}
+
+.meetingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meetingDetail, .assignedAdvisor {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .8rem;
+}
+
+.icon::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-color: rgba(255, 255, 255);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.download a{
+  display: flex;
+  align-items: center;
+}
+
+.download a:hover {
+  background-color: #05204a;
+  color: white;
+  transition: all 200ms ease-in;
+}
+
+.download a{
+  display: flex;
+  gap: 1rem;
+  background: rgb(209, 209, 209);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.download a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.download a:active {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 992px){
+  h1.large {
+      font-size: 4rem;
+    }
+  
+}
