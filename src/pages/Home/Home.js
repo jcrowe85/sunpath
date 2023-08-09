@@ -73,7 +73,7 @@ const Home = () => {
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 order-lg-2`}>
-                <p style={{ margin: "0" }}>A Well Managed Plan Makes Dreams a Reality!</p>
+                <p style={{ margin: "0" }}>A Well Managed Plan Makes a Dream Reality!</p>
                 <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Let Us Help You Live a Fulfilled Retirement!</h1>
                 <div style={{ position: "relative" }}>
                   <p style={{ margin: "0" }}>You've spent the past 35+ years working, it's time to enjoy the fruits of your labor. Let us handle the burden of your finances, so that you can begin the life you worked so hard for.</p>

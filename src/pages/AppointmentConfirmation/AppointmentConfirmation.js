@@ -173,7 +173,7 @@ const AppointmentConfirmation = () => {
                                 <p>Your advisor will be requesting general financial information, such as retirement income and expense estimates, retirement savings balances (401k, IRA, etc.), brokerage account(s) etc.</p>
                                 <p>If you would like to better prepare yourself for the meeting, you can download and review our factfind work sheet by clicking the link and download the expense worksheet from our google drive:</p>
                                 <div className={classes.download}>
-                                    <a href="https://docs.google.com/spreadsheets/d/1RGQVvpNWB-05fZrDrTkmfb8xdfJELMBM/edit?usp=drive_link&ouid=114659688459433872381&rtpof=true&sd=true" target='_blank'>
+                                    <a href="https://docs.google.com/document/d/1co6JW_2CLBitY5PbSRdDSZEJjdIlEFcw2MbFZT9tJkk/edit?usp=sharing" target='_blank'>
                                         <AiOutlineDownload size="24px"/>
                                         <p>Sunpath Fact Finder Worksheet - 2023 Copyright</p>
                                     </a>
