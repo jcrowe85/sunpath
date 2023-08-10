@@ -16,6 +16,7 @@ import { BiTime } from 'react-icons/bi';
 import { AiOutlineSwapRight, AiTwotonePhone, AiOutlineDownload } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
 import StackOfPapers from '../../assets/imgs/stack-of-papers.jpg'
+import { useEffect } from 'react';
 
 const MONTHS = [
     "Jan",
@@ -33,6 +34,24 @@ const MONTHS = [
   ];
 
 const AppointmentConfirmation = () => {
+
+    useEffect(() => {
+        gtag_report_conversion();
+    }, [])
+
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11290226267/VYnPCOL5oc8YENvczIcq',
+            'event_callback': callback
+        });
+        return false;
+    }
+    
 
     (function () {
         emailjs.init("-NlWC3XQtQ2WM2mIsE1By");
