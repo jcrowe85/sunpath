@@ -35,6 +35,10 @@
   width: 24px;
 }
 
+.timeIcon {
+  visibility: hidden;
+}
+
 .meetingDetails {
   display: flex;
   flex-direction: column;
@@ -89,9 +93,15 @@
   color: black;
 }
 
+
 @media screen and (min-width: 992px){
   h1.large {
       font-size: 4rem;
     }
-  
+  .timeIcon {
+    visibility: visible;
+  }
+  .timeIcon, .meetingDetail {
+    flex-basis: content !important;
+  }
 }

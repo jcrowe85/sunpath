@@ -133,7 +133,7 @@ const AppointmentConfirmation = () => {
                                             </div>
                                            {formattedStartTime}
                                         </div>
-                                        <div className={'col-12 col-lg-1'} style={{margin: '0', padding: '0', textAlign: 'center', flex: "0"}}>
+                                        <div className={`col-12 col-lg-1 ${classes.timeIcon}`}>
                                             <AiOutlineSwapRight />
                                         </div>
                                         <div className={`col-12 col-lg-5 ${classes.meetingDetail}`}>
@@ -157,6 +157,7 @@ const AppointmentConfirmation = () => {
                             <div className={`${classes.workingWithClients} column col-12 col-lg-6`} style={{ margin: "auto", backgroundColor: "#0b2b5c" }}>
                                 <img src={JoshHeadshot} style={{ width: "100%" }} />
                                 <p>"As the owner of Sunpath Financial, I am honored to have a meeting with you, and look forward to learning more about you during our scheduled call."</p>
+                                <p>Joshua J. Crowe, CEO</p>
                             </div>
                         </div>
                     </div>

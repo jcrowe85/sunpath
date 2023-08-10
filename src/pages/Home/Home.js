@@ -57,8 +57,8 @@ const Home = () => {
                 <div className="row">
                   <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem" }}>________</div>
                   <div className="col-lg-8" style={{ position: "relative" }}>
-                    <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out with our 5-minute questionnaire.</p>
-                    <p>Our 5-minute questionnaire provides an unbiased retirement score that represents your progress towards retirement. The questionnaire takes 5 minutes to complete, on average. Get started today!</p>
+                    <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
+                    <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
                     <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
@@ -146,14 +146,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* 
-          A comprehensive financial plan
-          Your tax situation
-          forcasting your future finances
-          Your investments
-          reviewing your progress
-          https://www.evelyn.com/services/financial-planning/a-full-financial-plan/
-        */}
         <div className={classes.wrapWht + ' ' + classes.ourServicesSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
@@ -296,23 +288,27 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="" style={{ padding: "0" }}>
-                <div className={classes['two-columns__col-two']}>
-                  <div className={classes['section-event-details__row']} style={{ margin: '0', padding: '0' }}>
-                    <div className={classes['two-columns__row-one']} >
-                      <img src={office1} />
-                      <img src={office2} />
+                <div className='col-12 col-lg-5'>
+                    <div className='row'>
+                      <div className='col-6'>
+                        <img src={office1} />
+                      </div>
+                      <div className='col-6'>
+                        <img src={office2} />
+                      </div>
                     </div>
-                    <div className={classes['two-columns__row-two']} >
+                    <div className='row' style={{margin: "1rem 0"}}>
                       <EventLocationMap mapCoordinates={{ center: { lat: 33.65605544419939, lng: -117.86781907081604 }, zoom: 14 }} />
                     </div>
-                    <div className={classes['two-columns__row-three']} >
-                      <img src={office3} />
-                      <img src={office4} />
+                    <div className='row'>
+                      <div className='col-6'>
+                        <img src={office3} />
+                      </div>
+                      <div className='col-6'>
+                        <img src={office4} />
+                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

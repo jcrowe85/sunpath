@@ -23,7 +23,7 @@ const AboutUs = () => {
                                     <img src={JoshAlbertBook}></img>
                                 </div>
                                 <div className={`column col-12 col-lg-5`} >
-                                    <h1 className={classes.large}>Founders and Authors on Retirement.</h1>
+                                    <h1 className={classes.large}>Founders and Authors on Retirement</h1>
                                     <div >
                                         <p>With several accolades at one of the world's largest financial institutions, Joshua J. Crowe, Albert J. Lee, and Timothy R. Healy, founded Sunpath Financial in 2016.</p>
                                         <p>In the years that followed, they authored a retirement book, were published in Forbes, and received highest production in the US with two large partners.</p>

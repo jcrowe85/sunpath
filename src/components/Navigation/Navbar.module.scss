@@ -1,38 +1,51 @@
 .navbar {
+    position: relative;
+    z-index: 999;
+}
+
+.desktopMenu {
     display: flex;
     align-items: center;
     height: 4rem;
     position: relative;
     background-color: transparent;    
     z-index: 999;
+    box-sizing: content-box;
 }
-.brand{
-    justify-content: flex-start;
-    cursor: pointer;    
+
+.mobileMenu {
+    display: flex;
+    padding: 1rem;
 }
+
+.brand {
+    flex: 2;
+}
+
 .brand img {
-    height: 50px;
+    height: 40px;
     width: auto;
     justify-content: flex-start;
 }
-.desktopLogo {
-    display: none;
-}
-.mobileLogo img{
-    flex: 2;
+.mobileMenu {
+    display: flex;
+    align-items: center;
 }
 .navMenu {
     display: flex;
     flex-direction: column;
-    margin-left: -110%;
+    left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
     background-color: transparent;
-    padding: 0;        
+    padding: 0;      
+    list-style: none;  
+    position: absolute;
+    width: 100%;
 }
 .navMenu.active {
-    left: 0;
     opacity: 1;
+    left: 0;
     transition: all 0.5s ease;
     z-index: 1;
     list-style: none;
@@ -50,11 +63,8 @@
     border-radius: 0;
 }
 .menuIcon {
-
- 
     font-size: 1.8rem;
     cursor: pointer;
-   
 }
 .faBars{
     color: black;
@@ -71,6 +81,8 @@
         background-color: transparent;
         justify-content: center;
         width: 70vw;
+        margin: auto;
+         padding: 0;
     }
     .navMenu {
         display: flex;
@@ -81,6 +93,8 @@
         transition: all 0.5s ease;
         background-color: transparent;
         padding: 0;       
+        margin: 0;
+        width: inherit;
     }    
     .navLinks {
         color: white;
@@ -96,7 +110,7 @@
         display:none;
     }    
     .brand {
-        
+     flex: 2;   
     }
 }
 

@@ -8,15 +8,15 @@ const MenuItems = [
     }, 
     {
         title: "About Us",
-        url: "about"
+        url: "/about"
     }, 
     {
         title: "Process",
-        url: "our-process"
+        url: "/our-process"
     }, 
     {
         title: "Contact Us",
-        url: "contact"
+        url: "/contact"
     },         
     // {
     //     title: "Blog",
