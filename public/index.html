@@ -64,6 +64,23 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WCJSL5CZ');</script>
     <!-- End Google Tag Manager -->
+    
+  <script>
+    function gtag_report_conversion(url) {
+          var callback = function () {
+          if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11290226267/JKMLCP2Q4M8YENvczIcq',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+    return false;
+    }
+    </script>
 
   <!-- Begin Inspectlet Asynchronous Code -->
   <script type="text/javascript">

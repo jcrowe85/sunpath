@@ -59,7 +59,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
                     <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
-                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion()}}>BOOK CONSULTATION</button></Link>
                   </div>
                 </div>
               </div>
