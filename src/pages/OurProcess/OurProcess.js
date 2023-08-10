@@ -36,7 +36,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                            <Link to='/'><button className="whtBlkWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                        <Link to='/'><button className="navyWhtWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                            <Link to='/'><button className="whtBlkWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                        <Link to='/'><button className="navyWhtWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                            <Link to='/'><button className="whtBlkWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                        <Link to='/'><button className="navyWhtWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                                            <Link to='/'><button className="whtBlkWhtBtn" id="book-consultation" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
                                         </div>
                                     </div>
                                 </div>
