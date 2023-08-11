@@ -59,7 +59,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
                     <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
-                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion()}}>BOOK CONSULTATION</button></Link>
+                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -161,7 +161,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                   </div>
                   <div className="col-5">
                     {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
@@ -200,7 +200,7 @@ const Home = () => {
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
                   <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                      <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                      <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                     </div>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="navyWhtWhtBtn" onClick={() => alert("We do not have any events scheduled at this time. Please try back soon.")}>Register for Event</button></Link>
+                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -284,7 +284,7 @@ const Home = () => {
                 </div> */}
                 <div className="row">
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
                   </div>
                 </div>
               </div>

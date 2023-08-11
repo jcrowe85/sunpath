@@ -98,6 +98,7 @@ const ContactUs = () => {
                                 <p>Thank you for considering Sunpath Financial to service your wealth management needs.</p>
                                 <p>If you cannot contact us outside normal business hours, please feel free to complete our contact form located on this page.</p>
                                 <p>One of our representatives will return your call within 24 hours.</p>
+                                <p style={{fontWeight: "bold"}}>To reach us by phone call: (949) 649-4779</p>
                                 <div className="row">
                                     <div className="col-12 col-lg-6">
                                         <p style={{ borderLeft: "1px solid black", paddingLeft: "1rem" }}>
