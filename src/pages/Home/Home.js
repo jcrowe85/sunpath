@@ -59,7 +59,7 @@ const Home = () => {
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
                     <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
-                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -135,7 +135,7 @@ const Home = () => {
                 <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
                 <div className="row" style={{ padding: "0" }}>
                   <div className="col-7">
-                    <Link to='/'><button className="whtBlkWhtBtn" onClick={() => location.href='https://calendly.com/sunpathfinancial/20-minute-consultation'}>BOOK CONSULTATION</button></Link>
+                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                         <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -152,7 +152,7 @@ const Home = () => {
               <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{ zIndex: "4" }}>
                 <div className={classes.textRight}>
                   <p>Comprehensive Income, Tax, and Investment Planning</p>
-                  <h1 className={classes.large}>We Help Our Clients Build and Maintain Their Finances.</h1>
+                  <h1 className={classes.large}>We Help Our Clients Build and Maintain Their Finances</h1>
                   <div style={{ position: "relative" }}>
                     <p>Building and maintaing a retirement plan is challenging, but if you equip yourself with the right team of advisors, you can turn a burden into your dream retirement.</p>
                     {/* <p>It works by using a math equation to figure how much you’d need to save each month to reach your retirement income shortfall, and divides it by how much you’re actually contributing.</p> */}
@@ -161,7 +161,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                   <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                   </div>
                   <div className="col-5">
                     {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
@@ -193,14 +193,14 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className={`column col-12 col-lg-5`}>
-                <h1 className={classes.large}>Hear It For Yourself.</h1>
+                <h1 className={classes.large}>Hear It For Yourself</h1>
                 <div style={{ position: "relative" }}>
                   <p>We work hard to help our clients meet their financial goals, we strive to protect the financial freedom they worked so hard for.</p>
                   <p>The work is challenging, but the compliments we receive from our clientele helps us to persevere.</p>
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
                   <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                      <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                      <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                     </div>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const Home = () => {
             <div className="row">
               <div className={`column col-12 col-lg-6 order-lg-2`}>
                 <p style={{ margin: "0" }}>Successful Retirees Seek an Education!</p>
-                <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Join Our Live Educational Dinner Events!</h1>
+                <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Join Our Live Educational Dinner Events</h1>
                 <div style={{ position: "relative" }}>
                   <p style={{ margin: "0" }}>Our educational dinner events were designed to help retirees understand the fundamentals of retirement. From social security and pensions, to tax planning, medicare and estate planning, Sunpath covers all the major topics of retirement.</p>
                 </div>
@@ -242,7 +242,7 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                    <button className="whtBlkWhtBtn" onClick={() => {alert('At this time we do not have any events scheduled. Please try back at a later date.')}}>REGISTER FOR EVENT</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
@@ -284,7 +284,7 @@ const Home = () => {
                 </div> */}
                 <div className="row">
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
                   </div>
                 </div>
               </div>

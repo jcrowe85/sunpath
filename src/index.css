@@ -96,6 +96,16 @@ button:hover {
     color: black;
     border: 1px solid transparent;
 }
+.redWhtRedBtn {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
+    background-color: #d32831;
+    color: white;
+   
+}
+.redWhtRedBtn:hover {
+   
+}
+
 .column {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
