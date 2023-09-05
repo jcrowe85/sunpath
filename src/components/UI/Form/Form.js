@@ -4,19 +4,17 @@ import classes from './Form.module.css';
 import userInput from '../../../hooks/user-input';
 import Button from '../LandingPageButton/LandingPageButton';
 import Input from '../Input/Input';
+import emailjs, { init } from "@emailjs/browser";
 
 
 const Form = props => {
 
     const navigate = useNavigate();
 
+    //use params to get event location
     const location = useLocation();
-
     const [searchParams] = useSearchParams();
-    
     const eventLocation = searchParams.get('location');
-
-    console.log(eventLocation)
 
     //Form inputs and validations
     const {
@@ -240,7 +238,7 @@ const Form = props => {
             })
         }
     });
-    
+
     //Show custom fields if checkbox is checked and validate inputs
     const customFields = Object.keys(formFields).map((key, index) => {
         if (key === 'customFields') {
@@ -263,7 +261,7 @@ const Form = props => {
             })
         }
     });
-    
+
     //Show custom fields if array is not empty
     let customForms;
 
@@ -276,61 +274,94 @@ const Form = props => {
             </div>
     }
 
+    //initialize email js to email lead info
+    (function () {
+        emailjs.init("-NlWC3XQtQ2WM2mIsE1By");
+    })();
 
-    async function saveRegistrant() {
-        try {
-            const response = await fetch('https://sunpath-ad580-default-rtdb.firebaseio.com/registrants.json', {
-                method: 'POST',
-                body: JSON.stringify({
-                    enteredName,
-                    enteredEmail,
-                    enteredPhoneNumber,
-                    enteredFullAddress,
-                    enteredCityName,
-                    enteredStateName,
-                    enteredZipCode,
-                    eventLocation
-                }),
-                headers: {
-                    'Content-type': 'application/json'
-                },
-            });
-            const data = await response.json();
-
-            if (!response.ok) {
-                throw new Error(data.message || 'Count not save registrant to database')
-            }
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-
+    //submit registrant info to email js
     const submitHandler = (e) => {
         e.preventDefault();
+        const templateParams = {
+            fullName: enteredName,
+            email: enteredEmail,
+            phone: enteredPhoneNumber,
+        }
 
-        saveRegistrant();
+        emailjs.send("service_2clswrb", "template_5hrqdac", templateParams, "5NG10HmgPEnSFu_2C")
+            .then(function (response) {
+                alert("Your email was sent! We will send you email and text notifications leading up to the event. Thank you for choosing Sunpath Financial.")
+                //Reset form fields
+                resetNameInput();
+                resetEmailInput();
+                resetAddressInput();
+                resetPhoneNumberInput();
+                resetCityNameInput();
+                resetStateNameInput();
+                resetZipCodeInput();
+                props.showCustomFields();
 
-        //Reset form fields
-        resetNameInput();
-        resetEmailInput();
-        resetAddressInput();
-        resetPhoneNumberInput();
-        resetCityNameInput();
-        resetStateNameInput();
-        resetZipCodeInput();
-        props.showCustomFields();
-
-        //Redirect to thank you page
-        navigate(`${location.pathname}/thank-you`);
-
+                //Redirect to thank you page
+                navigate(`/`);
+            }, function (error) {
+                alert("There was an error sending your email", error)
+            });
     }
+
+    // async function saveRegistrant() {
+    //     try {
+    //         const response = await fetch('https://sunpath-ad580-default-rtdb.firebaseio.com/registrants.json', {
+    //             method: 'POST',
+    //             body: JSON.stringify({
+    //                 enteredName,
+    //                 enteredEmail,
+    //                 enteredPhoneNumber,
+    //                 enteredFullAddress,
+    //                 enteredCityName,
+    //                 enteredStateName,
+    //                 enteredZipCode,
+    //                 eventLocation
+    //             }),
+    //             headers: {
+    //                 'Content-type': 'application/json'
+    //             },
+    //         });
+    //         const data = await response.json();
+
+    //         if (!response.ok) {
+    //             throw new Error(data.message || 'Count not save registrant to database')
+    //         }
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
+
+
+    // const submitHandler = (e) => {
+    //     e.preventDefault();
+
+    //     saveRegistrant();
+
+    //     //Reset form fields
+    //     resetNameInput();
+    //     resetEmailInput();
+    //     resetAddressInput();
+    //     resetPhoneNumberInput();
+    //     resetCityNameInput();
+    //     resetStateNameInput();
+    //     resetZipCodeInput();
+    //     props.showCustomFields();
+
+    //     //Redirect to thank you page
+    //     navigate(`${location.pathname}/thank-you`);
+
+    // }
 
     return (
         <form onSubmit={submitHandler}>
             {basicFields}
             {customForms}
-            <Button disabled={!basicFormIsValid[0]} ctaButtonText={props.ctaButtonText}/>
+            <Button disabled={!basicFormIsValid[0]} ctaButtonText={props.ctaButtonText} />
         </form>
     )
 };

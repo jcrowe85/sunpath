@@ -10,6 +10,7 @@ import SocialSecuritySeminarRanchoCucamongaMay5th from './pages/SocialSecurity/S
 import RetirementIncomeTaxesInflationRanchoCucamongaMay5th from './pages/RetirementIncome/Seminar/RetirementIncomeTaxesInflationRanchoCucamongaMay5th';
 import SocialSecuritySeminarVictorvilleJune2nd from './pages/SocialSecurity/Seminar/SocialSecuritySeminarVictorvilleJune2nd';
 import SocialSecuritySeminarAnaheimMarch24th from './pages/SocialSecurity/Seminar/SocialSecuritySeminarAnaheimMarch24th';
+import SocialSecurityWebinar from './pages/SocialSecurity/Webinar/SocialSecurityWebinar';
 import Retirement from './pages/Retirement';
 import Checkup from './pages/Retirement/Checkup/Checkup';
 import CheckupVideoLander from './pages/Retirement/CheckupVideoLander/CheckupVideoLander';
@@ -46,6 +47,7 @@ const App = () => {
           <Route path='checkup' element={<Checkup />} />
           <Route path='checkup-video-lander' element={<CheckupVideoLander />} />
         </Route>
+        <Route path='social-security/webinar' element={<SocialSecurityWebinar />}></Route>
         <Route path='privacy-policy' element={<PrivacyPolicy />} ></Route>
       </Route>
     </Routes>

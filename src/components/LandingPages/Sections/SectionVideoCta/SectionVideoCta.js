@@ -59,7 +59,6 @@ const SectionVideoCta = props => {
                             seminarDateTime={seminarDateTime}
                             eventName={eventName}
                             eventAddress={eventAddress}
-                            seminarDateTime={seminarDateTime}
                             registrantInfo={registrantInfo}
                         />}
                 </div>
