@@ -55,7 +55,7 @@ const Home = () => {
               <div className={`column col-12 col-lg-6 ${classes.column}`}>
                 <h1 className={classes.large}>Newport Beach Retirement & Tax Planners</h1>
                 <div className="row">
-                  <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem" }}>________</div>
+                  <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem", marginTop: ".25rem" }}>________</div>
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
                     <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
