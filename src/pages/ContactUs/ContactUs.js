@@ -74,9 +74,9 @@ const ContactUs = () => {
             <div className="bootstrap-wrapper">
                 <div className={classes.wrapNavy + ' ' + classes.fiduciaryAdvisorSection}>
                     <Navbar />
-                    <div className={`container`}>
+                     <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className="column col-12 col-lg-6" >
+                            <div className={`column col-12 col-lg-6 ${classes.column}`}>
                                 <h1 className={classes.large}>Registered Fiduciaries Put Your Interest First</h1>
                                 <p style={{ marginTop: "0", fontSize: "1rem" }}>Sunpath's Fiduciaries Represent the Gold Standard</p>
                                 <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
@@ -86,28 +86,28 @@ const ContactUs = () => {
                                         </div>
                                     </div> */}
                             </div>
-                            <div className={`${classes.workingWithClients} column col-12 col-lg-6`} style={{ margin: "auto" }}><img src={workingWithClients} style={{ width: "100%" }} /></div>
+                            <div className={`${classes.workingWithClients} column col-12 col-lg-6 ${classes.column}`} style={{ margin: "auto" }}><img src={workingWithClients} style={{ width: "100%" }} /></div>
                         </div>
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.location}>
-                    <div className={`container`}>
+                     <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className="column col-12 col-lg-6" >
+                            <div className={`column col-12 col-lg-6 ${classes.column}`}>
                                 <h1 className={classes.large} style={{ marginTop: "0" }}>Get In Touch with Us Today</h1>
                                 <p>Thank you for considering Sunpath Financial to service your wealth management needs.</p>
                                 <p>If you cannot contact us outside normal business hours, please feel free to complete our contact form located on this page.</p>
                                 <p>One of our representatives will return your call within 24 hours.</p>
                                 <p style={{fontWeight: "bold"}}>To reach us by phone call: (949) 649-4779</p>
                                 <div className="row">
-                                    <div className="col-12 col-lg-6">
+                                    <div className={`col-12 col-lg-6 ${classes.column}`}>
                                         <p style={{ borderLeft: "1px solid black", paddingLeft: "1rem" }}>
                                             <span style={{ fontWeight: "bold" }}>Sunpath Financial, Inc.</span>
                                             <span className="paragraphBreak">100 Bayview Circle, Suite 100</span>
                                             <span className="paragraphBreak">Newport Beach, Ca 92660</span>
                                         </p>
                                     </div>
-                                    <div className="col-12 col-lg-6">
+                                    <div className={`col-12 col-lg-6 ${classes.column}`}>
                                         <p style={{ borderLeft: "1px solid black", paddingLeft: "1rem" }}>
                                             <span style={{ fontWeight: "bold" }}>Hours of operation</span>
                                             <span className="paragraphBreak">Monday - Friday: 9am - 5pm</span>
@@ -116,7 +116,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-6" style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-6 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <form onSubmit={submitForm} >
                                     <div className="row">
                                         <div className={`col-12 col-lg-6 ${classes.formControl}`}>

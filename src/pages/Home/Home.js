@@ -52,18 +52,18 @@ const Home = () => {
           <Navbar />
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className={`column col-12 col-lg-6`}>
+              <div className={`column col-12 col-lg-6 ${classes.column}`}>
                 <h1 className={classes.large}>Newport Beach Retirement & Tax Planners</h1>
                 <div className="row">
                   <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem" }}>________</div>
                   <div className="col-lg-8" style={{ position: "relative" }}>
                     <p style={{ marginTop: "0", fontSize: "1.2rem" }}>Are you ready for retirement? Find out by scheduling a free consultation.</p>
                     <p>You'll speak with one of our registered and licensed retirement fiduciaries at no charge. Get started today!</p>
-                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                   </div>
                 </div>
               </div>
-              <div className={`column col-12 col-lg-6 ${classes.mainImg}`}>
+              <div className={`column col-12 col-lg-6 ${classes.column} ${classes.mainImg}`}>
                 <img src={joshNewport} />
               </div>
             </div>
@@ -72,7 +72,7 @@ const Home = () => {
         <div className={classes.wrapWht + ' ' + classes.retirementWorthLivingSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className={`column col-12 col-lg-6 order-lg-2`}>
+              <div className={`column ${classes.column} col-12 col-lg-6 order-lg-2`}>
                 <p style={{ margin: "0" }}>A Well Managed Plan Makes a Dream Reality!</p>
                 <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Let Us Help You Live a Fulfilled Retirement!</h1>
                 <div style={{ position: "relative" }}>
@@ -101,14 +101,14 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div> */}
                 </div>
               </div>
-              <div className="column col-12 col-lg-6" >
+              <div className={`column col-12 col-lg-6 ${classes.column}`}>
                 <div className={classes.worthLivingMainImg}>
                   <img src={worthLivingImgActive}></img>
                 </div>
@@ -129,27 +129,27 @@ const Home = () => {
         <div className={classes.wrapNavy + ' ' + classes.fiduciaryAdvisorSection}>
           <div className={`container`}>
             <div className="row">
-              <div className="column col-12 col-lg-6" >
+              <div className={`column col-12 col-lg-6 ${classes.column}`}>
                 <h1 className={classes.large}>Registered Fiduciaries Put Your Interest First</h1>
                 <p style={{ marginTop: "0", color: "white", fontSize: "1rem" }}>Sunpath's Fiduciaries Represent the Gold Standard</p>
                 <p>As a registered investment advisory firm, Sunpath Financial's fiduciary advisors represent the highest ethical standards, so you can rest assured knowing you're in good hands.</p>
                 <div className="row" style={{ padding: "0" }}>
                   <div className="col-7">
-                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                   </div>
                   {/* <div className="col-5">
                         <button className="blkBlkWhtBtn">LEARN MORE</button>
                       </div> */}
                 </div>
               </div>
-              <div className={`${classes.workingWithClients} column col-12 col-lg-6`}><img src={workingWithClients} style={{ width: "100%" }} /></div>
+              <div className={`${classes.workingWithClients} column ${classes.column} col-12 col-lg-6`}><img src={workingWithClients} style={{ width: "100%" }} /></div>
             </div>
           </div>
         </div>
         <div className={classes.wrapWht + ' ' + classes.ourServicesSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className={`column col-12 col-lg-7 order-lg-2 ${classes.textRight}`} style={{ zIndex: "4" }}>
+              <div className={`column col-12 col-lg-7 order-lg-2 ${classes.column} ${classes.textRight}`} style={{ zIndex: "4" }}>
                 <div className={classes.textRight}>
                   <p>Comprehensive Income, Tax, and Investment Planning</p>
                   <h1 className={classes.large}>We Help Our Clients Build and Maintain Their Finances</h1>
@@ -161,14 +161,14 @@ const Home = () => {
                 </div>
                 <div className="row">
                   <div className="col-7">
-                   <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                   </div>
                   <div className="col-5">
                     {/* <button className="whtWhtBlkBtn">LEARN MORE</button> */}
                   </div>
                 </div>
               </div>
-              <div className={`column col-12 col-lg-5 order-lg-1 ${classes.serviceList}`} style={{ zIndex: "4" }} >
+              <div className={`column col-12 col-lg-5 order-lg-1 ${classes.column} ${classes.serviceList}`} style={{ zIndex: "4" }} >
                 <div className={`${classes.ourServicesFeatures}`}>
                   <h2>Social Security and Pensions</h2>
                   {/* <img style={{width: '100%'}}></img> */}
@@ -192,7 +192,7 @@ const Home = () => {
         <div className={classes.wrapNavy + ' ' + classes.testimonialSection}>
           <div className="container">
             <div className="row">
-              <div className={`column col-12 col-lg-5`}>
+              <div className={`column col-12 col-lg-5 ${classes.column}`}>
                 <h1 className={classes.large}>Hear It For Yourself</h1>
                 <div style={{ position: "relative" }}>
                   <p>We work hard to help our clients meet their financial goals, we strive to protect the financial freedom they worked so hard for.</p>
@@ -200,12 +200,12 @@ const Home = () => {
                   <p>We would love to hear your story, your challenges, to see if we can help you like we've done so many.</p>
                   <div className="row" style={{ padding: "0" }}>
                     <div className="col-7">
-                      <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                      <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="column col-12 col-lg-7" style={{ margin: "auto" }}>
+              <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: "auto" }}>
                 <a href="https://www.youtube.com/watch?v=nfeWhmYUUY0" target="_blank"><img src={testimonial}></img></a>
               </div>
             </div>
@@ -214,7 +214,7 @@ const Home = () => {
         <div className={classes.wrapWht + ' ' + classes.eventSection}>
           <div className={`container ${classes.container}`}>
             <div className="row">
-              <div className={`column col-12 col-lg-6 order-lg-2`}>
+              <div className={`column col-12 col-lg-6 order-lg-2 ${classes.column}`}>
                 <p style={{ margin: "0" }}>Successful Retirees Seek an Education!</p>
                 <h1 className={classes.large} style={{ marginTop: "15px", marginBottom: "15px" }}>Join Our Live Educational Dinner Events</h1>
                 <div style={{ position: "relative" }}>
@@ -242,14 +242,14 @@ const Home = () => {
                 </div>
                 <div className="row" style={{ padding: "0", marginTop: "1.5rem" }}>
                   <div className="col-7">
-                    <button className="whtBlkWhtBtn" onClick={() => {alert('At this time we do not have any events scheduled. Please try back at a later date.')}}>REGISTER FOR EVENT</button>
+                    <button className="whtBlkWhtBtn" onClick={() => { alert('At this time we do not have any events scheduled. Please try back at a later date.') }}>REGISTER FOR EVENT</button>
                   </div>
                   {/* <div className="col-5">
                       <button className="blkBlkWhtBtn">LEARN MORE</button>
                     </div> */}
                 </div>
               </div>
-              <div className="column col-12 col-lg-6" style={{ margin: "auto" }}>
+              <div className={`column col-12 col-lg-6 ${classes.column}`} style={{ margin: "auto" }}>
                 <div className={classes.eventsMainImg}>
                   <img src={eventsImgActive}></img>
                 </div>
@@ -270,7 +270,7 @@ const Home = () => {
         <div className={classes.wrapNavy + ' ' + classes.location}>
           <div className={`container`}>
             <div className="row">
-              <div className="column col-12 col-lg-6" >
+              <div className={`column col-12 col-lg-6 ${classes.column}`} >
                 <h1 className={classes.large}>Located in Beautiful Newport Beach</h1>
                 <p>Neslted against Newport Backbay, across the street from Fletcher Jones Mercedes Benz, off SR-73 and Jamboree, Sunpath's headquarter is a central lcoation and makes serving Southern California a breeze.</p>
                 <p style={{ borderLeft: "1px solid white", paddingLeft: "1rem" }}><span style={{ fontWeight: "bold" }}>Sunpath Financial, Inc.</span><span className="paragraphBreak">100 Bayview Circle, Suite 100</span><span className="paragraphBreak">Newport Beach, Ca 92660</span></p>
@@ -284,31 +284,31 @@ const Home = () => {
                 </div> */}
                 <div className="row">
                   <div className="col-7">
-                    <button className="redWhtRedBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK FREE CONSULTATION</button>
+                    <button className="redWhtRedBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK FREE CONSULTATION</button>
                   </div>
                 </div>
               </div>
-                <div className='col-12 col-lg-5'>
-                    <div className='row'>
-                      <div className='col-6'>
-                        <img src={office1} />
-                      </div>
-                      <div className='col-6'>
-                        <img src={office2} />
-                      </div>
-                    </div>
-                    <div className='row' style={{margin: "1rem 0"}}>
-                      <EventLocationMap mapCoordinates={{ center: { lat: 33.65605544419939, lng: -117.86781907081604 }, zoom: 14 }} />
-                    </div>
-                    <div className='row'>
-                      <div className='col-6'>
-                        <img src={office3} />
-                      </div>
-                      <div className='col-6'>
-                        <img src={office4} />
-                      </div>
-                    </div>
+              <div className={`column col-12 col-lg-5 ${classes.column}`}>
+                <div className='row'>
+                  <div className='col-6'>
+                    <img src={office1} />
+                  </div>
+                  <div className='col-6'>
+                    <img src={office2} />
+                  </div>
                 </div>
+                <div className='row' style={{ margin: "1rem 0" }}>
+                  <EventLocationMap mapCoordinates={{ center: { lat: 33.65605544419939, lng: -117.86781907081604 }, zoom: 14 }} />
+                </div>
+                <div className='row'>
+                  <div className='col-6'>
+                    <img src={office3} />
+                  </div>
+                  <div className='col-6'>
+                    <img src={office4} />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

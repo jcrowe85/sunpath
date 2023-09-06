@@ -1,32 +1,47 @@
 .wrapNavy {
-    background: #05204a;
-    color: white;
-    position: relative;
-  }
-
-  .wrapWht {
-    background: #e4e4e4;
-    color: black;
-  }
-
-  .contactUs input[type=text], .contactUs input[type=email], textarea {
-    margin: 0.5rem 0rem;
-    width: 100%;
-    padding: .5rem;
-    border: none;
-  }
-
-  .contactUs input[type=text]:focus, .contactUs input[type=email]:focus, textarea:focus {
-    outline: none;
-  }
-
-.formControl {
-    margin-bottom: 1rem;
+  background: #05204a;
+  color: white;
+  position: relative;
 }
 
-@media screen and (min-width: 992px){
-    h1.large {
-        font-size: 4rem;
-      }
-    
+.wrapWht {
+  background: #e4e4e4;
+  color: black;
+}
+
+.contactUs input[type=text],
+.contactUs input[type=email],
+textarea {
+  margin: 0.5rem 0rem;
+  width: 100%;
+  padding: .5rem;
+  border: none;
+}
+
+.contactUs input[type=text]:focus,
+.contactUs input[type=email]:focus,
+textarea:focus {
+  outline: none;
+}
+
+.formControl {
+  margin-bottom: 1rem;
+}
+
+.column {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1.large {
+    font-size: 4rem;
+  }
+
+  .container {
+    padding: 4rem 0rem;
+  }
+
 }

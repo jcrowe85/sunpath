@@ -19,12 +19,12 @@ const AboutUs = () => {
                 <div className={classes.wrapNavy + ' ' + classes.mainSection}>
                     <Navbar />
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-5" style={{ margin: "auto" }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <img src={RoadMap}></img>
                                 </div>
-                                <div className={`column col-12 col-lg-7`} >
+                                <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                     <h1 className={classes.large}>Let Us Help You Build a Retirement Roadmap</h1>
                                     <div >
                                         <p>Our process challenges clients to go on a journey, to explore what they'd like to do in retirement. Traveling, hanging out with the grandkids, exploring new hobbies, start a new business..this is your opportunity to reach for the stars.</p>
@@ -36,7 +36,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                            <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                         </div>
                                     </div>
                                 </div>
@@ -45,9 +45,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.step1}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>Understanding Where You Are Today</h1>
                                 <div >
                                     <p>The first step invovles a face-to-face meeting (but can take place over the phone) where we will gather pertinent financial information.</p>
@@ -56,11 +56,11 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                        <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-5" style={{ backgroundColor: "#05204a" }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#05204a" }}>
                                 <div className={classes.step}>
                                     <h1>Step 1</h1>
                                 </div>
@@ -70,14 +70,14 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.step2}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-5" style={{ backgroundColor: "#fff" }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#fff" }}>
                                     <div className={classes.step}>
                                         <h1 style={{ color: "#05204a" }}>Step 2</h1>
                                     </div>
                                 </div>
-                                <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                                <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <h1>Where You'd Like to Be Tomorrow</h1>
                                     <div>
                                         <p>The second step in our process is more exciting than the first, it's your opportunity to dream and share the things you'd like to do in retirement.</p>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                            <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                         </div>
                                     </div>
                                 </div>
@@ -95,9 +95,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.step3}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>A Roadmap to Get You There</h1>
                                 <div>
                                     <p>With your dreams and finacials in hand, our dedicated planning team will begin working on your customized retirement roadmap.</p>
@@ -106,11 +106,11 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                        <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-5" style={{ backgroundColor: "#05204a" }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#05204a" }}>
                                 <div className={classes.step}>
                                     <h1>Step 3</h1>
                                 </div>
@@ -120,14 +120,14 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.step4}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-5" style={{ backgroundColor: "#fff" }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#fff" }}>
                                     <div className={classes.step}>
                                         <h1 style={{ color: "#05204a" }}>Step 4</h1>
                                     </div>
                                 </div>
-                                <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                                <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <h1>Review and Discuss Your Retirement Plan</h1>
                                     <div>
                                         <p>During our second meeting, we will discuss the outcome of your plan, carefully reviewing each of the aforementioned reports to help you understand how your needs and wants will be met.</p>
@@ -136,7 +136,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                            <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                         </div>
                                     </div>
                                 </div>
@@ -145,9 +145,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.step5}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>Implement Your Retirement Plan</h1>
                                 <div>
                                     <p>When you decided to move forward with us, we will schedule a third meeting to begin implementing our recommendations.</p>
@@ -157,13 +157,13 @@ const AboutUs = () => {
                                 </div>
                                 <div className="row" style={{ padding: "0" }}>
                                     <div className="col-7">
-                                        <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                        <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-5" style={{ backgroundColor: "#05204a" }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#fff" }}>
                                 <div className={classes.step}>
-                                    <h1>Step 5</h1>
+                                <h1 style={{ color: "#05204a" }}>Step 5</h1>
                                 </div>
                             </div>
                         </div>
@@ -171,14 +171,14 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.step6}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-5" style={{ backgroundColor: "#fff" }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ backgroundColor: "#fff" }}>
                                     <div className={classes.step}>
                                         <h1 style={{ color: "#05204a" }}>Step 6</h1>
                                     </div>
                                 </div>
-                                <div className={`column col-12 col-lg-7`} style={{ margin: 'auto' }}>
+                                <div className={`column col-12 col-lg-7 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <h1>Annual & Quarterly Review</h1>
                                     <div>
                                         <p>On the first week of every quarter we send all clients a link to schedule an appointment to review their progress.</p>
@@ -188,7 +188,7 @@ const AboutUs = () => {
                                     </div>
                                     <div className="row" style={{ padding: "0" }}>
                                         <div className="col-7">
-                                            <button className="whtBlkWhtBtn" onClick={() => {return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation')}}>BOOK CONSULTATION</button>
+                                            <button className="whtBlkWhtBtn" onClick={() => { return gtag_report_conversion('https://calendly.com/sunpathfinancial/20-minute-consultation') }}>BOOK CONSULTATION</button>
                                         </div>
                                     </div>
                                 </div>

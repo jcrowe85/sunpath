@@ -17,12 +17,12 @@ const AboutUs = () => {
                 <div className={classes.wrapNavy + ' ' + classes.mainSection}>
                     <Navbar />
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-7" >
+                                <div className={`column col-12 col-lg-7 ${classes.column}`} >
                                     <img src={JoshAlbertBook}></img>
                                 </div>
-                                <div className={`column col-12 col-lg-5`} >
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} >
                                     <h1 className={classes.large}>Founders and Authors on Retirement</h1>
                                     <div >
                                         <p>With several accolades at one of the world's largest financial institutions, Joshua J. Crowe, Albert J. Lee, and Timothy R. Healy, founded Sunpath Financial in 2016.</p>
@@ -35,9 +35,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.joshSection}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>Joshua J. Crowe, CEO</h1>
                                 <div >
                                     <p>Sunpath's CEO, CCO, and founder, Joshua J. Crowe is a 20-year finance vet who started his career in taxes at just 18 years old.</p>
@@ -45,7 +45,7 @@ const AboutUs = () => {
                                     <p>He has presented to thousands of pre and post retirees, providing an education on what it means to manage a successful retirement.</p>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-7" >
+                            <div className={`column col-12 col-lg-7 ${classes.column}`} >
                                 <img src={JoshHeadshot}></img>
                             </div>
                         </div>
@@ -53,9 +53,9 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.albertSection}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-7" >
+                                <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                     <img src={AlbertHeadshot}></img>
                                 </div>
                                 <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
@@ -72,9 +72,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.timSection}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>Timothy R. Healy, VP</h1>
                                 <div >
                                     <p>Co-founder and VP, Timothy R. Healy is a 15-year finance vet who serves as Sunpath's VP and director of sales.</p>
@@ -82,7 +82,7 @@ const AboutUs = () => {
                                     <p>Timothy went on the receive several accolades a the firm, including rookie of the year and MDRT, two of the firms most challening feats.</p>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-7" >
+                            <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                 <img src={TimHeadshot}></img>
                             </div>
                         </div>
@@ -90,12 +90,12 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.nateSection}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-7" >
+                                <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                     <img src={NateHeadshot}></img>
                                 </div>
-                                <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <h1>Nathan M. Crowe</h1>
                                     <div >
                                         <p>Tax accountant and financial advisor, Nathan M. Crowe has spent the past 20-years in finance.</p>
@@ -108,9 +108,9 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.shiawSection}>
-                    <div className="container">
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <h1>Shiawtian Chen, CPA</h1>
                                 <div >
                                     <p>CPA and tax account, Shiawtian Chen has spent the past 10-years working with high-profile clients worldwide.</p>
@@ -118,7 +118,7 @@ const AboutUs = () => {
                                     <p>He was strategically hired to help Sunpath's clients reduce their lifetime tax liabilities.</p>
                                 </div>
                             </div>
-                            <div className="column col-12 col-lg-7" >
+                            <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                 <img src={ShiawHeadshot}></img>
                             </div>
                         </div>
@@ -126,12 +126,12 @@ const AboutUs = () => {
                 </div>
                 <div className={classes.wrapNavy + ' ' + classes.laurenSection}>
                     <div className={classes.nerdsOnline}>
-                        <div className="container">
+                        <div className={`container ${classes.container}`}>
                             <div className="row">
-                                <div className="column col-12 col-lg-7" >
+                                <div className={`column col-12 col-lg-7 ${classes.column}`}>
                                     <img src={LaurenHeadshot}></img>
                                 </div>
-                                <div className={`column col-12 col-lg-5`} style={{ margin: 'auto' }}>
+                                <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
                                     <h1>Lauren Stone, MBA</h1>
                                     <div >
                                         <p>Lauren Stone received her masters of business administration degree in 2019 and went on to work for several large firms.</p>
