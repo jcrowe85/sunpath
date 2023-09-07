@@ -127,7 +127,7 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.wrapNavy + ' ' + classes.fiduciaryAdvisorSection}>
-          <div className={`container`}>
+          <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 ${classes.column}`}>
                 <h1 className={classes.large}>Registered Fiduciaries Put Your Interest First</h1>
@@ -190,7 +190,7 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.wrapNavy + ' ' + classes.testimonialSection}>
-          <div className="container">
+          <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-5 ${classes.column}`}>
                 <h1 className={classes.large}>Hear It For Yourself</h1>
@@ -268,7 +268,7 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.wrapNavy + ' ' + classes.location}>
-          <div className={`container`}>
+          <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 ${classes.column}`} >
                 <h1 className={classes.large}>Located in Beautiful Newport Beach</h1>
