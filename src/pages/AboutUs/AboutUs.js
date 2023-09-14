@@ -107,7 +107,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.wrapWht + ' ' + classes.shiawSection}>
+                {/* <div className={classes.wrapWht + ' ' + classes.shiawSection}>
                     <div className={`container ${classes.container}`}>
                         <div className="row">
                             <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
@@ -123,8 +123,25 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
+                </div> */}
+                <div className={classes.wrapWht + ' ' + classes.laurenSection}>
+                    <div className={`container ${classes.container}`}>
+                        <div className="row">
+                            <div className={`column col-12 col-lg-5 ${classes.column}`} style={{ margin: 'auto' }}>
+                                <h1>Lauren Stone, MBA</h1>
+                                <div >
+                                    <p>Lauren Stone received her masters of business administration degree in 2019 and went on to work for several large firms.</p>
+                                    <p>She serves as Sunpath's executive assistant, curating operations, coordinating client acquisitions, organizing marketing efforts, and so forth.</p>
+                                    <p>With an aptitude for detail, Lauren keeps the proverbial "wheels greased" for all of us at Sunpath.</p>
+                                </div>
+                            </div>
+                            <div className={`column col-12 col-lg-7 ${classes.column}`}>
+                                <img src={LaurenHeadshot}></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className={classes.wrapNavy + ' ' + classes.laurenSection}>
+                {/* <div className={classes.wrapWht + ' ' + classes.laurenSection}>
                     <div className={classes.nerdsOnline}>
                         <div className={`container ${classes.container}`}>
                             <div className="row">
@@ -142,8 +159,8 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className={classes.wrapWht + ' ' + classes.footerSection}>
+                </div> */}
+                <div className={classes.wrapNavy + ' ' + classes.footerSection}>
                     <div className={`container ${classes.container}`}>
                         <div className="row">
                             <p> © 2023 Sunpath Financial, Inc. and its related entities, Sunpath Financial Group, Sunpath Financial & Insurance Agency, the Sunpath logo are service marks of Sunpath Financial and its related entities, are registered jurisdictions.</p>
