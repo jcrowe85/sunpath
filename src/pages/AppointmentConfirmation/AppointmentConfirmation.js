@@ -123,9 +123,9 @@ const AppointmentConfirmation = () => {
             <div className="bootstrap-wrapper">
                 <div className={classes.wrapNavy + ' ' + classes.fiduciaryAdvisorSection}>
                     <Navbar />
-                    <div className={`container`}>
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className="column col-12 col-lg-6" >
+                            <div className={`column col-12 col-lg-6 ${classes.column}`} >
                                 <h1 className={classes.large}>{inviteeFullName}, Your Appointment Has Been Scheduled.</h1>
                                 <p style={{ marginTop: "0", fontSize: "1rem" }}>Your Scheduled Meeting Details:</p>
                                 <div className={classes.meetingDetails}>
@@ -173,21 +173,21 @@ const AppointmentConfirmation = () => {
                                 </div>
 
                             </div>
-                            <div className={`${classes.workingWithClients} column col-12 col-lg-6`} style={{ margin: "auto", backgroundColor: "#0b2b5c" }}>
+                            <div className={`${classes.workingWithClients} column col-12 col-lg-6 ${classes.column}`} style={{ margin: "auto", backgroundColor: "#0b2b5c" }}>
                                 <img src={JoshHeadshot} style={{ width: "100%" }} />
                                 <p>"As the owner of Sunpath Financial, I am honored to have a meeting with you, and look forward to learning more about you during our scheduled call."</p>
-                                <p>Joshua J. Crowe, CEO</p>
+                                <p>- Joshua J. Crowe, CEO</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={classes.wrapWht + ' ' + classes.location}>
-                    <div className={`container`}>
+                    <div className={`container ${classes.container}`}>
                         <div className="row">
-                            <div className="column col-12 col-lg-6" style={{ margin: 'auto' }}>
+                            <div className={`column col-12 col-lg-6 ${classes.column}`} style={{ margin: 'auto' }}>
                                 <img src={StackOfPapers} />
                             </div>
-                            <div className="column col-12 col-lg-6" >
+                            <div className={`column col-12 col-lg-6 ${classes.column}`}>
                                 <h1 className={classes.large} style={{ marginTop: "0" }}>Preparing For Your Call With Our Advisor</h1>
                                 <p>On the day of your appointment, your assigned advisor will call you within 5 minutes before or after your scheduled time.</p>
                                 <p>Your advisor will be requesting general financial information, such as retirement income and expense estimates, retirement savings balances (401k, IRA, etc.), brokerage account(s) etc.</p>

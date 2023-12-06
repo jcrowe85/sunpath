@@ -9,6 +9,13 @@
   color: black;
 }
 
+.column {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .contactUs input[type=text], .contactUs input[type=email], textarea {
   margin: 0.5rem 0rem;
   width: 100%;
@@ -104,4 +111,9 @@
   .timeIcon, .meetingDetail {
     flex-basis: content !important;
   }
+
+  .contactUs .container {
+    padding: 4rem 0rem;
+  }
+  
 }
