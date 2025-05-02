@@ -154,6 +154,10 @@
     font-size: 4rem;
   }
 
+  h1.medium {
+    font-size: 3.5rem;
+  }
+
   .mainSection .container {
     padding: 1.5rem 0rem;
   }

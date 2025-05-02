@@ -3,6 +3,7 @@ import classes from "./Home.module.css";
 import Navbar from "../../components/Navigation/Navbar";
 import { Link } from "react-router-dom";
 import joshNewport from "../../assets/imgs/josh-newport.jpg";
+import beachGoingReirees from "../../assets/imgs/yacht-retirees.png";
 import crossIconExt from '../../assets/imgs/cross-icon-extension-navy.png';
 import boating from '../../assets/imgs/boating.png';
 import coupleRome from '../../assets/imgs/couple-rome.jpg';
@@ -34,7 +35,7 @@ import EventLocationMap from "../../components/LandingPages/EventLocationMap/Eve
 
 const Home = () => {
 
-  const [worthLivingImgActive, setWorthLivingImgActive] = useState(boating);
+  const [worthLivingImgActive, setWorthLivingImgActive] = useState(couplePyramids);
   const [eventsImgActive, setEventsImgActive] = useState(flemmingsRanchoJoshCloseUp);
 
   const updateWorthLivingImgHandler = (event) => {
@@ -53,7 +54,7 @@ const Home = () => {
           <div className={`container ${classes.container}`}>
             <div className="row">
               <div className={`column col-12 col-lg-6 ${classes.column}`}>
-                <h1 className={classes.large}>Newport Beach Retirement & Tax Planners</h1>
+                <h1 className={classes.medium}>Helping You Build a Retirement Worth Living</h1>
                 <div className="row">
                   <div className="col-2 hidden-md-down" style={{ lineHeight: "0rem", marginTop: ".25rem" }}>________</div>
                   <div className="col-lg-8" style={{ position: "relative" }}>
@@ -64,7 +65,7 @@ const Home = () => {
                 </div>
               </div>
               <div className={`column col-12 col-lg-6 ${classes.column} ${classes.mainImg}`}>
-                <img src={joshNewport} />
+                <img src={beachGoingReirees} />
               </div>
             </div>
           </div>
@@ -80,7 +81,9 @@ const Home = () => {
 
                 </div>
                 <div className={`row ${classes['worthLivingImages']}`} style={{ display: "flex" }}>
-                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={boating}>
+                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={couplePyramids}>
+                    <img src={couplePyramids} data-url={couplePyramids} />
+                  </div>                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={boating}>
                     <img src={boating} data-url={boating} />
                   </div>
                   <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleCamping}>
@@ -88,9 +91,6 @@ const Home = () => {
                   </div>
                   <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={coupleRome}>
                     <img src={coupleRome} data-url={coupleRome} />
-                  </div>
-                  <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={couplePyramids}>
-                    <img src={couplePyramids} data-url={couplePyramids} />
                   </div>
                   <div className="col-4" onClick={updateWorthLivingImgHandler} data-url={friendsTraveling}>
                     <img src={friendsTraveling} data-url={friendsTraveling} />
