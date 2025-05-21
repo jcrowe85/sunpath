@@ -1,126 +1,131 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 
 body {
-    margin: 0;
-    padding: 0; 
-    font-family: helvetica;
-    color: #202020;
-    background-color: #e4e4e4;
-    font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -mox-osx-smoothing: grayscale;
-    font-size: 16px;
-    background-position: top center;    
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  color: #202020;
+  background-color: #e4e4e4;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-smoothing: grayscale;
+  font-size: 16px;
+  background-position: top center;
 }
-h1, h2, h3, h4, h5 {
-    font-family: Crimson, Times;
-    letter-spacing: 0.04rem;
-    font-weight: 500;
-    line-height: 1em;
-    margin: .5em 0em;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Crimson, Times;
+  letter-spacing: 0.04rem;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0.5em 0em;
 }
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
-*, *::after, *::before {
-    z-index: 1;
+*,
+*::after,
+*::before {
+  z-index: 1;
 }
 p {
-    line-height: 1.5rem;
-    font-size: .9rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .paragraphBreak::before {
-    content: '\a';
-    white-space: pre;
+  content: "\a";
+  white-space: pre;
 }
 button {
-    position: relative;
-    border: none;
-    padding: .8rem 1rem;
-    z-index: 999;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
+  position: relative;
+  border: none;
+  padding: 0.8rem 1rem;
+  z-index: 999;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
 }
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .whtBlkWhtBtn {
-    background: white; 
-    color: black;
-    border: 1px solid white;
+  background: white;
+  color: black;
+  border: 1px solid white;
 }
 .whtBlkWhtBtn:hover {
-    background: black;
-    color: white;
-    border: 1px solid white;
+  background: black;
+  color: white;
+  border: 1px solid white;
 }
 .blkBlkWhtBtn {
-    background: black; 
-    color: white;
-    border: 1px solid transparent;
+  background: black;
+  color: white;
+  border: 1px solid transparent;
 }
 .blkBlkWhtBtn:hover {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
 .blkWhtBlkBtn {
-    background: black; 
-    color: white;
-    border: 1px solid black;
+  background: black;
+  color: white;
+  border: 1px solid black;
 }
 .blkWhtBlkBtn:hover {
-    background: transparent;
-    color: black;
-    border: 1px solid black;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
 }
-.whtWhtBlkBtn { 
-    background: transparent; 
-    color: black;
-    border: 1px solid transparent;
+.whtWhtBlkBtn {
+  background: transparent;
+  color: black;
+  border: 1px solid transparent;
 }
 .whtWhtBlkBtn:hover {
-    background: transparent; 
-    color: black;
-    border: 1px solid black;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
 }
 .navyWhtWhtBtn {
-    background: #05204a; 
-    color: white;
-    border: 1px solid transparent;
+  background: #05204a;
+  color: white;
+  border: 1px solid transparent;
 }
 .navyWhtWhtBtn:hover {
-    background: white; 
-    color: black;
-    border: 1px solid transparent;
+  background: white;
+  color: black;
+  border: 1px solid transparent;
 }
 .redWhtRedBtn {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
-    background-color: #e28b19;
-    color: white;
-   
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: #e28b19;
+  color: white;
+  border-radius: 5px;
 }
 .redWhtRedBtn:hover {
-   
 }
 
 .wrapper {
-    max-width: 768px;
-    margin: 0 auto;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
-    .savingsBarSection {
-        margin-top: 500rem;
-    } 
-    .wrapper {
-        max-width: 1170px;
-        margin: 0 auto;
-    }
+  .savingsBarSection {
+    margin-top: 500rem;
+  }
+  .wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 }
